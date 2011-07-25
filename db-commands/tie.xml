@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+          xmlns:xl="http://www.w3.org/1999/xlink"
+          version="5.0"
+          label="tie"
+          role="core"
+	>
+    <refmeta>
+        <refentrytitle>
+            <command>tie</command>
+        </refentrytitle>
+        <manvolnum/>
+    </refmeta>
+
+    <refnamediv>
+        <refname>tie</refname>
+        <refpurpose>Tie an XQuery to a variable for convenience</refpurpose>
+        <refclass>
+<!--builtin-->
+
+<!--command-->
+
+<!--function-->
+        </refclass>
+    </refnamediv>
+
+    <refsection>
+        <title>See Also</title>
+        <para>
+            <uri>http://www.xmlsh.org/CommandTie</uri>
+        </para>
+    </refsection>
+</refentry>

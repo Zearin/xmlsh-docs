@@ -1,0 +1,2219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<reference xmlns="http://docbook.org/ns/docbook"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xl="http://www.w3.org/1999/xlink" version="5.0">
+	
+	<title>Reference</title>
+	
+	
+	<refentry label=":">
+		<refmeta>
+			<refentrytitle>
+				<command>:</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>:</refname>
+
+			<refpurpose>the null command</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+		<refsynopsisdiv>
+			<!--
+					 : ignored arguments 
+				-->
+			<cmdsynopsis>
+				<command />
+				<arg />
+				<arg />
+				<arg />
+			</cmdsynopsis>
+		</refsynopsisdiv>
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandColon</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="[">
+		<refmeta>
+			<refentrytitle>
+				<command>[</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>[</refname>
+
+			<refpurpose>Evaluate expressions</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandTest</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="break">
+		<refmeta>
+			<refentrytitle>
+				<command>break</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>break</refname>
+
+			<refpurpose>Exits one level of a while, for, or until</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandBreak</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="cd">
+		<refmeta>
+			<refentrytitle>
+				<command>cd</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>cd</refname>
+
+			<refpurpose>Change (or print) current directory</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandCd</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="continue">
+		<refmeta>
+			<refentrytitle>
+				<command>continue</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>continue</refname>
+
+			<refpurpose>Continue one iteration of a loop</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandContinue</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="csv2xml">
+		<refmeta>
+			<refentrytitle>
+				<command>csv2xml</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>csv2xml</refname>
+
+			<refpurpose>Convert CSV to XML</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandCsv2xml</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="declare">
+		<refmeta>
+			<refentrytitle>
+				<command>declare</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>declare</refname>
+
+			<refpurpose>Declare (or list) namespaces</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+		<refsynopsisdiv>
+			<!--
+					 declaredeclare namespace [prefix=[uri]] 
+				-->
+			<cmdsynopsis>
+				<command />
+				<arg />
+				<arg />
+				<arg />
+			</cmdsynopsis>
+		</refsynopsisdiv>
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandDeclare</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="echo">
+		<refmeta>
+			<refentrytitle>
+				<command>echo</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>echo</refname>
+
+			<refpurpose>Print arguments as text</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandEcho</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="eval">
+		<refmeta>
+			<refentrytitle>
+				<command>eval</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>eval</refname>
+
+			<refpurpose>Evaluate a shell command</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandEval</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="exit">
+		<refmeta>
+			<refentrytitle>
+				<command>exit</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>exit</refname>
+
+			<refpurpose>Exit the shell, script, or function</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandExit</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="false">
+		<refmeta>
+			<refentrytitle>
+				<command>false</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>false</refname>
+
+			<refpurpose>Returns <returnvalue>false</returnvalue></refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandFalse</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="fixed2xml">
+		<refmeta>
+			<refentrytitle>
+				<command>fixed2xml</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>fixed2xml</refname>
+
+			<refpurpose>Convert fixed-field data to XML</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandFixed2xml</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="help">
+		<refmeta>
+			<refentrytitle>
+				<command>help</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>help</refname>
+
+			<refpurpose>Help for xmlsh commands</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+		<refsynopsisdiv>
+			<!--
+					 help [-n] commandshelp [-n] command 
+				-->
+			<cmdsynopsis>
+				<command />
+				<arg />
+				<arg />
+				<arg />
+			</cmdsynopsis>
+		</refsynopsisdiv>
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandHelp</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="http">
+		<refmeta>
+			<refentrytitle>
+				<command>http</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>http</refname>
+
+			<refpurpose>HTTP client command</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandHttp</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="httpserver">
+		<refmeta>
+			<refentrytitle>
+				<command>httpserver</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>httpserver</refname>
+
+			<refpurpose>HTTP server</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandHttpserver</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="httpsession">
+		<refmeta>
+			<refentrytitle>
+				<command>httpsession</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>httpsession</refname>
+
+			<refpurpose>HTTP session control</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandHttpsession</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="import">
+		<refmeta>
+			<refentrytitle>
+				<command>import</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>import</refname>
+
+			<refpurpose>Import modules, packages, and commands</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandImport</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="jcall">
+		<refmeta>
+			<refentrytitle>
+				<command>jcall</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>jcall</refname>
+
+			<refpurpose>Call Java from within the same JVM</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandJcall</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="jobs">
+		<refmeta>
+			<refentrytitle>
+				<command>jobs</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>jobs</refname>
+
+			<refpurpose>Print jobs</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandJobs</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="log">
+		<refmeta>
+			<refentrytitle>
+				<command>log</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>log</refname>
+
+			<refpurpose>Writes to the log4j log</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandLog</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="read">
+		<refmeta>
+			<refentrytitle>
+				<command>read</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>read</refname>
+
+			<refpurpose>Reads text into a variable</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandRead</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="require">
+		<refmeta>
+			<refentrytitle>
+				<command>require</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>require</refname>
+
+			<refpurpose>Check the current shell against a specified minimum
+				version</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandRequire</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="return">
+		<refmeta>
+			<refentrytitle>
+				<command>return</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>return</refname>
+
+			<refpurpose>Return from a function</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandReturn</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="rngconvert">
+		<refmeta>
+			<refentrytitle>
+				<command>rngconvert</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>rngconvert</refname>
+
+			<refpurpose>Convert RNG schemas to (and from) other schema
+				formats</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandRngconvert</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="rngvalidate">
+		<refmeta>
+			<refentrytitle>
+				<command>rngvalidate</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>rngvalidate</refname>
+
+			<refpurpose>Validate against an RNG schema</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandRngvalidate</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="set">
+		<refmeta>
+			<refentrytitle>
+				<command>set</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>set</refname>
+
+			<refpurpose>Set positional parameters and view
+				variables</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandSet</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="shift">
+		<refmeta>
+			<refentrytitle>
+				<command>shift</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>shift</refname>
+
+			<refpurpose>Shift positional parameters</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandShift</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="source">
+		<refmeta>
+			<refentrytitle>
+				<command>source</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>source</refname>
+
+			<refpurpose>Execute a script within the current shell</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandSource</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="test">
+		<refmeta>
+			<refentrytitle>
+				<command>test</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>test</refname>
+
+			<refpurpose>Evaluate expressions</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandTest</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="throw">
+		<refmeta>
+			<refentrytitle>
+				<command>throw</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>throw</refname>
+
+			<refpurpose>Create and update the timestamp of a file</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandThrow</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="tie">
+		<refmeta>
+			<refentrytitle>
+				<command>tie</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>tie</refname>
+
+			<refpurpose>Tie an XQuery to a variable for convenience</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandTie</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="true">
+		<refmeta>
+			<refentrytitle>
+				<command>true</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>true</refname>
+
+			<refpurpose>Returns <returnvalue>true</returnvalue></refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandTrue</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="unset">
+		<refmeta>
+			<refentrytitle>
+				<command>unset</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>unset</refname>
+
+			<refpurpose>Unset a variable</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandUnset</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="wait">
+		<refmeta>
+			<refentrytitle>
+				<command>wait</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>wait</refname>
+
+			<refpurpose>Wait for jobs to complete</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandWait</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xaddattribute">
+		<refmeta>
+			<refentrytitle>
+				<command>xaddattribute</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xaddattribute</refname>
+
+			<refpurpose>Add (or replace) an attribute on nodes matching an
+				expression</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXaddattribute</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xaddbase">
+		<refmeta>
+			<refentrytitle>
+				<command>xaddbase</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xaddbase</refname>
+
+			<refpurpose>Add xml:base attributes</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXaddbase</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xbase">
+		<refmeta>
+			<refentrytitle>
+				<command>xbase</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xbase</refname>
+
+			<refpurpose>Extract the base URI from a document or
+				node</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXbase</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xcat">
+		<refmeta>
+			<refentrytitle>
+				<command>xcat</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xcat</refname>
+
+			<refpurpose>Concatenate XML documents</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXcat</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xcmp">
+		<refmeta>
+			<refentrytitle>
+				<command>xcmp</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xcmp</refname>
+
+			<refpurpose>Compare text, binary, or XML data</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXcmp</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xdelete">
+		<refmeta>
+			<refentrytitle>
+				<command>xdelete</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xdelete</refname>
+
+			<refpurpose>Delete nodes or attributes matching an
+				expression</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXDelete</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xecho">
+		<refmeta>
+			<refentrytitle>
+				<command>xecho</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xecho</refname>
+
+			<refpurpose>Print arguments as XML</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXEcho</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xed">
+		<refmeta>
+			<refentrytitle>
+				<command>xed</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xed</refname>
+
+			<refpurpose>XPath-based XML edit</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXed</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xfile">
+		<refmeta>
+			<refentrytitle>
+				<command>xfile</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xfile</refname>
+
+			<refpurpose>File name manipulations</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXfile</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xgetopts">
+		<refmeta>
+			<refentrytitle>
+				<command>xgetopts</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xgetopts</refname>
+
+			<refpurpose>Parse arguments into XML</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXgetopts</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xgrep">
+		<refmeta>
+			<refentrytitle>
+				<command>xgrep</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xgrep</refname>
+
+			<refpurpose>Search for patterns in files</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXgrep</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xidentity">
+		<refmeta>
+			<refentrytitle>
+				<command>xidentity</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xidentity</refname>
+
+			<refpurpose>Output an identical copy of the input</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXidentity</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xinclude">
+		<refmeta>
+			<refentrytitle>
+				<command>xinclude</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xinclude</refname>
+
+			<refpurpose>Run XInclude preprocessing on an XMLfile</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXinclude</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xls">
+		<refmeta>
+			<refentrytitle>
+				<command>xls</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xls</refname>
+
+			<refpurpose>List files in a directory</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXls</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xmd5sum">
+		<refmeta>
+			<refentrytitle>
+				<command>xmd5sum</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xmd5sum</refname>
+
+			<refpurpose>Calculate the md5 sum of files</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXmd5sum</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xml2csv">
+		<refmeta>
+			<refentrytitle>
+				<command>xml2csv</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xml2csv</refname>
+
+			<refpurpose>Convert XML to CSV</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXml2csv</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xmlsh">
+		<refmeta>
+			<refentrytitle>
+				<command>xmlsh</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xmlsh</refname>
+
+			<refpurpose>Run a sub shell</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXmlsh</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xmove">
+		<refmeta>
+			<refentrytitle>
+				<command>xmove</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xmove</refname>
+
+			<refpurpose>Move (and/or rename) XML files, based on an expression
+				in the file</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXmove</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xpath">
+		<refmeta>
+			<refentrytitle>
+				<command>xpath</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xpath</refname>
+
+			<refpurpose>Run XPath (2.0) expressions on XML</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXpath</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xproperties">
+		<refmeta>
+			<refentrytitle>
+				<command>xproperties</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xproperties</refname>
+
+			<refpurpose>Parse (or generate) Java Properties files</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXproperties</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xpwd">
+		<refmeta>
+			<refentrytitle>
+				<command>xpwd</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xpwd</refname>
+
+			<refpurpose>Print the current directory</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXpwd</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xquery">
+		<refmeta>
+			<refentrytitle>
+				<command>xquery</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xquery</refname>
+
+			<refpurpose>Run XQuery scripts on an XML document</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXquery</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xread">
+		<refmeta>
+			<refentrytitle>
+				<command>xread</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xread</refname>
+
+			<refpurpose>Read an XML document into a variable</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXread</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xsdvalidate">
+		<refmeta>
+			<refentrytitle>
+				<command>xsdvalidate</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xsdvalidate</refname>
+
+			<refpurpose>Validate a document against a W3C XSD
+				schema</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXsdvalidate</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xslt">
+		<refmeta>
+			<refentrytitle>
+				<command>xslt</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xslt</refname>
+
+			<refpurpose>Run an XSLT 2.0 transformation</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXslt</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xslt1">
+		<refmeta>
+			<refentrytitle>
+				<command>xslt1</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xslt1</refname>
+
+			<refpurpose>Run an XSLT 1.0 transformation</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXslt1</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xsplit">
+		<refmeta>
+			<refentrytitle>
+				<command>xsplit</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xsplit</refname>
+
+			<refpurpose>Split XML into multiple files</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXsplit</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xsql">
+		<refmeta>
+			<refentrytitle>
+				<command>xsql</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xsql</refname>
+
+			<refpurpose>Query a relational database using JDBC</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXsql</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xtee">
+		<refmeta>
+			<refentrytitle>
+				<command>xtee</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xtee</refname>
+
+			<refpurpose>Copy input to multiple outputs</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXtee</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xtype">
+		<refmeta>
+			<refentrytitle>
+				<command>xtype</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xtype</refname>
+
+			<refpurpose>Print the XDM type of each argument</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXtype</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xunzip">
+		<refmeta>
+			<refentrytitle>
+				<command>xunzip</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xunzip</refname>
+
+			<refpurpose>Extract (or list) the contents from a zip
+				file</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXunzip</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xuri">
+		<refmeta>
+			<refentrytitle>
+				<command>xuri</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xuri</refname>
+
+			<refpurpose>Create and dissect URIs</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXuri</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xvalidate">
+		<refmeta>
+			<refentrytitle>
+				<command>xvalidate</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xvalidate</refname>
+
+			<refpurpose>Validate a document against a schema</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXvalidate</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xversion">
+		<refmeta>
+			<refentrytitle>
+				<command>xversion</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xversion</refname>
+
+			<refpurpose>Print the shell version</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXversion</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xwhich">
+		<refmeta>
+			<refentrytitle>
+				<command>xwhich</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xwhich</refname>
+
+			<refpurpose>Locate commands</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXwhich</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+	<refentry label="xzip">
+		<refmeta>
+			<refentrytitle>
+				<command>xzip</command>
+			</refentrytitle>
+			<manvolnum />
+		</refmeta>
+
+		<refnamediv>
+			<refname>xzip</refname>
+
+			<refpurpose>Extract (or list) the contents of a zip
+				file</refpurpose>
+
+			<refclass>
+				<!--builtin-->
+				<!--command-->
+				<!--function-->
+			</refclass>
+		</refnamediv>
+
+		<refsection>
+			<title>See Also</title>
+			<para>
+				<uri>http://www.xmlsh.org/CommandXunzip</uri>
+			</para>
+		</refsection>
+	</refentry>
+
+
+
+
+</reference>

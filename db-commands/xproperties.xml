@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+          xmlns:xl="http://www.w3.org/1999/xlink"
+          version="5.0"
+          label="xproperties"
+          role="core"
+	>
+    <refmeta>
+        <refentrytitle>
+            <command>xproperties</command>
+        </refentrytitle>
+        <manvolnum/>
+    </refmeta>
+
+    <refnamediv>
+        <refname>xproperties</refname>
+        <refpurpose>Parse (or generate) Java Properties files</refpurpose>
+        <refclass>
+<!--builtin-->
+
+<!--command-->
+
+<!--function-->
+        </refclass>
+    </refnamediv>
+
+    <refsection>
+        <title>See Also</title>
+        <para>
+            <uri>http://www.xmlsh.org/CommandXproperties</uri>
+        </para>
+    </refsection>
+</refentry>

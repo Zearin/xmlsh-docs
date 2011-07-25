@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+          xmlns:xl="http://www.w3.org/1999/xlink"
+          version="5.0"
+          label="xpath"
+          role="core"
+	>
+    <refmeta>
+        <refentrytitle>
+            <command>xpath</command>
+        </refentrytitle>
+        <manvolnum/>
+    </refmeta>
+
+    <refnamediv>
+        <refname>xpath</refname>
+        <refpurpose>Run XPath (2.0) expressions on XML</refpurpose>
+        <refclass>
+<!--builtin-->
+
+<!--command-->
+
+<!--function-->
+        </refclass>
+    </refnamediv>
+
+    <refsection>
+        <title>See Also</title>
+        <para>
+            <uri>http://www.xmlsh.org/CommandXpath</uri>
+        </para>
+    </refsection>
+</refentry>

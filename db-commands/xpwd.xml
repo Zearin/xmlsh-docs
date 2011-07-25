@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+          xmlns:xl="http://www.w3.org/1999/xlink"
+          version="5.0"
+          label="xpwd"
+          role="core"
+	>
+    <refmeta>
+        <refentrytitle>
+            <command>xpwd</command>
+        </refentrytitle>
+        <manvolnum/>
+    </refmeta>
+
+    <refnamediv>
+        <refname>xpwd</refname>
+        <refpurpose>Print the current directory</refpurpose>
+        <refclass>
+<!--builtin-->
+
+<!--command-->
+
+<!--function-->
+        </refclass>
+    </refnamediv>
+
+    <refsection>
+        <title>See Also</title>
+        <para>
+            <uri>http://www.xmlsh.org/CommandXpwd</uri>
+        </para>
+    </refsection>
+</refentry>
