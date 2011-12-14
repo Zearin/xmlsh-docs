@@ -8,7 +8,7 @@ import commands experimental
 
 declare namespace d=http://docbook.org/ns/docbook
 declare namespace x=http://www.w3.org/1999/xhtml
-#declare namespace g=http://un.known
+declare namespace g=http://un.known
 declare namespace=http://www.w3.org/1999/xhtml
 
 set +supports-dtd
@@ -19,25 +19,24 @@ set -method xml
 
 
 
-
 #
 #   Scrape URI from DocBook refentry
 #
 commandURL=$( xcat $1 | xpath "//d:uri/text()" )
 
-
+#echo "    commandURL = ${commandURL}"
 
 
 #   
 #   Fetch HTML for URI
 #
 try {
-    
+	
     ( http $commandURL | tail --lines=+2 | xquote | grep --invert-match -i 'g:plusone' | xunquote | xunquote )>{commandHTML}
-
+	
 } catch WstxParsingException {
 
-    cat $WstxParsingException 2> stderr-log.txt
+    print $WstxParsingException 2> stderr-log.txt
 
 } finally {
     
@@ -51,6 +50,3 @@ try {
         
     xecho $refilteredHTML 
 }
-
-
-
