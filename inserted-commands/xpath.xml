@@ -1,0 +1,164 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xpath" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xpath</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xpath</d:refname>
+		    <d:refpurpose>Run XPath (2.0) expressions on XML</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+<!--Cannot find attribute for key "depreciated" from hints given.-->
+<x:h1>Command xpath</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>xpath</x:strong> evaluate an XPATH expression and print the result<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+xpath [ <x:a href="/SerializationOptions">serialization options</x:a> ] [options] [xpath-expr]<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-f,-file xpath-file</x:td>
+                  <x:td>	read xpath expression from file</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-i,-input context</x:td>
+                  <x:td> use context as the source xml document, otherwise stdin if context is an XML expression which is an item then use it directly as the context item.</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-c,-context context</x:td>
+                  <x:td>Use context as a literal context</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-cf,-context-file file</x:td>
+                  <x:td>Use file as the name of an XML file for the context, or "-" for stdin</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-n</x:td>
+                  <x:td>			do not use a source context</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-q,-query xpath-expr</x:td>
+                  <x:td>xpath expression</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-v</x:td>
+                  <x:td>		Read remaining pairs of arguments as name/value pairs to assign as xpath variables</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-nons</x:td>
+                  <x:td>		Do not import global namespace declarations from the shell environment</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-ns prefix=uri</x:td>
+                  <x:td>	Add a predeclared namespace delcaration</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-s,-string</x:td>
+                  <x:td>Convert the result to a string if it is an attribute or element</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-b,-bool</x:td>
+                  <x:td>Do not print anything.  Treat the result as a boolean and exit with 0 if the value is true otherwise 1</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-e,-exists</x:td>
+                  <x:td>Execute xpath but do not print anything.  The exit status is 0 if there was any selected values otherwise 1</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+Supports the standard [ <x:a href="/SerializationOptions">serialization options</x:a> ]<x:br/>
+         <x:br/>
+Note that the "-q" is optional.  It is only required if you need to specify both -n and -v <x:br/>
+Examples<x:br/>
+         <x:div class="indent">xpath-n -q expr -v variable some-value<x:br/>
+         </x:div>
+If the result (or any node of the result if a sequence) is an Attribute the it is converted to a string.<x:br/>
+
+-i is depreciated.  It is a convenience option that does the following<x:br/>
+         <x:ul>
+            <x:li> If context is an atomic value then treat as a filename to be loaded as the context item
+</x:li>
+            <x:li> Otherwise treat as the literal context for the context item</x:li>
+        </x:ul>
+         <x:br/>
+-c or -cf are suggested which explicitly indicate if to use the expression literally or as a filename<x:br/>
+         <x:br/>
+   
+         <x:h3>Example</x:h3>
+
+         <x:div class="code">
+            <x:pre>xls | xpath '//file[1]/@name/string()'</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>.classpath</x:pre>
+         </x:div>
+
+Simplified example, you don't need to use /string()<x:br/>
+         <x:div class="code">
+            <x:pre>xls | xpath '//file[1]/@name'</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>.classpath</x:pre>
+         </x:div>
+
+
+         <x:br/>
+Namespace example using a renamed prefix for a namespace<x:br/>
+         <x:div class="code">
+            <x:pre>echo "&lt;x:a xmlns:x='foo' />" | xpath  -nons -ns y=foo /y:a</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>&lt;x:a xmlns:x="foo"/></x:pre>
+         </x:div>
+
+   
+         <x:h3>Return Value</x:h3>
+
+Returns 0 if the the xpath expression executed successfully and a non-empty result is returned. otherwise 1<x:br/>
+         <x:br/>
+
+
+         <x:a href="/Commands">Commands</x:a>
+         <x:br/>
+         <x:a href="/CategoryCommands">CategoryCommands</x:a>
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXpath</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

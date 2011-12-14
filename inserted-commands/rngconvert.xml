@@ -1,0 +1,91 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="rngconvert" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>rngconvert</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>rngconvert</d:refname>
+		    <d:refpurpose>Convert RNG schemas to (and from) other schema formats</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command rngvalidate</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>rngconvert</x:strong> converts to and from rng, xsd, and dtd schema formats<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+rngconvert [options]  inputfile outputfile<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+Converts between rng, dtd and xsd schema files.<x:br/>
+Uses the <x:a class="ext" href="http://www.thaiopensource.com/relaxng/trang.html">TRANG</x:a> rng conversion code.<x:br/>
+         <x:br/>
+Note that trang does not support converting from xsd to rng.<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-i</x:td>
+                  <x:td>	input option</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-o</x:td>
+                  <x:td>  ouput option</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-I</x:td>
+                  <x:td>  input type</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-O</x:td>
+                  <x:td>	output type</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-C</x:td>
+                  <x:td> Adds a catalog URI  </x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+For details on options see the TRANG manual <x:a class="ext" href="http://www.thaiopensource.com/relaxng/trang-manual.html">Trang Manual</x:a>
+
+         <x:br/>
+
+
+ 
+         <x:a href="/CommandXvalidate">CommandXvalidate</x:a>
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandRngconvert</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

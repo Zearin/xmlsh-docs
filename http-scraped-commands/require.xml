@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command require</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>require</strong> Checks the current shell for a specified minimum version<br/>
+   
+   <h3>Synopsis</h3>
+
+   <strong>require</strong>
+   <br/>
+   <strong>require version</strong>
+   <br/>
+Checks to see if the supplied version is less then or equal the the current version of xmlsh. (see <a  href="/CommandXversion">xversion</a>).<br/>
+If the required version is greater then the current version then throws an exception equivalent to the <a  href="/CommandSet">"throw on error" (-e)</a> flag.<br/>
+require can be trapped with <a  href="/ExceptionHandling">try/catch </a> or with a conditional same as errors from <a  href="/CommandSet">"throw on error" (-e)</a>.<br/>
+   <br/>
+If no arguments are given then require simply is an invalid command for versions prior to the implementation or require (1.0.1).<br/>
+   <br/>
+On failure (if caught or not) prints to standard error  "requires version: &lt;require test&gt;"<br/>
+   
+   <h3>Examples</h3>
+
+   <br/>
+Example require version 1.0.2.  If version is less then 1.0.2 then an exception is thrown (which will abort a script).<br/>
+   <div class="code">
+      <pre>require 1.0.1 </pre>
+   </div>
+
+
+Check for version 1.0.2 and print an error message but keep going<br/>
+   <div class="code">
+      <pre>require 1.0.2 || echo Required verison 1.0.2 ignored</pre>
+   </div>
+
+Trap a require or a script calling require with try/catch<br/>
+
+   <div class="code">
+      <pre>try {
+   require 99
+} catch e {
+  echo Ignored failure of require 99
+}</pre>
+   </div>
+
+
+
+
+   <a  href="/Commands">Commands</a>
+   <br/>
+   <a  href="/CommandXVersion">CommandXVersion</a>
+   <br/>
+   <a  href="/CategoryCommands">CategoryCommands</a>
+   <br/>
+
+
+</div>

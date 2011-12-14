@@ -1,0 +1,85 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xaddbase" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xaddbase</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xaddbase</d:refname>
+		    <d:refpurpose>Add xml:base attributes</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command xaddbase</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>xaddbase</x:strong> Adds xml:base attributes to an XML file.<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+xaddbase [ <x:a href="/SerializationOptions">serialization options</x:a> ] [options] [file]<x:br/>
+
+         <x:h4>Options</x:h4>
+
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-r,relative</x:td>
+                  <x:td>Add base URI's expressed as relative URI's relative to their parent</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-a,-all</x:td>
+                  <x:td>Add base URI's to ALL nodes otherwise only adds a base URI to the root element, <x:br/>
+and any child element who's base URI differes from its parent.   <x:br/>
+If not specified all xml:base attributes are removed which are unnecessary (who's value equals that of their parent).</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+Supports the standard [ <x:a href="/SerializationOptions">serialization options</x:a> ]<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+xaddbase performs the "add-xml-base" function from xproc.   For the root node and all child nodes who's base URI differes from the root node (or all nodes if -a is given) adds an "xml:base" attribute indicating the BASE URI of the node.<x:br/>
+         <x:br/>
+Example:<x:br/>
+         <x:div class="code">
+            <x:pre>$ xaddbase -r file.xml</x:pre>
+         </x:div>
+
+   
+         <x:h3>Return Value</x:h3>
+
+Returns 0 if the command executed successfully, 1 if there was an error.<x:br/>
+
+
+ 
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXaddbase</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

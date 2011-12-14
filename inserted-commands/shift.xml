@@ -1,0 +1,91 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="shift" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>shift</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>shift</d:refname>
+		    <d:refpurpose>Shift positional parameters</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h3>Command shift</x:h3>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>shift</x:strong> Shifts positional arguments or sequence variables<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+shift [n]<x:br/>
+shift variable [n]<x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+         <x:br/>
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>set a b c d e
+shift
+echo $*</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>b c d e</x:pre>
+         </x:div>
+
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>shift 2
+echo $*</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>d e</x:pre>
+         </x:div>
+
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>a=(1 2 3 foo bar spam)
+shift a 2
+echo $a</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>3 foo bar spam</x:pre>
+         </x:div>
+
+
+
+
+ 
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandShift</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

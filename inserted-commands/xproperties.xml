@@ -1,0 +1,87 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xproperties" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xproperties</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xproperties</d:refname>
+		    <d:refpurpose>Parse (or generate) Java Properties files</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command xproperties</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>xproperties</x:strong> Manage a Java Properties file<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+xproperties 	[ <x:a href="/SerializationOptions">serialization options</x:a> ] [options]<x:br/>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-in	file</x:td>
+                  <x:td>Load a Properties file in text form</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-inxml file</x:td>
+                  <x:td>Load a Properties file in xml form</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-text	</x:td>
+                  <x:td>Output properties in text form to stdout</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-xml</x:td>
+                  <x:td>Output properties in xml form to stdout</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-d,-delete	var</x:td>
+                  <x:td>Delete a variable from the properties</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-a,-add var=value</x:td>
+                  <x:td>Add (or replace) a variable (name "var", value "value") to the properties</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-comment</x:td>
+                  <x:td>Append or update the comment</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-v,-var var</x:td>
+                  <x:td>print out the value of a variable (cannot be intermixed with -text or -xml) </x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+Supports the standard [ <x:a href="/SerializationOptions">serialization options</x:a> ]<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+xproperties can be used to create new properties files, transform fil</x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXproperties</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

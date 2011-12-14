@@ -1,0 +1,88 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xmd5sum" role="core streaming">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xmd5sum</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xmd5sum</d:refname>
+		    <d:refpurpose>Calculate the md5 sum of files</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command xmd5sum</x:h1>
+
+   
+         <x:h3>xmd5sum</x:h3>
+
+         <x:strong>xmd5sum</x:strong> List files in a directory<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+xmd5sum [ <x:a href="/SerializationOptions">serialization options</x:a> ]  [file ...]<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+         <x:br/>
+Supports the standard [ <x:a href="/SerializationOptions">serialization options</x:a> ]<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+         <x:br/>
+Calculates the md5 checksum of each file and outputs the file and length.<x:br/>
+If any argument is a directory, then it is recursed and all contents are also summed.<x:br/>
+         <x:br/>
+Example:<x:br/>
+
+         <x:div class="code">
+            <x:pre>cd $XMLSH/samples/data
+xmd5sum *.xml</x:pre>
+         </x:div>
+
+Results<x:br/>
+         <x:div class="code">
+            <x:pre>&lt;xmd5>
+  &lt;file name="REC-xml-20060816.xml" md5="8fac09521dfbbf3509024a924351f49f" length="199019"/>
+  &lt;file name="books.xml" md5="dbd4c7ab88e5092f7ca83643cef2fd86" length="2841"/>
+  &lt;file name="intl.xml" md5="73696927038bcac47b0c87d3aec16bc2" length="418"/>
+  &lt;file name="othello.xml" md5="7dd2133a6e6104d79e017cd7062aa939" length="248777"/>
+  &lt;file name="xi_doc1.xml" md5="80e03792e5d21285672ad5295f54c989" length="297"/>
+  &lt;file name="xi_sub1.xml" md5="57024d1dc619fc7db898f10083d62a93" length="212"/>
+  &lt;file name="xml-base-chap.xml" md5="3b2cf4f7c2b22090de0def548967b97e" length="101"/>
+  &lt;file name="xml-base-test.xml" md5="09d39f674b7d2ce9c7b967d408d185bf" length="203"/>
+&lt;/xmd5></x:pre>
+         </x:div>
+
+
+   
+         <x:h3>Return Value</x:h3>
+
+Returns 0 if the directory exists and is read successfully, otherwise 1.<x:br/>
+
+
+ 
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXmd5sum</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

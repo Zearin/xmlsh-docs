@@ -1,0 +1,68 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xversion" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xversion</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xversion</d:refname>
+		    <d:refpurpose>Print the shell version</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h2>Command xversion </x:h2>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>xversion</x:strong> Prints the version and build of the shell.<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+xversion [ <x:a href="/SerializationOptions">serialization options</x:a> ]<x:br/>
+
+Prints the version , release, and build date of the shell.<x:br/>
+As of version 1.0.7 also includes the saxon version and edition<x:br/>
+
+Example: <x:br/>
+         <x:div class="code">
+            <x:pre>xversion</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <!--start GeSHi-->
+
+<!--end GeSHi-->
+
+<x:br/>
+         <x:a href="/Commands">Commands</x:a>
+         <x:br/>
+         <x:a href="/CommandRequire">CommandRequire</x:a>	
+         <x:br/>
+         <x:a href="/CategoryCommands">CategoryCommands</x:a>
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXversion</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

@@ -1,0 +1,71 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="help" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>help</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>help</d:refname>
+		    <d:refpurpose>Help for xmlsh commands</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command help</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:br/>
+         <x:strong>help</x:strong> Prints help on commands and syntax<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:strong>help</x:strong> [options] commands<x:br/>
+         <x:strong>help</x:strong> [options] &lt;command><x:br/>
+
+         <x:h4>Options</x:h4>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-n,-nobrowse</x:td>
+                  <x:td>Do not launch a browser for detailed help</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+   
+         <x:h3>Description</x:h3>
+
+The help command provides online help on xmlsh commands and syntax.<x:br/>
+A minimum amount of help, typically a synopsis, is availble with the installed xmlsh product and is printed on the output.<x:br/>
+If a command or topic has more detailed help available online, the URL is printed and optinonaly a broweser is launched with the URL.<x:br/>
+
+
+
+ 
+See Also <x:a href="/CommandXEcho">xecho</x:a>
+
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandHelp</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

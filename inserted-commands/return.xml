@@ -1,0 +1,80 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="return" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>return</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>return</d:refname>
+		    <d:refpurpose>Return from a function</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command return</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>return</x:strong> returns from a function<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+return value;<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+         <x:strong>return</x:strong> stops executing a function and returns from it with the value as the exit value of the function.<x:br/>
+This becomes $? to the calling code.<x:br/>
+         <x:br/>
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>function foo () 
+{
+	if true ; then 
+   	 return 1;
+	fi 
+	echo This should never happen;
+}
+
+foo
+echo $?</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>1</x:pre>
+         </x:div>
+
+
+The return value of functions can be any expression, including XML Expressions, Java objects and sequences.   The $? variable converts any non-numeric expression to a numeric value equivilent to the effective boolean of the expression.   You can retrieve the native return value of functions by using them in assignment statments or passing as arguments using the <x:a href="/SyntaxFunction">function call</x:a> syntax.<x:br/>
+
+
+
+         <x:a href="/SyntaxFunction">Functions</x:a>
+         <x:br/>
+ 
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandReturn</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

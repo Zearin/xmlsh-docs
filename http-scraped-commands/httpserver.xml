@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command httpserver</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>httpserver</strong> http server<br/>
+   
+   <h3>Synopsis</h3>
+
+httpserver [options]  [start|stop]<br/>
+   <br/>
+Note: This command is part of the <a  href="/CommandsExperimental">Experimental Commands</a> set and needs to be imported in order to be used. <br/>
+   <br/>
+This command is still under development and is expected to change substantially.<br/>
+   <br/>
+Httpserver starts or stops a single thread which runs an HTTP server within the current shell.<br/>
+The server is run as a background thread so the command returns immedeately.  <br/>
+Processing of requests is entirely scripted.<br/>
+   
+   <h3>Options</h3>
+
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-port port</td>
+              <td>Listen on the specified port (default 80)</td>
+            </tr>
+         <tr>
+              <td>-context path</td>
+              <td>Responds to requests on the given context (default "/")</td>
+            </tr>
+         <tr>
+              <td>-get cmd</td>
+              <td>Executes cmd when handling a GET request</td>
+            </tr>
+         <tr>
+              <td>-put cmd</td>
+              <td>Executes cmd when handling a PUT request</td>
+            </tr>
+         <tr>
+              <td>-post cmd</td>
+              <td> Executes cmd when handling a POST request</td>
+            </tr>
+         <tr>
+              <td>-chunk</td>
+              <td>Operates in HTTP Chunked mode (default is off)</td>
+            </tr>
+      </tbody>
+   </table>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>start</td>
+              <td>Starts the HTTP server</td>
+            </tr>
+         <tr>
+              <td>stop</td>
+              <td>Stops the HTTP server</td>
+            </tr>
+      </tbody>
+   </table>
+   
+   <h3>Usage</h3>
+
+   <br/>
+On invocation of a method,  $1 is set to the file part of the URI, $2 is set to the query portion of the URI.<br/>
+The HTTP Request body is made available as stdin to the command, and the output of the command becomes the Response portion.<br/>
+   <br/>
+Like <a  href="/EmbeddingServlet">xmlsh servlet</a> the global variable HTTP_HEADERS is set as with all HTTP headers.<br/>
+   <br/>
+   
+   <h3>Examples</h3>
+
+   <br/>
+Start a server that serves the file specified by the URL given.<br/>
+   <div class="code">
+      <pre>import commands posix
+httpserver -port 80 -get 'cat $(xfile . $1)' start</pre>
+   </div>
+
+
+   
+   <h3>Return Value</h3>
+
+
+
+
+ 
+   <a  href="/CommandsExperimental">CommandsExperimental</a>
+   <br/>
+   <a  href="/EmbeddingServlet">EmbeddingServlet</a>
+   <br/>
+
+
+
+</div>

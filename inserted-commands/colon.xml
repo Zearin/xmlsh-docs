@@ -1,0 +1,60 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label=":" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>:</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>:</d:refname>
+		    <d:refpurpose>
+			      <d:command>:</d:command> is the null command. It can be used in places where a command is
+			required syntatcially but none is needed. </d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command :</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>:</x:strong> is the null command.  It can be used in places where a command is required syntatcially but none is needed.<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:br/>
+:<x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+
+         <x:div class="code">
+            <x:pre>	if true ; then : else echo false ; fi</x:pre>
+         </x:div>
+
+
+
+ 
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandColon</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

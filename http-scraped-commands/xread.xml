@@ -1,0 +1,41 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xread</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xread</strong> Reads an xml document into a variable<br/>
+   
+   <h3>Synopsis</h3>
+
+   <strong>xread</strong> variable<br/>
+   <br/>
+Reads up to EOF from stdin and parses the stream as an XML document and assigns it to the specified variable.<br/>
+   
+   <h3>Examples</h3>
+
+Example: Read into variable a an XML document from a file<br/>
+
+   <div class="code">
+      <pre>xread a &lt; file.xml</pre>
+   </div>
+
+
+Example: Read into variable a an XML document from a Here Document.<br/>
+   <div class="code">
+      <pre>xread a &lt;&lt;EOF
+&lt;test&gt;
+	data
+&lt;/test&gt;
+EOF</pre>
+   </div>
+
+
+
+   <a  href="/Commands">Commands</a>
+   <br/>
+   <a  href="/CategoryCommands">CategoryCommands</a>
+
+</div>

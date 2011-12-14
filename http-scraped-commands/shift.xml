@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h3>Command shift</h3>
+
+   
+   <h3>Name</h3>
+
+   <strong>shift</strong> Shifts positional arguments or sequence variables<br/>
+   
+   <h3>Synopsis</h3>
+
+shift [n]<br/>
+shift variable [n]<br/>
+   
+   <h3>Examples</h3>
+
+   <br/>
+Example<br/>
+   <div class="code">
+      <pre>set a b c d e
+shift
+echo $*</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>b c d e</pre>
+   </div>
+
+Example<br/>
+   <div class="code">
+      <pre>shift 2
+echo $*</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>d e</pre>
+   </div>
+
+Example<br/>
+   <div class="code">
+      <pre>a=(1 2 3 foo bar spam)
+shift a 2
+echo $a</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>3 foo bar spam</pre>
+   </div>
+
+
+
+
+ 
+
+
+</div>

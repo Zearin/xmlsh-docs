@@ -1,0 +1,198 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="test" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>test</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>test</d:refname>
+		    <d:refpurpose>Evaluate expressions</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command test</x:h1>
+
+         <x:br/>
+         <x:h1>Synopsis</x:h1>
+
+         <x:strong>test</x:strong> expr<x:br/>
+         <x:strong>[</x:strong> expr <x:strong>]</x:strong>
+         <x:br/>
+The test command evaluates an expression and returns true or false (0,1) as its exit value.<x:br/>
+The test command is aliased as "[" which is the typical use.<x:br/>
+         <x:br/>
+An omitted EXPRESSION defaults to false.  Otherwise, EXPRESSION is true<x:br/>
+or false and sets exit status.  It is one of:<x:br/>
+         <x:br/>
+         <x:strong>( EXPRESSION )</x:strong>
+         <x:br/>
+   EXPRESSION is true<x:br/>
+         <x:br/>
+         <x:strong>! EXPRESSION</x:strong>
+         <x:br/>
+   EXPRESSION is false<x:br/>
+         <x:br/>
+         <x:strong>EXPRESSION1 -a EXPRESSION2</x:strong>
+         <x:br/>
+   both EXPRESSION1 and EXPRESSION2 are true<x:br/>
+         <x:br/>
+         <x:strong>EXPRESSION1 -o EXPRESSION2</x:strong>
+         <x:br/>
+   either EXPRESSION1 or EXPRESSION2 is true<x:br/>
+         <x:br/>
+         <x:strong>-n STRING</x:strong>
+         <x:br/>
+   the length of STRING is nonzero<x:br/>
+         <x:br/>
+         <x:strong>STRING </x:strong>
+         <x:br/>
+   equivalent to -n STRING<x:br/>
+         <x:br/>
+         <x:strong>-z STRING</x:strong>
+         <x:br/>
+   the length of STRING is zero<x:br/>
+         <x:br/>
+         <x:strong>-D name</x:strong>
+         <x:br/>
+   true if the environment variable "name" is defined<x:br/>
+         <x:br/>
+         <x:strong>-S value</x:strong>
+
+         <x:div class="indent">true if the value/argument is a string <x:em>type </x:em>(not an xml type)<x:br/>
+         </x:div>
+         <x:strong>-X value</x:strong>
+
+         <x:div class="indent">true if the value/argument is an xml <x:em>type</x:em>
+            <x:br/>
+         </x:div>
+         <x:br/>
+         <x:strong>STRING1 = STRING2</x:strong>
+         <x:br/>
+   the strings are equal<x:br/>
+         <x:br/>
+         <x:strong>STRING1 != STRING2</x:strong>
+         <x:br/>
+   the strings are not equal<x:br/>
+         <x:br/>
+         <x:strong>INTEGER1 -eq INTEGER2</x:strong>
+         <x:br/>
+   INTEGER1 is equal to INTEGER2<x:br/>
+         <x:br/>
+         <x:strong>INTEGER1 -ge INTEGER2</x:strong>
+         <x:br/>
+   INTEGER1 is greater than or equal to INTEGER2<x:br/>
+         <x:br/>
+         <x:strong>INTEGER1 -gt INTEGER2</x:strong>
+         <x:br/>
+   INTEGER1 is greater than INTEGER2<x:br/>
+         <x:br/>
+         <x:strong>INTEGER1 -le INTEGER2</x:strong>
+         <x:br/>
+   INTEGER1 is less than or equal to INTEGER2<x:br/>
+         <x:br/>
+         <x:strong>INTEGER1 -lt INTEGER2</x:strong>
+         <x:br/>
+   INTEGER1 is less than INTEGER2<x:br/>
+         <x:br/>
+         <x:strong>INTEGER1 -ne INTEGER2</x:strong>
+         <x:br/>
+   INTEGER1 is not equal to INTEGER2<x:br/>
+         <x:br/>
+         <x:strong>FILE1 -ef FILE2</x:strong>
+         <x:br/>
+   FILE1 and FILE2 have the same cananocal path<x:br/>
+         <x:br/>
+         <x:strong>FILE1 -nt FILE2</x:strong>
+         <x:br/>
+   FILE1 is newer (modification date) than FILE2<x:br/>
+         <x:br/>
+         <x:strong>FILE1 -ot FILE2</x:strong>
+         <x:br/>
+   FILE1 is older than FILE2<x:br/>
+         <x:br/>
+         <x:strong>-d FILE</x:strong>
+         <x:br/>
+   FILE exists and is a directory<x:br/>
+         <x:br/>
+         <x:strong>-e FILE</x:strong>
+         <x:br/>
+   FILE exists<x:br/>
+         <x:br/>
+         <x:strong>-f FILE</x:strong>
+         <x:br/>
+   FILE exists and is a regular file<x:br/>
+         <x:br/>
+         <x:strong>-r FILE</x:strong>
+         <x:br/>
+   FILE exists and read permission is granted<x:br/>
+         <x:br/>
+         <x:strong>-s FILE</x:strong>
+         <x:br/>
+   FILE exists and has a size greater than zero<x:br/>
+         <x:br/>
+         <x:strong>-w FILE</x:strong>
+         <x:br/>
+   FILE exists and write permission is granted<x:br/>
+         <x:br/>
+         <x:strong>-x FILE</x:strong>
+         <x:br/>
+   FILE exists and execute (or search) permission is granted<x:br/>
+         <x:br/>
+         <x:strong>-u string</x:strong>
+         <x:br/>
+   TRUE if string is formated as an absolute URI (starts with &lt;scheme>: )<x:br/>
+         <x:br/>
+Beware	that  parentheses  need  to be escaped (e.g., by back-<x:br/>
+slashes) for shells.  INTEGER may also be -l STRING, which evaluates to<x:br/>
+the length of STRING.<x:br/>
+   
+         <x:h3>XML Expressions</x:h3>
+
+         <x:br/>
+An XML Expression within the test command is evaluated to boolean and the result used for the expression.<x:br/>
+A simplistic example<x:br/>
+
+         <x:div class="code">
+            <x:pre>[ &lt;[ fn:true() ]&gt; ] &amp;&amp; echo true</x:pre>
+         </x:div>
+
+A more interesting example<x:br/>
+
+         <x:div class="code">
+            <x:pre>a=&lt;[ &lt;foo attr="bar"/> ]&gt;
+if [ &lt;[ $a/@attr eq 'bar' ]&gt; ] ; then   
+   echo attr is bar
+fi</x:pre>
+         </x:div>
+
+Note the spaces needed before and after the [ and ]<x:br/>
+
+
+
+ 
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandTest</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

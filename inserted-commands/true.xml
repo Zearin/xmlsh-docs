@@ -1,0 +1,67 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="true" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>true</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>true</d:refname>
+		    <d:refpurpose>Return true</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command true</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>true</x:strong> returns a true condition<x:br/>
+         <x:br/>
+true returns the exit value 0 which is considered false.<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:strong>true</x:strong>
+         <x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+         <x:br/>
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>if true ; then echo True; else echo False ; fi</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>True</x:pre>
+         </x:div>
+
+
+
+ 
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandTrue</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

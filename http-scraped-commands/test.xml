@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command test</h1>
+
+   <br/>
+   <h1>Synopsis</h1>
+
+   <strong>test</strong> expr<br/>
+   <strong>[</strong> expr <strong>]</strong>
+   <br/>
+The test command evaluates an expression and returns true or false (0,1) as its exit value.<br/>
+The test command is aliased as "[" which is the typical use.<br/>
+   <br/>
+An omitted EXPRESSION defaults to false.  Otherwise, EXPRESSION is true<br/>
+or false and sets exit status.  It is one of:<br/>
+   <br/>
+   <strong>( EXPRESSION )</strong>
+   <br/>
+   EXPRESSION is true<br/>
+   <br/>
+   <strong>! EXPRESSION</strong>
+   <br/>
+   EXPRESSION is false<br/>
+   <br/>
+   <strong>EXPRESSION1 -a EXPRESSION2</strong>
+   <br/>
+   both EXPRESSION1 and EXPRESSION2 are true<br/>
+   <br/>
+   <strong>EXPRESSION1 -o EXPRESSION2</strong>
+   <br/>
+   either EXPRESSION1 or EXPRESSION2 is true<br/>
+   <br/>
+   <strong>-n STRING</strong>
+   <br/>
+   the length of STRING is nonzero<br/>
+   <br/>
+   <strong>STRING </strong>
+   <br/>
+   equivalent to -n STRING<br/>
+   <br/>
+   <strong>-z STRING</strong>
+   <br/>
+   the length of STRING is zero<br/>
+   <br/>
+   <strong>-D name</strong>
+   <br/>
+   true if the environment variable "name" is defined<br/>
+   <br/>
+   <strong>-S value</strong>
+
+   <div class="indent">true if the value/argument is a string <em>type </em>(not an xml type)<br/>
+   </div>
+   <strong>-X value</strong>
+
+   <div class="indent">true if the value/argument is an xml <em>type</em>
+      <br/>
+   </div>
+   <br/>
+   <strong>STRING1 = STRING2</strong>
+   <br/>
+   the strings are equal<br/>
+   <br/>
+   <strong>STRING1 != STRING2</strong>
+   <br/>
+   the strings are not equal<br/>
+   <br/>
+   <strong>INTEGER1 -eq INTEGER2</strong>
+   <br/>
+   INTEGER1 is equal to INTEGER2<br/>
+   <br/>
+   <strong>INTEGER1 -ge INTEGER2</strong>
+   <br/>
+   INTEGER1 is greater than or equal to INTEGER2<br/>
+   <br/>
+   <strong>INTEGER1 -gt INTEGER2</strong>
+   <br/>
+   INTEGER1 is greater than INTEGER2<br/>
+   <br/>
+   <strong>INTEGER1 -le INTEGER2</strong>
+   <br/>
+   INTEGER1 is less than or equal to INTEGER2<br/>
+   <br/>
+   <strong>INTEGER1 -lt INTEGER2</strong>
+   <br/>
+   INTEGER1 is less than INTEGER2<br/>
+   <br/>
+   <strong>INTEGER1 -ne INTEGER2</strong>
+   <br/>
+   INTEGER1 is not equal to INTEGER2<br/>
+   <br/>
+   <strong>FILE1 -ef FILE2</strong>
+   <br/>
+   FILE1 and FILE2 have the same cananocal path<br/>
+   <br/>
+   <strong>FILE1 -nt FILE2</strong>
+   <br/>
+   FILE1 is newer (modification date) than FILE2<br/>
+   <br/>
+   <strong>FILE1 -ot FILE2</strong>
+   <br/>
+   FILE1 is older than FILE2<br/>
+   <br/>
+   <strong>-d FILE</strong>
+   <br/>
+   FILE exists and is a directory<br/>
+   <br/>
+   <strong>-e FILE</strong>
+   <br/>
+   FILE exists<br/>
+   <br/>
+   <strong>-f FILE</strong>
+   <br/>
+   FILE exists and is a regular file<br/>
+   <br/>
+   <strong>-r FILE</strong>
+   <br/>
+   FILE exists and read permission is granted<br/>
+   <br/>
+   <strong>-s FILE</strong>
+   <br/>
+   FILE exists and has a size greater than zero<br/>
+   <br/>
+   <strong>-w FILE</strong>
+   <br/>
+   FILE exists and write permission is granted<br/>
+   <br/>
+   <strong>-x FILE</strong>
+   <br/>
+   FILE exists and execute (or search) permission is granted<br/>
+   <br/>
+   <strong>-u string</strong>
+   <br/>
+   TRUE if string is formated as an absolute URI (starts with &lt;scheme&gt;: )<br/>
+   <br/>
+Beware	that  parentheses  need  to be escaped (e.g., by back-<br/>
+slashes) for shells.  INTEGER may also be -l STRING, which evaluates to<br/>
+the length of STRING.<br/>
+   
+   <h3>XML Expressions</h3>
+
+   <br/>
+An XML Expression within the test command is evaluated to boolean and the result used for the expression.<br/>
+A simplistic example<br/>
+
+   <div class="code">
+      <pre>[ &lt;[ fn:true() ]&gt; ] &amp;&amp; echo true</pre>
+   </div>
+
+A more interesting example<br/>
+
+   <div class="code">
+      <pre>a=&lt;[ &lt;foo attr="bar"/&gt; ]&gt;
+if [ &lt;[ $a/@attr eq 'bar' ]&gt; ] ; then   
+   echo attr is bar
+fi</pre>
+   </div>
+
+Note the spaces needed before and after the [ and ]<br/>
+
+
+
+ 
+   <br/>
+
+
+</div>

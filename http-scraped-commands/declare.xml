@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command declare</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>declare</strong> Declares or lists namespaces<br/>
+   
+   <h3>Synopsis</h3>
+
+   <strong>declare</strong> 
+   <br/>
+   <strong>declare</strong> namespace [prefix=[uri]]<br/>
+   <br/>
+The declare command is used to add global declarations to the shell.  Currently the <a  href="/Namespaces">declare namespaces</a> is the only declaration.<br/>
+Future may include serialization<br/>
+   <br/>
+If uri is omitted then the namespace is undeclared<br/>
+   <br/>
+   
+   <h3>Examples</h3>
+
+Example<br/>
+   <div class="code">
+      <pre>declare namespace xmlsh=http://www.xmlsh.org/namespaces/xmlsh
+declare namespace</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>xmlsh=http://www.xmlsh.org/namespaces/xmlsh</pre>
+   </div>
+
+
+
+ 
+   <br/>
+
+
+</div>

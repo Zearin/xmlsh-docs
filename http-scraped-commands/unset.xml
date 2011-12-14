@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command unset</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>unset</strong> unsets environment variables<br/>
+   
+   <h3>Synopsis</h3>
+
+unset [var1 ...]<br/>
+
+   <h4>Description</h4>
+
+Unsets (removes from the environment) each variable passed as an argument by name.  completely removes the variable from the environment for this shell and all future subshells or external processes.<br/>
+   <br/>
+Example<br/>
+
+   <div class="code">
+      <pre>A="hello"
+echo $A
+unset A
+echo $A</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>Hello</pre>
+   </div>
+
+
+
+
+ 
+
+
+</div>

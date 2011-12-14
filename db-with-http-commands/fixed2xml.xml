@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry
+	xmlns	="http://docbook.org/ns/docbook"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xl="http://www.w3.org/1999/xlink"
+	
+	version	="5.0"
+	label	="fixed2xml" 
+	role	="core streaming"
+>
+	<refmeta>
+		<refentrytitle>
+			<command>fixed2xml</command>
+		</refentrytitle>
+		<manvolnum />
+	</refmeta>
+
+	<refnamediv>
+		<refname>fixed2xml</refname>
+		<refpurpose>Convert fixed-field data to XML</refpurpose>
+		<refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</refclass>
+	</refnamediv>
+
+
+	<refsynopsisdiv>
+		<cmdsynopsis>
+			<command>fixed2xml</command>
+			<arg />
+		</cmdsynopsis>
+	</refsynopsisdiv>
+
+	<refsection>
+		<title>See Also</title>
+		<para>
+			<uri>http://www.xmlsh.org/CommandFixed2xml</uri>
+		</para>
+	</refsection>
+</refentry>

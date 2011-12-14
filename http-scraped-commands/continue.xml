@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command continue</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>continue</strong> continues a for or while loop<br/>
+   
+   <h3>Synopsis</h3>
+
+   <br/>
+continue [levels]<br/>
+   
+   <h3>Description</h3>
+
+   <br/>
+The continue statement continues one or more levels of a while, for or until, skipping the remaining body.<br/>
+   <br/>
+If no arguments are supplied then 1 level is continued.<br/>
+   
+   <h3>Examples</h3>
+
+
+   <div class="code">
+      <pre>for i in a b c d e ; do
+  if [ $i = "b" ] ; then 
+	continue ;
+   fi
+  echo $i
+done</pre>
+   </div>
+
+Results<br/>
+   <div class="code">
+      <pre>a
+c
+d
+e</pre>
+   </div>
+
+
+
+
+ 
+
+
+</div>

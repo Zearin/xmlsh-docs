@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xaddbase</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xaddbase</strong> Adds xml:base attributes to an XML file.<br/>
+   
+   <h3>Synopsis</h3>
+
+xaddbase [ <a  href="/SerializationOptions">serialization options</a> ] [options] [file]<br/>
+
+   <h4>Options</h4>
+
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-r,relative</td>
+              <td>Add base URI's expressed as relative URI's relative to their parent</td>
+            </tr>
+         <tr>
+              <td>-a,-all</td>
+              <td>Add base URI's to ALL nodes otherwise only adds a base URI to the root element, <br/>
+and any child element who's base URI differes from its parent.   <br/>
+If not specified all xml:base attributes are removed which are unnecessary (who's value equals that of their parent).</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   
+   <h3>Description</h3>
+
+xaddbase performs the "add-xml-base" function from xproc.   For the root node and all child nodes who's base URI differes from the root node (or all nodes if -a is given) adds an "xml:base" attribute indicating the BASE URI of the node.<br/>
+   <br/>
+Example:<br/>
+   <div class="code">
+      <pre>$ xaddbase -r file.xml</pre>
+   </div>
+
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the command executed successfully, 1 if there was an error.<br/>
+
+
+ 
+   <br/>
+
+
+</div>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command exit</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>exit</strong> Exits the current shell or script.<br/>
+   
+   <h3>Synopsis</h3>
+
+   <strong>exit</strong> [ret code]<br/>
+   <br/>
+Exits the current shell.  If ret code is specified it is used as the exit value, otherwise 0. <br/>
+If running an xmlsh script then exits the script with the specified exit code.<br/>
+If running interactively exits the xmlsh program.<br/>
+   
+   <h3>Examples</h3>
+
+Example: exit with exit value 0<br/>
+   <div class="code">
+      <pre>exit 0</pre>
+   </div>
+
+Example: exit with the last command's exit value<br/>
+   <div class="code">
+      <pre>exit </pre>
+   </div>
+
+
+
+
+ 
+   <br/>
+
+
+</div>

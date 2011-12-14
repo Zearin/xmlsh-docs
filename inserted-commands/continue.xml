@@ -1,0 +1,80 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="continue" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>continue</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>continue</d:refname>
+		    <d:refpurpose>Continue one iteration of a loop</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command continue</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>continue</x:strong> continues a for or while loop<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:br/>
+continue [levels]<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+         <x:br/>
+The continue statement continues one or more levels of a while, for or until, skipping the remaining body.<x:br/>
+         <x:br/>
+If no arguments are supplied then 1 level is continued.<x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+
+         <x:div class="code">
+            <x:pre>for i in a b c d e ; do
+  if [ $i = "b" ] ; then 
+	continue ;
+   fi
+  echo $i
+done</x:pre>
+         </x:div>
+
+Results<x:br/>
+         <x:div class="code">
+            <x:pre>a
+c
+d
+e</x:pre>
+         </x:div>
+
+
+
+
+ 
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandContinue</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

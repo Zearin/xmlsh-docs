@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command set</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>set</strong> sets options and positional parameters<br/>
+   
+   <h3>Synopsis</h3>
+
+set [options] [param1 [param2 ...]]<br/>
+   
+   <h3>Options</h3>
+
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-x</td>
+              <td>		Turns on execution tracing	(default off)</td>
+            </tr>
+         <tr>
+              <td>-v</td>
+              <td>		Turns on command interpretation parse tracing	(default off)</td>
+            </tr>
+         <tr>
+              <td>-e</td>
+              <td>		Turns on "throw on error" mode (default off)</td>
+            </tr>
+         <tr>
+              <td>-xpipe</td>
+              <td>	Turns on the xpipe implementation for pipes (Experimental)		(default off)</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+The set command also supports all of the global <a  href="/SerializationOptions">Serialization Options</a>
+   <br/>
+
+   <h4>set options</h4>
+
+   <br/>
+If any options are specified then they set the global shell options for the current shell.<br/>
+Preceding any boolean option by a + instead of a - will turn OFF that option.<br/>
+   <br/>
+Example<br/>
+   <div class="code">
+      <pre>set +omit-xml-declaration</pre>
+   </div>
+
+turns OFF the omit-xml-declaration option<br/>
+
+   <h4>Execute Trace (-x)</h4>
+
+If -x is set then commands are printed to the error output prior to execution<br/>
+
+   <h4>Verbose (-v)</h4>
+ 
+if -v is set then commands are printed to the error output while parsed<br/>
+
+   <h4>Throw On Error (-e)</h4>
+
+If -e is set, then an exception is throw equivalent to using the <a  href="/ExceptionHandling">throw</a> command whenever a simple command returns a non-zero value, except when the command is the condition for an if, while or until, or when preceded by a "!".<br/>
+   <br/>
+If the shell is not interactive, and the exception is not trapped with a try, it will cause the shell to exit.<br/>
+   <br/>
+
+   <h4>set parameters </h4>
+
+Sets the positional parameters or prints environment variables<br/>
+   <br/>
+Example: sets $1 to "foo" and $2 to "bar"<br/>
+   <div class="code">
+      <pre>$ set foo bar</pre>
+   </div>
+
+Positional parameters can also be XML expressions<br/>
+   <div class="code">
+      <pre>$ set &lt;[1,"foo",&lt;bar&gt;spam&lt;/bar&gt;]&gt;</pre>
+   </div>
+
+
+   <h4>print variables</h4>
+
+With no arguments prints the names and types of all variables as an xml document.<br/>
+Note this differences from the unix shells in that it doesnt print the variables value, this is because<br/>
+ values in xmlsh can be extremely large.<br/>
+   <div class="code">
+      <pre>$ set
+&lt;env&gt;
+   &lt;variable name="a" type="xml"/&gt;
+   &lt;variable name="PATH" type="string"/&gt;
+&lt;/env&gt;</pre>
+   </div>
+
+
+
+ 
+
+
+</div>

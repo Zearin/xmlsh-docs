@@ -1,0 +1,46 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h2>Command xtype</h2>
+
+   
+   <h3>Name</h3>
+
+   <strong>xtype</strong> Prints the XDM type of each argument<br/>
+   
+   <h3>Synopsis</h3>
+
+xtype [ <a  href="/SerializationOptions">serialization options</a> ] arg [arg ...]<br/>
+   
+   <h3>Options</h3>
+
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   <br/>
+xtype prints the XDM type of each argument using <a class="ext" href="http://www.xqueryfunctions.com/xq/functx_sequence-type.html">functx:sequence-type </a>
+
+Example:<br/>
+
+   <div class="code">
+      <pre>xtype "hi" &lt;[ 1.2 ]&gt; there &lt;[ 1,2,3 ]&gt; &lt;[ &lt;foo/&gt; ]&gt; &lt;[ document{ &lt;bar/&gt; } ]&gt;</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>xs:string
+xs:decimal
+xs:string
+xs:integer+
+element()
+document-node()</pre>
+   </div>
+
+
+
+
+   <a  href="/Commands">Commands</a>	
+   <br/>
+   <a  href="/CategoryCommands">CategoryCommands</a>
+   <br/>
+
+
+</div>

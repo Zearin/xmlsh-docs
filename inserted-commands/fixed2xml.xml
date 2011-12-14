@@ -1,0 +1,86 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="fixed2xml" role="core streaming">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>fixed2xml</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>fixed2xml</d:refname>
+		    <d:refpurpose>Convert fixed-field data to XML</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command fixed2xml</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>fixed2xml</x:strong> converts a fixed field width file to an xml file<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+csv2xml [ <x:a href="/SerializationOptions">serialization options</x:a> ] [options] [fixedfile]<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-root	rootname</x:td>
+                  <x:td>use "rootname" as the root element name, default "root"</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-row 	rowname</x:td>
+                  <x:td>use "rowname" as each row's element name, default "row"</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-col 	colname</x:td>
+                  <x:td>use "colname" as each column's element name (or for attribute normal format, the attribute prefix)</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-colspecs   specs</x:td>
+                  <x:td>sequence or , delimited list of column specs</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-colnames names</x:td>
+                  <x:td>Use a sequence  or "," delimited list of strings to specify the column names</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-encoding encoding</x:td>
+                  <x:td>read csv file in encoding (default "cp1252")</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-header</x:td>
+                  <x:td>read 1 row from the csv file and use as column names (element or attribute)</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-attr</x:td>
+                  <x:td>Output in attribute normal format (each column is an attribute), default row normal format</x:td>
+               </x:tr>
+               <x:tr>
+              </x:tr>
+            </x:tbody>
+         </x:table>
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command>fixed2xml</d:command>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandFixed2xml</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

@@ -1,0 +1,53 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xunzip</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xunzip</strong> Extracts or lists contents from a zip file<br/>
+   
+   <h3>Synopsis</h3>
+
+xunzip[ <a  href="/SerializationOptions">serialization options</a> ] [-d dest] [-f zipfile] [file ...]<br/>
+   
+   <h3>Description</h3>
+
+Extracts files from a zip archive.<br/>
+   
+   <h3>Options</h3>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-d,-dest destination</td>
+              <td>Extracts contents to destination directory otherwise extracts to current directory</td>
+            </tr>
+         <tr>
+              <td>-f,-file zipfile</td>
+              <td>Use zipfile as source otherwise stdin</td>
+            </tr>
+         <tr>
+              <td>-l,-list</td>
+              <td>Lists (does not extract) content filenames to stdout</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   <br/>
+If no zipfile is specified, then stdin is read.<br/>
+If no destination is specified then extracts to current directory.<br/>
+If -l is specified then lists (do not extract) content filenames to stdout.<br/>
+   <br/>
+If any other arguments are present then only those files are extracted.  Wildcards are not supported.  Filenames are case sensitive.<br/>
+   <br/>
+
+
+See <a  href="/CommandXZip">xzip</a>
+   <br/>
+ 
+
+
+</div>

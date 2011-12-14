@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h3>Name</h3>
+
+   <strong>xpwd</strong> prints the current directory<br/>
+   
+   <h3>Synopsis</h3>
+
+xpwd [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   
+   <h3>Description</h3>
+
+Prints the current directory.<br/>
+Outputs the directory using the File schema.<br/>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   <br/>
+Example:<br/>
+   <div class="code">
+      <pre>xpwd</pre>
+   </div>
+
+Result<br/>
+   <!--start GeSHi-->
+
+<!--end GeSHi-->
+
+<br/>
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the directory exists and is read successfully, otherwise 1.<br/>
+
+
+ 
+   <br/>
+
+
+</div>

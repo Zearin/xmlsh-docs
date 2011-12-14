@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry
+	xmlns	="http://docbook.org/ns/docbook"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xl="http://www.w3.org/1999/xlink"
+	
+	version	="5.0"
+	label	="exit" 
+	role	="core"
+>
+      <refmeta>
+        <refentrytitle>
+            <command>exit</command>
+        </refentrytitle>
+        <manvolnum/>
+      </refmeta>
+
+      <refnamediv>
+        <refname>exit</refname>
+        <refpurpose>Exit the shell, script, or function</refpurpose>
+        <refclass>
+<!--builtin-->
+
+<!--command-->
+
+<!--function-->
+        </refclass>
+      </refnamediv>
+
+    
+      <refsynopsisdiv>
+        <cmdsynopsis>
+            <command/>
+            <arg/>
+        </cmdsynopsis>
+      </refsynopsisdiv>
+
+      <refsection>
+        <title>See Also</title>
+        <para>
+            <uri>http://www.xmlsh.org/CommandExit</uri>
+        </para>
+      </refsection>
+   </refentry>

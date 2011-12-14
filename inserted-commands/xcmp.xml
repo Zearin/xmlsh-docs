@@ -1,0 +1,95 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xcmp" role="core streaming">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xcmp</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xcmp</d:refname>
+		    <d:refpurpose>Compare text, binary, or XML data</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command xcmp</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>xcmp</x:strong> compares 2 files either as xml equality or by binary comparison.<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+xcmp [-x] [-b] [-c] [-p] [-n] file1 file2<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+Compares 2 files either as xml equality or by binary comparison. <x:br/>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-x</x:td>
+                  <x:td>	Indicates an XML comparison</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-b</x:td>
+                  <x:td>	Indicates to ignore blank line distinctions (\r vs \c\n)</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-c</x:td>
+                  <x:td>	Indicates to ignore comments</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-p</x:td>
+                  <x:td>	Indicates to ignore processing instructions</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-n</x:td>
+                  <x:td>	Do not print any errors, just exit with the status code</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+   
+         <x:h3>Return Value</x:h3>
+
+Returns 0 if the files are considered identical, 1 otherwise.<x:br/>
+   
+         <x:h3>Binary Compare</x:h3>
+
+If -x is not specified then a binary comparison is done, terminating on the first non-identical byte.<x:br/>
+If -b is specified then \r and \n\r are considered equal for binary comparisons. (For DOS / Unix compatibility )<x:br/>
+   
+         <x:h3>XML Compare</x:h3>
+
+If -x is specified then the files are compared for XML equivilence.  <x:br/>
+Equivilence is determined by comparing the parsed XML file as representing an equivilent XML document.  Attribute order is not considered, element order is considered.  Namespace URI's are compared (not namespace prefixes).   Comment, Character and CDATA sections are compared for string equality.<x:br/>
+         <x:br/>
+
+
+         <x:a href="/Commands">Commands</x:a>
+         <x:br/>
+         <x:a href="/CategoryCommands">CategoryCommands</x:a>
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXcmp</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

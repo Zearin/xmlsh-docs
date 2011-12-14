@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+<!--Cannot find attribute for key "depreciated" from hints given.-->
+<h1>Command xpath</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xpath</strong> evaluate an XPATH expression and print the result<br/>
+   
+   <h3>Synopsis</h3>
+
+xpath [ <a  href="/SerializationOptions">serialization options</a> ] [options] [xpath-expr]<br/>
+   
+   <h3>Options</h3>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-f,-file xpath-file</td>
+              <td>	read xpath expression from file</td>
+            </tr>
+         <tr>
+              <td>-i,-input context</td>
+              <td> use context as the source xml document, otherwise stdin if context is an XML expression which is an item then use it directly as the context item.</td>
+            </tr>
+         <tr>
+              <td>-c,-context context</td>
+              <td>Use context as a literal context</td>
+            </tr>
+         <tr>
+              <td>-cf,-context-file file</td>
+              <td>Use file as the name of an XML file for the context, or "-" for stdin</td>
+            </tr>
+         <tr>
+              <td>-n</td>
+              <td>			do not use a source context</td>
+            </tr>
+         <tr>
+              <td>-q,-query xpath-expr</td>
+              <td>xpath expression</td>
+            </tr>
+         <tr>
+              <td>-v</td>
+              <td>		Read remaining pairs of arguments as name/value pairs to assign as xpath variables</td>
+            </tr>
+         <tr>
+              <td>-nons</td>
+              <td>		Do not import global namespace declarations from the shell environment</td>
+            </tr>
+         <tr>
+              <td>-ns prefix=uri</td>
+              <td>	Add a predeclared namespace delcaration</td>
+            </tr>
+         <tr>
+              <td>-s,-string</td>
+              <td>Convert the result to a string if it is an attribute or element</td>
+            </tr>
+         <tr>
+              <td>-b,-bool</td>
+              <td>Do not print anything.  Treat the result as a boolean and exit with 0 if the value is true otherwise 1</td>
+            </tr>
+         <tr>
+              <td>-e,-exists</td>
+              <td>Execute xpath but do not print anything.  The exit status is 0 if there was any selected values otherwise 1</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   <br/>
+Note that the "-q" is optional.  It is only required if you need to specify both -n and -v <br/>
+Examples<br/>
+   <div class="indent">xpath-n -q expr -v variable some-value<br/>
+   </div>
+If the result (or any node of the result if a sequence) is an Attribute the it is converted to a string.<br/>
+
+-i is depreciated.  It is a convenience option that does the following<br/>
+   <ul>
+          <li> If context is an atomic value then treat as a filename to be loaded as the context item
+</li>
+          <li> Otherwise treat as the literal context for the context item</li>
+        </ul>
+   <br/>
+-c or -cf are suggested which explicitly indicate if to use the expression literally or as a filename<br/>
+   <br/>
+   
+   <h3>Example</h3>
+
+   <div class="code">
+      <pre>xls | xpath '//file[1]/@name/string()'</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>.classpath</pre>
+   </div>
+
+Simplified example, you don't need to use /string()<br/>
+   <div class="code">
+      <pre>xls | xpath '//file[1]/@name'</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>.classpath</pre>
+   </div>
+
+
+   <br/>
+Namespace example using a renamed prefix for a namespace<br/>
+   <div class="code">
+      <pre>echo "&lt;x:a xmlns:x='foo' /&gt;" | xpath  -nons -ns y=foo /y:a</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>&lt;x:a xmlns:x="foo"/&gt;</pre>
+   </div>
+
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the the xpath expression executed successfully and a non-empty result is returned. otherwise 1<br/>
+   <br/>
+
+
+   <a  href="/Commands">Commands</a>
+   <br/>
+   <a  href="/CategoryCommands">CategoryCommands</a>
+
+</div>

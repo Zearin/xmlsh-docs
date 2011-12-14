@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xread" role="core">
+	<refmeta>
+		<refentrytitle>
+			<command>xread</command>
+		</refentrytitle>
+		<manvolnum />
+	</refmeta>
+
+	<refnamediv>
+		<refname>xread</refname>
+		<refpurpose>Read an XML document into a variable</refpurpose>
+		<refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</refclass>
+	</refnamediv>
+
+
+	<refsynopsisdiv>
+		<cmdsynopsis>
+			<command />
+			<arg />
+		</cmdsynopsis>
+	</refsynopsisdiv>
+
+	<refsection>
+		<title>See Also</title>
+		<para>
+			<uri>http://www.xmlsh.org/CommandXread</uri>
+		</para>
+	</refsection>
+</refentry>

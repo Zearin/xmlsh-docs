@@ -1,0 +1,58 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xslt1</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xslt1</strong> executes an XSLT Version 1 transformation and print the result<br/>
+   
+   <h3>Synopsis</h3>
+
+xslt1 [ <a  href="/SerializationOptions">serialization options</a> ] [-f xslt file] [-v] [var value [var value]] <br/>
+   
+   <h3>Description</h3>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-i input-file</td>
+              <td>Read input from input-file otherwise use stdin</td>
+            </tr>
+         <tr>
+              <td>-f xslt-file</td>
+              <td>read xslt script from file</td>
+            </tr>
+         <tr>
+              <td>-v</td>
+              <td>if -v is given then the remaining args are treated as name/value pairs and assigned to xslt external variables</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   
+   <h3>Example</h3>
+
+
+   <div class="code">
+      <pre>xslt1 -f /path/file.xsl -i foo.xml</pre>
+   </div>
+
+   
+   <h3>Notes</h3>
+
+xslt1 uses the Saxon 6.5.5 implementation of XSLT.  It should only be used if the version 2 <a  href="/CommandXslt">xslt</a> command does not work properly.   The xslt1 command is not as fully featured, and forces serialization on the output even if redirected to an xml variable.<br/>
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the the xslt executed successfully. otherwise 1<br/>
+   <br/>
+
+
+ 
+   <br/>
+
+
+</div>

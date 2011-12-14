@@ -1,0 +1,161 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xfile" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xfile</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xfile</d:refname>
+		    <d:refpurpose>File name manipulations</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command xfile</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>xfile</x:strong> file name manipulations<x:br/>
+         <x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+xfile [ <x:a href="/SerializationOptions">serialization options</x:a> ]  [options] [filename [base]]<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-b,-base</x:td>
+                  <x:td> basename of file without directory or extension </x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-B,-basename</x:td>
+                  <x:td>basename of file with directory but without extension</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-n,-name</x:td>
+                  <x:td> name of file without directory </x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-N</x:td>
+                  <x:td> exactly as given, including directory if present but converted to java format</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-d,-dir</x:td>
+                  <x:td> Directory component </x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-a,-absolute</x:td>
+                  <x:td>	absolute path</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-c,-canonical</x:td>
+                  <x:td>canonical path</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-e,-extension</x:td>
+                  <x:td>extension only including the "." </x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-u,-uri</x:td>
+                  <x:td>outputs a file scheme URI </x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-s</x:td>
+                  <x:td>Converts the filename to local system notation otherwise outputs Java notation</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+Supports the standard [ <x:a href="/SerializationOptions">serialization options</x:a> ]<x:br/>
+         <x:br/>
+If [filename] is omitted the current directory is used<x:br/>
+if [base] is provided then it is added as a new component to the filename prior to executing the options<x:br/>
+If [base] is an absolute path (on windows this means a drive letter or UNC path, on unix starting with /) then <x:br/>
+filename is ignored.   This allows xfile to be used to conditionally resolve relative paths.<x:br/>
+         <x:br/>
+   
+         <x:h3>Description</x:h3>
+
+Prints a component of a filename or path.<x:br/>
+         <x:br/>
+Example:<x:br/>
+         <x:div class="code">
+            <x:pre>xfile -a foo.bar</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>c:/work/dei/xmlsh/trunk/foo.bar</x:pre>
+         </x:div>
+
+
+         <x:div class="code">
+            <x:pre>xfile -e $PWD/foo.bar</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>.bar</x:pre>
+         </x:div>
+
+Resolve a relative path<x:br/>
+         <x:div class="code">
+            <x:pre>xfile /tmp foo/bar</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>/tmp/foo/bar</x:pre>
+         </x:div>
+
+Resolve a absolute path on windows<x:br/>
+         <x:div class="code">
+            <x:pre>xfile /tmp c:/foo/bar</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>c:/foo/bar</x:pre>
+         </x:div>
+
+   
+         <x:h3>Windows Notes</x:h3>
+
+On Windows systems, the output filename is converted to the Java notation unless the -s argument is given.  This changes \ to / but preserves any drive letter.<x:br/>
+   
+         <x:h3>Return Value</x:h3>
+
+Returns 0 if the command executed successfully, 1 if there was an error.<x:br/>
+
+
+         <x:a href="/Commands">Commands</x:a>
+         <x:br/>
+         <x:a href="/CategoryCommands">CategoryCommands</x:a>
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXfile</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

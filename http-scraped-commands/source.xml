@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command source (.)</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>source (.)</strong> runs a script in the current shell<br/>
+
+   <h4>Options</h4>
+
+   <br/>
+   <strong>.</strong> file<br/>
+   <br/>
+"source" the file as a script and runs it within the same shell.<br/>
+"." is an alias for "source"<br/>
+   
+   <h3>Examples</h3>
+
+   <br/>
+Example:<br/>
+   <div class="code">
+      <pre>. test.xsh</pre>
+   </div>
+
+
+   <div class="code">
+      <pre>source test.xsh</pre>
+   </div>
+
+
+
+
+   <a  href="/Commands">Commands</a>
+   <br/>
+   <a  href="/CategoryCommands">CategoryCommands</a>
+
+</div>

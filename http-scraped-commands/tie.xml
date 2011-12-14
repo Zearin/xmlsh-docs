@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command tie</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>tie</strong> Ties an xquery expression to a variable for ease of access<br/>
+   
+   <h3>Synopsis</h3>
+
+tie variable expression<br/>
+tie variable<br/>
+   
+   <h3>Description</h3>
+
+Tie associates an xquery expression to a variable so it can be queried more with a simplier syntax.<br/>
+In the second form (with one argument only) the variable is untied.<br/>
+   <br/>
+The expression is any xquery expression and should be quoted or escaped.   The expression is evaluated whenever the variable is accessed with either<br/>
+the syntax<br/>
+
+   <div class="code">
+      <pre>${variable:arg}</pre>
+   </div>
+
+or<br/>
+   <div class="code">
+      <pre>${variable[index]:arg}</pre>
+   </div>
+</div>

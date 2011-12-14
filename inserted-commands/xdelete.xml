@@ -1,0 +1,77 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xdelete" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xdelete</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xdelete</d:refname>
+		    <d:refpurpose>Delete nodes or attributes matching an expression</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h2>Command xdelete</x:h2>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>xdelete</x:strong> Deletes nodes (element,text,attribute) from an XML document<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:strong>xdelete</x:strong> [options]<x:br/>
+         <x:br/>
+Deletes all nodes matching the expression given<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-e,-xpath xpath-expr</x:td>
+                  <x:td>xpath expression</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-m,matches matches-expr</x:td>
+                  <x:td>XSLT matches expression</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+   
+         <x:h3>Description</x:h3>
+
+         <x:br/>
+xdelete is a simple front end to the <x:a href="/CommandXed">xed</x:a> command which deletes all matching nodes, expressed as either a XSLT matches expression or an xpath expression.<x:br/>
+         <x:br/>
+Example: delete the path attribute from all file elements from xls<x:br/>
+         <x:div class="code">
+            <x:pre>xls | xdelete -m @path</x:pre>
+         </x:div>
+
+Result (when run on root xmlsh directory)<x:br/>
+         <x:br/>
+         <!--start GeSHi-->
+</x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXDelete</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

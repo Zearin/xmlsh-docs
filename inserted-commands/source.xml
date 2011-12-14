@@ -1,0 +1,70 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="source" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>source</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>source</d:refname>
+		    <d:refpurpose>Execute a script within the current shell</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command source (.)</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>source (.)</x:strong> runs a script in the current shell<x:br/>
+
+         <x:h4>Options</x:h4>
+
+         <x:br/>
+         <x:strong>.</x:strong> file<x:br/>
+         <x:br/>
+"source" the file as a script and runs it within the same shell.<x:br/>
+"." is an alias for "source"<x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+         <x:br/>
+Example:<x:br/>
+         <x:div class="code">
+            <x:pre>. test.xsh</x:pre>
+         </x:div>
+
+
+         <x:div class="code">
+            <x:pre>source test.xsh</x:pre>
+         </x:div>
+
+
+
+
+         <x:a href="/Commands">Commands</x:a>
+         <x:br/>
+         <x:a href="/CategoryCommands">CategoryCommands</x:a>
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandSource</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

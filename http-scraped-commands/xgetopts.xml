@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xgetopts</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xgetopts</strong> parses command line options<br/>
+   
+   <h3>Synopsis</h3>
+
+xgetopts  [optstring] [--] args<br/>
+   
+   <h3>Description</h3>
+
+   <br/>
+xgetopts runs the internal shell command option processor (Options) and emits the result as an XML document.<br/>
+This is useful to be able to parse arguments from within shell scripts in a form similar to internal commands.<br/>
+   
+   <h3>Options</h3>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>a,argindex</td>
+              <td>Exit with argument index</td>
+            </tr>
+         <tr>
+              <td>o,optdef optstring</td>
+              <td>Option string</td>
+            </tr>
+         <tr>
+              <td>c,command cmdname</td>
+              <td>Command name</td>
+            </tr>
+         <tr>
+              <td>p,passthrough optstring</td>
+              <td>pass through options</td>
+            </tr>
+         <tr>
+              <td>i,ignore optstring</td>
+              <td>Option string to ignore</td>
+            </tr>
+         <tr>
+              <td>[+]s,serialize</td>
+              <td>Add (+ do not add) standard serialization options to optstring</td>
+            </tr>
+         <tr>
+              <td>[+]ps=pass-serialize</td>
+              <td>Add (+ do not add) standard serialization options to passthrough</td>
+            </tr>
+         <tr>
+              <td>noargs</td>
+              <td>Do no output additional arguments</td>
+            </tr>
+         <tr>
+              <td>novalues</td>
+              <td>Do not output argument values</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+optstring		A string containing the allowed options seperated by "," described below<br/>
+args			0 or more arguments to be parsed using the optstring, typically $*<br/>
+
+   <h4>optstring</h4>
+
+   <br/>
+optstring is a single string describing the available options.  It take the form of option_def "," option_def ... <br/>
+Each "option_def" is the option name, optionally followed by "=longname" optionally followed by ":" or ":+".<br/>
+   <br/>
+If "=longname" is used then "longname" is an alias for the option. <br/>
+If the option is followed by ":" the the option requires a value which is taken from the next argument.<br/>
+If the option is followed by ":+" then the option can be specified multiple times and a list of values is produced.<br/>
+   <br/>
+If no -o or -p is given then the first argument is the optstring.<br/>
+   <br/>
+If -p is specified then an additional optstring is used as a "pass through".   All arguments which match the passthrough optstring are serialized as is and remaining arguments are ignored.  This is useful for a command to 'pass through' known arguments to another command.<br/>
+   <br/>
+if -novalues is specified then the character content of values are not output.  This is useful for parameters which are not serializable or may be very large.<br/>
+   <br/>
+if -noargs is specified then the args element is omitted.<br/>
+   <br/>
+if -a is specified then the exit code is the relative position of the first non-option argument.  This allows options to be parsed then remaining arguments shifted into $1 ... $N by using "shift $?"<br/>
+   <br/>
+if -i is specified then all options in the ignore optstring are ignored and not output in the result.   <br/>
+   
+   <h3>Examples</h3>
+
+   <br/>
+Example<br/>
+   <div class="code">
+      <pre>xgetopts "a=all,b:,c:+"  -all -c c1 -c c2  arg1 arg2</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>&lt;xgetopts&gt;
+   &lt;options&gt;
+	  &lt;option name="a"/&gt;
+	  &lt;option name="c"&gt;
+		 &lt;value&gt;c1&lt;/value&gt;
+		 &lt;value&gt;c2&lt;/value&gt;
+	  &lt;/option&gt;
+   &lt;/options&gt;
+   &lt;args&gt;
+	  &lt;arg&gt;arg1&lt;/arg&gt;
+	  &lt;arg&gt;arg2&lt;/arg&gt;
+   &lt;/args&gt;
+&lt;/xgetopts&gt;</pre>
+   </div>
+
+
+From within a script:<br/>
+
+   <div class="code">
+      <pre>xgetopts "p:,o:,d:+" $* &gt;{args}
+echo $args
+phase=&lt;[ $args/xgetopts/options/option[@name='p']/value/text()]&gt; 
+echo Phase is ${phase}
+
+shows as 
+
+&lt;xgetopts&gt;
+   &lt;options&gt;
+	  &lt;option name="p"&gt;
+		 &lt;value&gt;phase1&lt;/value&gt;
+	  &lt;/option&gt;
+	  &lt;option name="o"&gt;
+		 &lt;value&gt;test.xml&lt;/value&gt;
+	  &lt;/option&gt;
+	  &lt;option name="d"&gt;
+		 &lt;value&gt;dir1&lt;/value&gt;
+		 &lt;value&gt;dir2&lt;/value&gt;
+	  &lt;/option&gt;
+   &lt;/options&gt;
+   &lt;args/&gt;
+&lt;/xgetopts&gt;
+Phase is phase1</pre>
+   </div>
+
+   <strong>xgetopts "p:,o:,d:+" $* &gt;{args} </strong> says that the p, o and d parameters are required and come from the command line. the output is put into the 'args' variable.<br/>
+   <br/>
+These lines extract the value of the p option and echo it to stdout.<br/>
+
+   <div class="code">
+      <pre>phase=&lt;[ $args/xgetopts/options/option[@name='p']/value/text()]&gt; 
+echo Phase is ${phase}</pre>
+   </div>
+
+
+   <h4>Argument count</h4>
+
+   <br/>
+From the above example, to retrieve the count of options<br/>
+   <div class="code">
+      <pre>argcount=&lt;[ count($args/xgetopts/options/option)]&gt; 
+echo $argcount args</pre>
+   </div>
+
+
+   <h4>Required Options</h4>
+
+   <br/>
+Note that there is no concept of "required" options.  Its up to the application to check if options are supplied.<br/>
+   
+   <h3>Passthrough Options</h3>
+
+   <br/>
+Using -p passthrough-options  allows xgetops to parse an argument list only evalutating the passthrough-options and ignoring the main options.<br/>
+This is useful in modules or scripts that implement a common set of options by another script or command but extend those options or get at the list of non-option arguments.<br/>
+   <br/>
+Example from the implementation of <a  href="/MarkLogicGet">MarkLogic get</a> command<br/>
+
+   <div class="code">
+      <pre>_opts=$&lt;(xgetopts -a -p "c=connect:,t=text" -ps -- "$@")
+shift $?
+
+for uri ; do
+   :query $_opts -q "doc(\"$uri\")"
+done</pre>
+   </div>
+
+This collects all optional options used by the <a  href="/MarkLogicQuery">MarkLogic query</a> command  (-c,-t) into the _opts variable as a sequence, then sets $* to the remaining options.<br/>
+The -a option causes xgetopts to exit with a return status of the first non-option arguement so the "shift $?" will discard all option arguments leaving the remaining args in $*.<br/>
+   <br/>
+The <a  href="/MarkLogicQuery">:query</a> command is then passed any -c or -t option specified<br/>
+
+
+
+
+
+ 
+
+
+</div>

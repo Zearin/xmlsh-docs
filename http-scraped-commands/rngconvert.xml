@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command rngvalidate</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>rngconvert</strong> converts to and from rng, xsd, and dtd schema formats<br/>
+   
+   <h3>Synopsis</h3>
+
+rngconvert [options]  inputfile outputfile<br/>
+   
+   <h3>Description</h3>
+
+Converts between rng, dtd and xsd schema files.<br/>
+Uses the <a class="ext" href="http://www.thaiopensource.com/relaxng/trang.html">TRANG</a> rng conversion code.<br/>
+   <br/>
+Note that trang does not support converting from xsd to rng.<br/>
+   
+   <h3>Options</h3>
+
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-i</td>
+              <td>	input option</td>
+            </tr>
+         <tr>
+              <td>-o</td>
+              <td>  ouput option</td>
+            </tr>
+         <tr>
+              <td>-I</td>
+              <td>  input type</td>
+            </tr>
+         <tr>
+              <td>-O</td>
+              <td>	output type</td>
+            </tr>
+         <tr>
+              <td>-C</td>
+              <td> Adds a catalog URI  </td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+For details on options see the TRANG manual <a class="ext" href="http://www.thaiopensource.com/relaxng/trang-manual.html">Trang Manual</a>
+
+   <br/>
+
+
+ 
+   <a  href="/CommandXvalidate">CommandXvalidate</a>
+   <br/>
+
+
+</div>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command help</h1>
+
+   
+   <h3>Name</h3>
+
+   <br/>
+   <strong>help</strong> Prints help on commands and syntax<br/>
+   
+   <h3>Synopsis</h3>
+
+   <strong>help</strong> [options] commands<br/>
+   <strong>help</strong> [options] &lt;command&gt;<br/>
+
+   <h4>Options</h4>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-n,-nobrowse</td>
+              <td>Do not launch a browser for detailed help</td>
+            </tr>
+      </tbody>
+   </table>
+   
+   <h3>Description</h3>
+
+The help command provides online help on xmlsh commands and syntax.<br/>
+A minimum amount of help, typically a synopsis, is availble with the installed xmlsh product and is printed on the output.<br/>
+If a command or topic has more detailed help available online, the URL is printed and optinonaly a broweser is launched with the URL.<br/>
+
+
+
+ 
+See Also <a  href="/CommandXEcho">xecho</a>
+
+
+
+</div>

@@ -1,0 +1,77 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+<!--Cannot find attribute for key "depreciated" from hints given.-->
+<h1>Command xslt</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xslt</strong> executes an XSLT version 2.0 transformation and print the result<br/>
+   
+   <h3>Synopsis</h3>
+
+xslt [ <a  href="/SerializationOptions">serialization options</a> ] [options] [-v var value [var value]] <br/>
+   
+   <h3>Description</h3>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-f,-file xslt-file</td>
+              <td>	read xslt script from file</td>
+            </tr>
+         <tr>
+              <td>-i,-input context</td>
+              <td> use context as the source xml document, otherwise stdin if context is an XML expression which is an item then use it directly as the context item.</td>
+            </tr>
+         <tr>
+              <td>-c,-context context</td>
+              <td>Use context as a literal context</td>
+            </tr>
+         <tr>
+              <td>-cf,-context-file file</td>
+              <td>Use file as the name of an XML file for the context, or "-" for stdin</td>
+            </tr>
+         <tr>
+              <td>-n</td>
+              <td>do not use a source context</td>
+            </tr>
+         <tr>
+              <td>-v</td>
+              <td>if -v is given then the remaining args are treated as name/value pairs and assigned to xslt as parameters</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   <br/>
+-i is depreciated.  It is a convenience option that does the following<br/>
+   <ul>
+          <li> If context is an atomic value then treat as a filename to be loaded as the context item
+</li>
+          <li> Otherwise treat as the literal context for the context item</li>
+        </ul>
+   <br/>
+-c or -cf are suggested which explicitly indicate if to use the expression literally or as a filename<br/>
+   <br/>
+   
+   <h3>Example</h3>
+
+   <div class="code">
+      <pre>xslt -f /path/file.xsl -cf foo.xml</pre>
+   </div>
+
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the the xslt executed successfully. otherwise 1<br/>
+   <br/>
+
+
+ 
+   <br/>
+
+
+
+</div>

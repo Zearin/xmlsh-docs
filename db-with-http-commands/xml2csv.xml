@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry
+	xmlns	="http://docbook.org/ns/docbook"
+	xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xl="http://www.w3.org/1999/xlink"
+	
+	version	="5.0"
+	label	="xml2csv" 
+	role	="core"
+>
+	
+	<refmeta>
+		<refentrytitle>
+			<command>xml2csv</command>
+		</refentrytitle>
+		<manvolnum />
+	</refmeta>
+
+	<refnamediv>
+		<refname>xml2csv</refname>
+		<refpurpose>Convert XML to CSV</refpurpose>
+		<refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</refclass>
+	</refnamediv>
+
+
+	<refsynopsisdiv>
+		<cmdsynopsis>
+			<command />
+			<arg />
+		</cmdsynopsis>
+	</refsynopsisdiv>
+
+	<refsection>
+		<title>See Also</title>
+		<para>
+			<uri>http://www.xmlsh.org/CommandXml2csv</uri>
+		</para>
+	</refsection>
+</refentry>

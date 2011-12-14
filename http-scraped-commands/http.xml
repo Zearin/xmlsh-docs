@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command http</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>http</strong> http client<br/>
+  <br/>
+   
+   <h3>Synopsis</h3>
+
+http [options]<br/>
+   
+   <h3>Options</h3>
+
+
+   <h4>Requests</h4>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-get	url</td>
+              <td>	performs an HTTP GET</td>
+            </tr>
+         <tr>
+              <td>-put  url</td>
+              <td>	performs an HTTP PUT</td>
+            </tr>
+         <tr>
+              <td>-post	url</td>
+              <td>	performs an HTTP POST</td>
+            </tr>
+         <tr>
+              <td>-delete url</td>
+              <td>  performs an HTTP DELETE</td>
+            </tr>
+         <tr>
+              <td>-trace url</td>
+              <td> 	performs an HTTP TRACE</td>
+            </tr>
+         <tr>
+              <td>-head url</td>
+              <td>	performs an HTTP HEAD</td>
+            </tr>
+         <tr>
+              <td>-options url</td>
+              <td> performs an HTTP OPTIONS</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+If no request options are supplied then -get is assumed.<br/>
+
+   <h4>Connection Options</h4>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-connectTimeout time</td>
+              <td>	Sets the connection timeout</td>
+            </tr>
+         <tr>
+              <td>-contentType  content-type</td>
+              <td>	Sets the content type in the request property</td>
+            </tr>
+         <tr>
+              <td>-readTimeout	time</td>
+              <td>		Sets the read timeout</td>
+            </tr>
+         <tr>
+              <td>-useCaches,+useCaches</td>
+              <td>Turns on (off) caching</td>
+            </tr>
+         <tr>
+              <td>-followRedirects,+followRedirects</td>
+              <td>Turns on (off) redirection</td>
+            </tr>
+         <tr>
+              <td>-user username</td>
+              <td>		Authenticates with username</td>
+            </tr>
+         <tr>
+              <td>-password password</td>
+              <td>		Authenticates with password</td>
+            </tr>
+         <tr>
+              <td>-H,-add-header name=value</td>
+              <td> Adds a HTTP header</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+Time is specified in seconds, and can be fractional such as   2.5 <br/>
+   <br/>
+If username and password are both supplied then Basic Authentication is used.<br/>
+   <br/>
+For -put and -post the standard input is read and used as the input to the HTTP command.<br/>
+For all commands the output of the HTTP command is sent to standard output.<br/>
+   
+   <h3>Examples</h3>
+
+   <div class="code">
+      <pre>http -get http://www.xmlsh.org</pre>
+   </div>
+
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the is return code of the request is 200, otherwise returns the return code<br/>
+
+
+ 
+   <a  href="/CommandsExperimental">CommandsExperimental</a>	
+
+</div>

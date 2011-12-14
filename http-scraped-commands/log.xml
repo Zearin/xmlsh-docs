@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command log</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>log</strong> writes an entry to log4j log<br/>
+   
+   <h3>Synopsis</h3>
+
+   <strong>log [options] Arg ... </strong>
+   <br/>
+
+   <h4>Options</h4>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-c,-class classname</td>
+              <td>Use classname as the class for log4j.  Default is the org.xmlsh.commands.builtin.log</td>
+            </tr>
+         <tr>
+              <td>-p,-priority priority</td>
+              <td>Specify the priority. One of  debug,info,warn,error,fatal.  Default: info</td>
+            </tr>
+      </tbody>
+   </table>
+   
+   <h3>Usage</h3>
+
+Log serializes each argument as per <a  href="/CommandEcho">echo</a>, separating each argument with a space.  The resulting string is written to the log4j log. <br/>
+   
+   <h3>Examples</h3>
+
+   <div class="code">
+      <pre>log Started running program</pre>
+   </div>
+
+
+   <div class="code">
+      <pre>log -c com.mycom.MyClass -p debug This is a debug info</pre>
+   </div>
+
+
+
+
+
+   <a  href="/Logging">Logging</a>
+
+</div>

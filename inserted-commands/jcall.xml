@@ -1,0 +1,104 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="jcall" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>jcall</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>jcall</d:refname>
+		    <d:refpurpose>Call Java from within the same JVM</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command jcall</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>jcall</x:strong> calls a java program (any class's static main) <x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+jcall [-cp,-classpath classpath ] classname [args]<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+Calls a java program from within the same JVM and thread as the current shell.<x:br/>
+         <x:br/>
+"classname" is the full package and class name, e.g. "org.xmlsh.commands.xpwd"<x:br/>
+Args are optional arguments to be sent to called class.<x:br/>
+
+         <x:h4>Options</x:h4>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-cp,-classpath classpath</x:td>
+                  <x:td>Uses the specified classpath in the classloader for calling the specified class.  <x:br/>
+The classpath is expected to be a single string or sequence of strings.</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+This command simulates the equivalent call to "java" command line. <x:br/>
+The class is attempted to be loaded, and the main function called with the supplied parameters.<x:br/>
+         <x:br/>
+Note, stdin and stdout are redirected to the shell's input and output, but stderr is not changed (remains the stderr of the calling environment, due to java limitations).<x:br/>
+
+         <x:h4>Options to the Java virtual machine</x:h4>
+
+         <x:br/>
+Sometimes when you call up a Java application you need to pass parameters not to the program, but to the Java Virtual machine. The format for this is generally<x:br/>
+
+         <x:div class="code">
+            <x:pre>java  -X... -D... classname, application parameters</x:pre>
+         </x:div>
+
+the -X and -D parameters are not available to the jcall command. If that is what you need, use the java command, i.e. call out to the operating system, see <x:a href="/BasicUsage">BasicUsage</x:a>
+         <x:br/>
+   
+         <x:h3>Notes on classpath</x:h3>
+
+If the classpath is more then one string it should be in a sequence variable or expression.<x:br/>
+To pass this expression as a sequence you need to wrap it with {} to keep it from being expanded into seperate arguments.<x:br/>
+         <x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+         <x:br/>
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>cp=(lib/*.jar)
+jcall -cp {$cp} org.test.MyClass arg1 arg2 arg3</x:pre>
+         </x:div>
+
+
+         <x:br/>
+
+
+
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandJcall</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

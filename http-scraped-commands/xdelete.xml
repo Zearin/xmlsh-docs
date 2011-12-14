@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h2>Command xdelete</h2>
+
+   
+   <h3>Name</h3>
+
+   <strong>xdelete</strong> Deletes nodes (element,text,attribute) from an XML document<br/>
+   
+   <h3>Synopsis</h3>
+
+   <strong>xdelete</strong> [options]<br/>
+   <br/>
+Deletes all nodes matching the expression given<br/>
+   
+   <h3>Options</h3>
+
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-e,-xpath xpath-expr</td>
+              <td>xpath expression</td>
+            </tr>
+         <tr>
+              <td>-m,matches matches-expr</td>
+              <td>XSLT matches expression</td>
+            </tr>
+      </tbody>
+   </table>
+   
+   <h3>Description</h3>
+
+   <br/>
+xdelete is a simple front end to the <a  href="/CommandXed">xed</a> command which deletes all matching nodes, expressed as either a XSLT matches expression or an xpath expression.<br/>
+   <br/>
+Example: delete the path attribute from all file elements from xls<br/>
+   <div class="code">
+      <pre>xls | xdelete -m @path</pre>
+   </div>
+
+Result (when run on root xmlsh directory)<br/>
+   <br/>
+   <!--start GeSHi-->
+</div>

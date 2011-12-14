@@ -1,0 +1,68 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="read" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>read</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>read</d:refname>
+		    <d:refpurpose>Reads text into a variable</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command read</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>read</x:strong> Reads one line from stdin and assigns to variables<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:strong>read</x:strong> var1 [var2 ... varn]<x:br/>
+         <x:br/>
+Reads one line from stdin, splits the line into fields using any of the charactors in the IFS variable (default space,tab),<x:br/>
+and assigns the values to the specified variables.<x:br/>
+         <x:br/>
+Example:<x:br/>
+         <x:div class="code">
+            <x:pre>read a b &lt;&lt;EOF
+string1 string2
+EOF
+echo $a $b</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>string1 string2</x:pre>
+         </x:div>
+
+
+
+ 
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandRead</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

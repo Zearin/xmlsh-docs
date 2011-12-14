@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xcmp</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xcmp</strong> compares 2 files either as xml equality or by binary comparison.<br/>
+   
+   <h3>Synopsis</h3>
+
+xcmp [-x] [-b] [-c] [-p] [-n] file1 file2<br/>
+   
+   <h3>Description</h3>
+
+Compares 2 files either as xml equality or by binary comparison. <br/>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-x</td>
+              <td>	Indicates an XML comparison</td>
+            </tr>
+         <tr>
+              <td>-b</td>
+              <td>	Indicates to ignore blank line distinctions (\r vs \c\n)</td>
+            </tr>
+         <tr>
+              <td>-c</td>
+              <td>	Indicates to ignore comments</td>
+            </tr>
+         <tr>
+              <td>-p</td>
+              <td>	Indicates to ignore processing instructions</td>
+            </tr>
+         <tr>
+              <td>-n</td>
+              <td>	Do not print any errors, just exit with the status code</td>
+            </tr>
+      </tbody>
+   </table>
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the files are considered identical, 1 otherwise.<br/>
+   
+   <h3>Binary Compare</h3>
+
+If -x is not specified then a binary comparison is done, terminating on the first non-identical byte.<br/>
+If -b is specified then \r and \n\r are considered equal for binary comparisons. (For DOS / Unix compatibility )<br/>
+   
+   <h3>XML Compare</h3>
+
+If -x is specified then the files are compared for XML equivilence.  <br/>
+Equivilence is determined by comparing the parsed XML file as representing an equivilent XML document.  Attribute order is not considered, element order is considered.  Namespace URI's are compared (not namespace prefixes).   Comment, Character and CDATA sections are compared for string equality.<br/>
+   <br/>
+
+
+   <a  href="/Commands">Commands</a>
+   <br/>
+   <a  href="/CategoryCommands">CategoryCommands</a>
+
+</div>

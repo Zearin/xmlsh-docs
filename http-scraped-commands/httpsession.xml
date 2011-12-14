@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command httpsession</h1>
+
+   
+   <h3>Name</h3>
+
+   <br/>
+   <strong>httpsession</strong> Accesses session variables in a servlet.<br/>
+   
+   <h3>Synopsis</h3>
+
+   <strong>httpsession</strong>  [ <a  href="/SerializationOptions">serialization options</a> ] [options]<br/>
+
+   <h4>Options</h4>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-setvar var value</td>
+              <td>Sets a session variable</td>
+            </tr>
+         <tr>
+              <td>-getvar var</td>
+              <td>Gets a session variable</td>
+            </tr>
+         <tr>
+              <td>-n</td>
+              <td>Dont print error if variable does not exist using -getvar</td>
+            </tr>
+      </tbody>
+   </table>
+   
+   <h3>Description</h3>
+
+The httpsession command only works within a <a  href="/EmbeddingServlet">Servlet.</a>
+   <br/>
+Only one variable may be set or get with each call.<br/>
+Setting a session variable sets the underlying servlet session variable which is persisted across calls using whatever session technology is implemented by the J2EE container.  The value of the variable may be any type.<br/>
+
+
+
+ 
+   <a  href="/EmbeddingServlet">EmbeddingServlet</a>
+   <br/>
+
+
+</div>

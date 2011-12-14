@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xgrep</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xgrep</strong> Find patterns in XML files<br/>
+   
+   <h3>Synopsis</h3>
+
+xgrep expr [files]<br/>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>expr</td>
+              <td>an XPath expression to search</td>
+            </tr>
+         <tr>
+              <td>[files]	</td>
+              <td>List of files to search</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+   
+   <h3>Description</h3>
+
+   <br/>
+xgrep parses each xml file given and if it contains a node which matches the xpath expression (expr) prints the filename of the matching file.<br/>
+   <br/>
+Example:<br/>
+   <div class="code">
+      <pre>xgrep '//foo'  *.xml</pre>
+   </div>
+
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the command executed successfully, 1 if there was an error.<br/>
+
+
+ 
+   <br/>
+
+
+</div>

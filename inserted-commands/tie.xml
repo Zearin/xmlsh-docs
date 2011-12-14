@@ -1,0 +1,63 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="tie" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>tie</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>tie</d:refname>
+		    <d:refpurpose>Tie an XQuery to a variable for convenience</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command tie</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>tie</x:strong> Ties an xquery expression to a variable for ease of access<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+tie variable expression<x:br/>
+tie variable<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+Tie associates an xquery expression to a variable so it can be queried more with a simplier syntax.<x:br/>
+In the second form (with one argument only) the variable is untied.<x:br/>
+         <x:br/>
+The expression is any xquery expression and should be quoted or escaped.   The expression is evaluated whenever the variable is accessed with either<x:br/>
+the syntax<x:br/>
+
+         <x:div class="code">
+            <x:pre>${variable:arg}</x:pre>
+         </x:div>
+
+or<x:br/>
+         <x:div class="code">
+            <x:pre>${variable[index]:arg}</x:pre>
+         </x:div>
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandTie</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

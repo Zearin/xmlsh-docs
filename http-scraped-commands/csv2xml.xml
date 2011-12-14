@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command csv2xml</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>csv2xml</strong> converts a csv file to an xml file<br/>
+   
+   <h3>Synopsis</h3>
+
+csv2xml [ <a  href="/SerializationOptions">serialization options</a> ] [options] [csvfile]<br/>
+   
+   <h3>Options</h3>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-root	rootname</td>
+              <td>Use "rootname" as the root element name, default "root"</td>
+            </tr>
+         <tr>
+              <td>-row 	rowname</td>
+              <td>		use "rowname" as each row's element name, default "row"</td>
+            </tr>
+         <tr>
+              <td>-col 	colname</td>
+              <td>		use "colname" as each column's element name (or for attribute normal format, the attribute prefix)</td>
+            </tr>
+         <tr>
+              <td>-colnames names</td>
+              <td>		Use a sequence or , separated list of strings to specify the column names</td>
+            </tr>
+         <tr>
+              <td>-delim 	delimchar</td>
+              <td>	deliminate columns with delimchar, default ","</td>
+            </tr>
+         <tr>
+              <td>-tab			</td>
+              <td>Use tab char as delimitor.  Synonymous for -delim &lt;[ "&amp;#009;" ]&gt;</td>
+            </tr>
+         <tr>
+              <td>-quote 	quotechar</td>
+              <td> 	quote with quote character, default "</td>
+            </tr>
+         <tr>
+              <td>-encoding encoding	</td>
+              <td>read csv file in encoding (default "cp1252")</td>
+            </tr>
+         <tr>
+              <td>-header 		</td>
+              <td>	read 1 row from the csv file and use as column names (element or attribute)</td>
+            </tr>
+         <tr>
+              <td>-attr			</td>
+              <td>	Output in attribute normal format (each column is an attribute), default row normal format</td>
+            </tr>
+         <tr>
+              <td>-skip lines		</td>
+              <td>Skip # lines before reading header or data </td>
+            </tr>
+         <tr>
+              <td>-trim</td>
+              <td>Trim the output by ignoring any data after the last column specified in -colnames or -header</td>
+            </tr>
+         <tr>
+              <td>-max #</td>
+              <td>Combine the data in the last field by ignoring any more delimiters after the # of fields is specifed, or if # is &lt;=0 then use the number of colums</td>
+            </tr>
+         <tr>
+              <td>csvfile		</td>
+              <td>	Name of the csv file to convert, otherwise stdin.  Default "-" (stdin)</td>
+            </tr>
+      </tbody>
+   </table>
+
+
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   <br/>
+If -colnames is specified, its argument is taken to be either a sequence of strings, or a single string which is "," seperated which specifieds the column names to be used.<br/>
+if -header is specified then the first row of the CSV file is read and the values used as column names.<br/>
+If both -colnames and -header are specified then -colnames takes precedence but the header is still read (and ignored).<br/>
+   <br/>
+   
+   <h3>Examples</h3>
+
+   <br/>
+Example<br/>
+   <div class="code">
+      <pre>echo foo,bar | csv2xml</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>&lt;root&gt;
+   &lt;row&gt;
+	  &lt;col&gt;foo&lt;/col&gt;
+	  &lt;col&gt;bar&lt;/col&gt;
+   &lt;/row&gt;
+&lt;/root&gt;</pre>
+   </div>
+
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the conversion is successful<br/>
+
+
+ 
+
+
+</div>

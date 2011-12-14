@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h2>Command xaddattribute</h2>
+
+   
+   <h3>Name</h3>
+
+   <strong>xaddattribute</strong> Adds attributes to matching elements<br/>
+   
+   <h3>Synopsis</h3>
+
+   <strong>addattribute</strong> match-expression attribute-name attribute-value <br/>
+   
+   <h3>Options</h3>
+
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>match-expression</td>
+              <td>A XSLT style match expression</td>
+            </tr>
+         <tr>
+              <td>attribute-name</td>
+              <td>Name of attribute to add or replace</td>
+            </tr>
+         <tr>
+              <td>attribute-value</td>
+              <td>Value of attribute</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+   
+   <h3>Description</h3>
+
+   <br/>
+addattribute is a simple front end to the <a  href="/CommandXed">xed</a> command which adds or replaces a single attribute to all matching nodes.<br/>
+The match-expression is an XSLT2.0 match expression.   For all element nodes matching that expression, an attribute is added or replaced (if an attribute exists by the same name).<br/>
+   <br/>
+Example: add a comment attribute to all file elements produced by xls<br/>
+   <div class="code">
+      <pre>xls | xaddattribute file comment "This is a file"</pre>
+   </div>
+</div>

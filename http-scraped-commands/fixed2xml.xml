@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command fixed2xml</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>fixed2xml</strong> converts a fixed field width file to an xml file<br/>
+   
+   <h3>Synopsis</h3>
+
+csv2xml [ <a  href="/SerializationOptions">serialization options</a> ] [options] [fixedfile]<br/>
+   
+   <h3>Options</h3>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-root	rootname</td>
+              <td>use "rootname" as the root element name, default "root"</td>
+            </tr>
+         <tr>
+              <td>-row 	rowname</td>
+              <td>use "rowname" as each row's element name, default "row"</td>
+            </tr>
+         <tr>
+              <td>-col 	colname</td>
+              <td>use "colname" as each column's element name (or for attribute normal format, the attribute prefix)</td>
+            </tr>
+         <tr>
+              <td>-colspecs   specs</td>
+              <td>sequence or , delimited list of column specs</td>
+            </tr>
+         <tr>
+              <td>-colnames names</td>
+              <td>Use a sequence  or "," delimited list of strings to specify the column names</td>
+            </tr>
+         <tr>
+              <td>-encoding encoding</td>
+              <td>read csv file in encoding (default "cp1252")</td>
+            </tr>
+         <tr>
+              <td>-header</td>
+              <td>read 1 row from the csv file and use as column names (element or attribute)</td>
+            </tr>
+         <tr>
+              <td>-attr</td>
+              <td>Output in attribute normal format (each column is an attribute), default row normal format</td>
+            </tr>
+         <tr>
+              </tr>
+      </tbody>
+   </table>
+</div>

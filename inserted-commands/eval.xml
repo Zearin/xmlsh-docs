@@ -1,0 +1,82 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="eval" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>eval</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>eval</d:refname>
+		    <d:refpurpose>Evaluate a shell command</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command eval</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>eval</x:strong> Evaluates its arguments as a command and executes it<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:br/>
+         <x:strong>eval</x:strong> [cmd]<x:br/>
+         <x:br/>
+The eval command parses its arguments, concatenates them with spaces then passes the resultant string to the current Shell for evaluation and execution.  This command can be used to dynamically construct and execute commands.<x:br/>
+         <x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+         <x:br/>
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>A="echo foo"
+eval $A</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>foo</x:pre>
+         </x:div>
+
+Example storing the result in a variable<x:br/>
+         <x:div class="code">
+            <x:pre>width=$(eval 'identify -format \"%[fx:w]\" dir1/picture.jpg')</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>$ echo ${width}                                               
+"592"</x:pre>
+         </x:div>
+
+
+
+
+ 
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandEval</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

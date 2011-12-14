@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xfile</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xfile</strong> file name manipulations<br/>
+   <br/>
+   
+   <h3>Synopsis</h3>
+
+xfile [ <a  href="/SerializationOptions">serialization options</a> ]  [options] [filename [base]]<br/>
+   
+   <h3>Options</h3>
+
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-b,-base</td>
+              <td> basename of file without directory or extension </td>
+            </tr>
+         <tr>
+              <td>-B,-basename</td>
+              <td>basename of file with directory but without extension</td>
+            </tr>
+         <tr>
+              <td>-n,-name</td>
+              <td> name of file without directory </td>
+            </tr>
+         <tr>
+              <td>-N</td>
+              <td> exactly as given, including directory if present but converted to java format</td>
+            </tr>
+         <tr>
+              <td>-d,-dir</td>
+              <td> Directory component </td>
+            </tr>
+         <tr>
+              <td>-a,-absolute</td>
+              <td>	absolute path</td>
+            </tr>
+         <tr>
+              <td>-c,-canonical</td>
+              <td>canonical path</td>
+            </tr>
+         <tr>
+              <td>-e,-extension</td>
+              <td>extension only including the "." </td>
+            </tr>
+         <tr>
+              <td>-u,-uri</td>
+              <td>outputs a file scheme URI </td>
+            </tr>
+         <tr>
+              <td>-s</td>
+              <td>Converts the filename to local system notation otherwise outputs Java notation</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   <br/>
+If [filename] is omitted the current directory is used<br/>
+if [base] is provided then it is added as a new component to the filename prior to executing the options<br/>
+If [base] is an absolute path (on windows this means a drive letter or UNC path, on unix starting with /) then <br/>
+filename is ignored.   This allows xfile to be used to conditionally resolve relative paths.<br/>
+   <br/>
+   
+   <h3>Description</h3>
+
+Prints a component of a filename or path.<br/>
+   <br/>
+Example:<br/>
+   <div class="code">
+      <pre>xfile -a foo.bar</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>c:/work/dei/xmlsh/trunk/foo.bar</pre>
+   </div>
+
+
+   <div class="code">
+      <pre>xfile -e $PWD/foo.bar</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>.bar</pre>
+   </div>
+
+Resolve a relative path<br/>
+   <div class="code">
+      <pre>xfile /tmp foo/bar</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>/tmp/foo/bar</pre>
+   </div>
+
+Resolve a absolute path on windows<br/>
+   <div class="code">
+      <pre>xfile /tmp c:/foo/bar</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>c:/foo/bar</pre>
+   </div>
+
+   
+   <h3>Windows Notes</h3>
+
+On Windows systems, the output filename is converted to the Java notation unless the -s argument is given.  This changes \ to / but preserves any drive letter.<br/>
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the command executed successfully, 1 if there was an error.<br/>
+
+
+   <a  href="/Commands">Commands</a>
+   <br/>
+   <a  href="/CategoryCommands">CategoryCommands</a>
+
+</div>

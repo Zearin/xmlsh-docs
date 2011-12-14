@@ -1,0 +1,85 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xcat" role="core streaming">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xcat</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xcat</d:refname>
+		    <d:refpurpose>Concatenate XML documents</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command xcat</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>xcat</x:strong> combine and concatenate XML files to a single XML document<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+xcat [ <x:a href="/SerializationOptions">serialization options</x:a> ] [-w string|element ] [-r]  [file ...]<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+Concatenates one or more XML files into a single xml fiile.<x:br/>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-w string	</x:td>
+                  <x:td>Wraps each xml file with an element named "string"</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-w element	</x:td>
+                  <x:td>Wraps each xml file with the specified element</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-r</x:td>
+                  <x:td>Removes root element</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+Supports the standard [ <x:a href="/SerializationOptions">serialization options</x:a> ]<x:br/>
+         <x:br/>
+If no files are specified, then stdin is read.<x:br/>
+If no file or one file is specified and no -w argument is given, the file is parsed and serialized without wrapping.<x:br/>
+If a -w argument is given the the file is wrapped with a container element.<x:br/>
+If the -r argument is specified then the root element is stripped from each file, <x:br/>
+if -r is specified and no -w argument then if there is more then one file and/or more then one child of root then this produces an error.<x:br/>
+   
+         <x:h3>Streaming</x:h3>
+
+The xcat command is streamable.  Input and output is created in streaming mode so there is no memory limit to how large the input or output documents can be.<x:br/>
+         <x:br/>
+
+
+ 
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXcat</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

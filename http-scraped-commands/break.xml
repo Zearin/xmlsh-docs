@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command break</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>break</strong> exits a for or while loop<br/>
+   
+   <h3>Synopsis</h3>
+
+   <br/>
+break [levels]<br/>
+   
+   <h3>Description</h3>
+
+   <br/>
+The break statement exits one or more levels of a while, for or until.<br/>
+If no arguments are supplied then 1 level is exited.<br/>
+   
+   <h3>Examples</h3>
+
+
+   <div class="code">
+      <pre>for i in a b c d e ; do
+  echo $i
+  if [ $i = "b" ] ; then 
+	break ;
+   fi
+done</pre>
+   </div>
+
+Results<br/>
+   <div class="code">
+      <pre>a
+b</pre>
+   </div>
+
+
+
+
+ 
+
+
+</div>

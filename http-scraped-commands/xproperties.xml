@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xproperties</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xproperties</strong> Manage a Java Properties file<br/>
+   
+   <h3>Synopsis</h3>
+
+xproperties 	[ <a  href="/SerializationOptions">serialization options</a> ] [options]<br/>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-in	file</td>
+              <td>Load a Properties file in text form</td>
+            </tr>
+         <tr>
+              <td>-inxml file</td>
+              <td>Load a Properties file in xml form</td>
+            </tr>
+         <tr>
+              <td>-text	</td>
+              <td>Output properties in text form to stdout</td>
+            </tr>
+         <tr>
+              <td>-xml</td>
+              <td>Output properties in xml form to stdout</td>
+            </tr>
+         <tr>
+              <td>-d,-delete	var</td>
+              <td>Delete a variable from the properties</td>
+            </tr>
+         <tr>
+              <td>-a,-add var=value</td>
+              <td>Add (or replace) a variable (name "var", value "value") to the properties</td>
+            </tr>
+         <tr>
+              <td>-comment</td>
+              <td>Append or update the comment</td>
+            </tr>
+         <tr>
+              <td>-v,-var var</td>
+              <td>print out the value of a variable (cannot be intermixed with -text or -xml) </td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   
+   <h3>Description</h3>
+
+xproperties can be used to create new properties files, transform fil</div>

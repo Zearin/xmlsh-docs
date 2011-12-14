@@ -1,0 +1,78 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="break" role="core">
+	
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>break</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>break</d:refname>
+		    <d:refpurpose>Exits one level of a while, for, or until</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+    
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command break</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>break</x:strong> exits a for or while loop<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:br/>
+break [levels]<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+         <x:br/>
+The break statement exits one or more levels of a while, for or until.<x:br/>
+If no arguments are supplied then 1 level is exited.<x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+
+         <x:div class="code">
+            <x:pre>for i in a b c d e ; do
+  echo $i
+  if [ $i = "b" ] ; then 
+	break ;
+   fi
+done</x:pre>
+         </x:div>
+
+Results<x:br/>
+         <x:div class="code">
+            <x:pre>a
+b</x:pre>
+         </x:div>
+
+
+
+
+ 
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandBreak</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

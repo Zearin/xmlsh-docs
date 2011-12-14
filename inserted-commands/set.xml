@@ -1,0 +1,134 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="set" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>set</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>set</d:refname>
+		    <d:refpurpose>Set positional parameters and view variables</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command set</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>set</x:strong> sets options and positional parameters<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+set [options] [param1 [param2 ...]]<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-x</x:td>
+                  <x:td>		Turns on execution tracing	(default off)</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-v</x:td>
+                  <x:td>		Turns on command interpretation parse tracing	(default off)</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-e</x:td>
+                  <x:td>		Turns on "throw on error" mode (default off)</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-xpipe</x:td>
+                  <x:td>	Turns on the xpipe implementation for pipes (Experimental)		(default off)</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+The set command also supports all of the global <x:a href="/SerializationOptions">Serialization Options</x:a>
+         <x:br/>
+
+         <x:h4>set options</x:h4>
+
+         <x:br/>
+If any options are specified then they set the global shell options for the current shell.<x:br/>
+Preceding any boolean option by a + instead of a - will turn OFF that option.<x:br/>
+         <x:br/>
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>set +omit-xml-declaration</x:pre>
+         </x:div>
+
+turns OFF the omit-xml-declaration option<x:br/>
+
+         <x:h4>Execute Trace (-x)</x:h4>
+
+If -x is set then commands are printed to the error output prior to execution<x:br/>
+
+         <x:h4>Verbose (-v)</x:h4>
+ 
+if -v is set then commands are printed to the error output while parsed<x:br/>
+
+         <x:h4>Throw On Error (-e)</x:h4>
+
+If -e is set, then an exception is throw equivalent to using the <x:a href="/ExceptionHandling">throw</x:a> command whenever a simple command returns a non-zero value, except when the command is the condition for an if, while or until, or when preceded by a "!".<x:br/>
+         <x:br/>
+If the shell is not interactive, and the exception is not trapped with a try, it will cause the shell to exit.<x:br/>
+         <x:br/>
+
+         <x:h4>set parameters </x:h4>
+
+Sets the positional parameters or prints environment variables<x:br/>
+         <x:br/>
+Example: sets $1 to "foo" and $2 to "bar"<x:br/>
+         <x:div class="code">
+            <x:pre>$ set foo bar</x:pre>
+         </x:div>
+
+Positional parameters can also be XML expressions<x:br/>
+         <x:div class="code">
+            <x:pre>$ set &lt;[1,"foo",&lt;bar>spam&lt;/bar>]&gt;</x:pre>
+         </x:div>
+
+
+         <x:h4>print variables</x:h4>
+
+With no arguments prints the names and types of all variables as an xml document.<x:br/>
+Note this differences from the unix shells in that it doesnt print the variables value, this is because<x:br/>
+ values in xmlsh can be extremely large.<x:br/>
+         <x:div class="code">
+            <x:pre>$ set
+&lt;env>
+   &lt;variable name="a" type="xml"/>
+   &lt;variable name="PATH" type="string"/>
+&lt;/env></x:pre>
+         </x:div>
+
+
+
+ 
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandSet</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xuri</h1>
+
+   <br/>
+   <h2>Name</h2>
+
+   <strong>xuri</strong> Constructs and disects URI's<br/>
+   
+   <h3>Synopsis</h3>
+
+xuri [options] uri<br/>
+xuri [options] base uri<br/>
+xuri [options] scheme ssp fragment<br/>
+xuri [options] scheme host path fragment<br/>
+xuri [options] scheme authority path query fragment<br/>
+xuri [options] scheme user host port path query fragment<br/>
+   <br/>
+As a special case, in the 1 argument case if the uri has no scheme it is converted into a file URI.<br/>
+   
+   <h3>Options</h3>
+
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-a,-authority</td>
+              <td>Outputs the authority</td>
+            </tr>
+         <tr>
+              <td>-f,-fragment</td>
+              <td>Outputs the fragment</td>
+            </tr>
+         <tr>
+              <td>-h,host</td>
+              <td>Outputs the host</td>
+            </tr>
+         <tr>
+              <td>-p,-path</td>
+              <td>Outputs the path</td>
+            </tr>
+         <tr>
+              <td>-P,-port</td>
+              <td>Outputs the Port</td>
+            </tr>
+         <tr>
+              <td>-Q,-query</td>
+              <td>Outputs the query</td>
+            </tr>
+         <tr>
+              <td>-s,-scheme</td>
+              <td>Outputs the scheme</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+   
+   <h3>Description</h3>
+
+   <br/>
+Example:<br/>
+   <div class="code">
+      <pre>xuri http test.xmlsh.org /data/books.xml ""</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>http://test.xmlsh.org/data/books.xml</pre>
+   </div>
+
+Example<br/>
+   <div class="code">
+      <pre>xuri -p http test.xmlsh.org /data/books.xml ""</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>/data/books.xml</pre>
+   </div>
+
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the command executed successfully, 1 if there was an error.<br/>
+
+
+ 
+   <br/>
+
+
+</div>

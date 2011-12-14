@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xcat</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xcat</strong> combine and concatenate XML files to a single XML document<br/>
+   
+   <h3>Synopsis</h3>
+
+xcat [ <a  href="/SerializationOptions">serialization options</a> ] [-w string|element ] [-r]  [file ...]<br/>
+   
+   <h3>Description</h3>
+
+Concatenates one or more XML files into a single xml fiile.<br/>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-w string	</td>
+              <td>Wraps each xml file with an element named "string"</td>
+            </tr>
+         <tr>
+              <td>-w element	</td>
+              <td>Wraps each xml file with the specified element</td>
+            </tr>
+         <tr>
+              <td>-r</td>
+              <td>Removes root element</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   <br/>
+If no files are specified, then stdin is read.<br/>
+If no file or one file is specified and no -w argument is given, the file is parsed and serialized without wrapping.<br/>
+If a -w argument is given the the file is wrapped with a container element.<br/>
+If the -r argument is specified then the root element is stripped from each file, <br/>
+if -r is specified and no -w argument then if there is more then one file and/or more then one child of root then this produces an error.<br/>
+   
+   <h3>Streaming</h3>
+
+The xcat command is streamable.  Input and output is created in streaming mode so there is no memory limit to how large the input or output documents can be.<br/>
+   <br/>
+
+
+ 
+   <br/>
+
+
+</div>

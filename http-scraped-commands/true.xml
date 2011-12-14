@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command true</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>true</strong> returns a true condition<br/>
+   <br/>
+true returns the exit value 0 which is considered false.<br/>
+   
+   <h3>Synopsis</h3>
+
+   <strong>true</strong>
+   <br/>
+   
+   <h3>Examples</h3>
+
+   <br/>
+Example<br/>
+   <div class="code">
+      <pre>if true ; then echo True; else echo False ; fi</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>True</pre>
+   </div>
+
+
+
+ 
+
+
+</div>

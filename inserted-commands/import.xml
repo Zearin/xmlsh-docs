@@ -1,0 +1,150 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="import" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>import</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>import</d:refname>
+		    <d:refpurpose>Import modules, packages, and commands</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command import</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>import</x:strong> imports a module or package into the default namespace or a named namespace.<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+import module [prefix=]module<x:br/>
+import package [prefix=]package [ [prefix=]package ...]<x:br/>
+import commands [prefix=]command-subpackage [ [prefix=]command-subpackage ...]<x:br/>
+import java url [url ...]<x:br/>
+   
+         <x:h3>Description  Modules</x:h3>
+
+The import command imports a module into the default namespace or a named namespace.<x:br/>
+See the <x:a href="/Modules">Modules</x:a> section for a description of Extension Modules.<x:br/>
+If prefix is omited then the module is imported into the default namespace.<x:br/>
+If prefix is specified then the module is imported into the named prefix and commands are accessed by using the prefix.<x:br/>
+         <x:br/>
+"module" is either the name of an extension module or the path to the module.xml file.<x:br/>
+For named modules, the XMODPATH variable is searched.  For each directory in XMODPATH, a child directory is searched with the name of the module, and if found the file "module.xml" is searched for in that directory.  If found then that module.xml file is used for the module configuration.<x:br/>
+         <x:br/>
+If a URL is specified for "module" it is assumed to be the module configuration file (typically named "module.xml" but could be any name.  <x:br/>
+When located, the fully expanded URL for the module configuration file is used as the base URI for any dependant files (e.g jar files in the class path).  Both the module.xml and its Dependant jars can be local files or on the network.<x:br/>
+
+Commands are found by looking in that package for classes that extend the XCommand abstract class.<x:br/>
+Commands may also be xmlsh scripts as resources within the specified package (and end with the .xsh extension).<x:br/>
+         <x:br/>
+Example<x:br/>
+         <x:br/>
+Load module calabash from /usr/local/xmlsh/calabash<x:br/>
+         <x:div class="code">
+            <x:pre>XMODPATH=/usr/local/xmlsh/ext
+import module xp=calabsh
+xp:xproc xprocfile.xpl
+...</x:pre>
+         </x:div>
+
+Load module marklogic from /usr/local/markogic/module.xml<x:br/>
+         <x:div class="code">
+            <x:pre>import module ml=/usr/local/marklogic/module.xml
+ml:list</x:pre>
+         </x:div>
+
+Load module marklogic from a remote host at <x:a class="ext" href="http://test.xmlsh.org/modules/marklogic/module.xml">http://test.xmlsh.org/modules/marklogic/module.xml</x:a>
+         <x:br/>
+where all jar files are located remotely<x:br/>
+         <x:div class="code">
+            <x:pre>import module ml=http://test.xmlsh.org/modules/marklogic/module.xml</x:pre>
+         </x:div>
+
+   
+         <x:h3>Description  Packages</x:h3>
+
+Commands that are already in the CLASSPATH (such as those builtin to xmlsh) may be imported by specifying just the package name using the "import package" command.  A namespace prefix may be provided and optionally a symbolic name may be specified<x:br/>
+         <x:br/>
+Example, to import the posix commands using the full package name and specifying the posix prefix<x:br/>
+
+         <x:div class="code">
+            <x:pre>import package posix=org.xmlsh.commands.posix</x:pre>
+         </x:div>
+
+   
+         <x:h3>Description  Commands</x:h3>
+
+To simplify importing sets of commands in the org.xmlsh.commands package, the "import commands" command may be used.<x:br/>
+This is equivalent to using "import package" giving "org.xmlsh.commands." as the prefix to the command.<x:br/>
+         <x:br/>
+Example, to import the posix commands using the full package name and specifying the posix prefix<x:br/>
+
+         <x:div class="code">
+            <x:pre>import commands posix=posix</x:pre>
+         </x:div>
+
+Example to import the experimental commands into the global namespace<x:br/>
+
+         <x:div class="code">
+            <x:pre>import commands experimental</x:pre>
+         </x:div>
+
+You can group commands together to include multiple command sets<x:br/>
+
+         <x:div class="code">
+            <x:pre>import commands posix experimental</x:pre>
+         </x:div>
+
+   
+         <x:h3>Description Java</x:h3>
+
+The shell's classpath can be extended by using the "import java" command.  With no further arguments it prints the current classpath.  Arguments are added to the classpath.  They can be any URI, but typically will be paths to jar files.   Relative paths are resolved against the current directory.<x:br/>
+         <x:br/>
+The classpath of the current shell is used as the base classpath for any commands which dynamically load java classes.<x:br/>
+For example, <x:a href="/CommandXsql">xsql</x:a>, <x:a href="/CommandJset">jset</x:a>, <x:a href="/CommandJset">jcall</x:a>, <x:a href="/FunctionJnew">jnew</x:a>.<x:br/>
+         <x:br/>
+Print the current classpath<x:br/>
+         <x:div class="code">
+            <x:pre>import java</x:pre>
+         </x:div>
+
+Add myfile.jar to the classpath<x:br/>
+         <x:div class="code">
+            <x:pre>import java myfile.jar</x:pre>
+         </x:div>
+
+
+         <x:br/>
+
+
+ 
+         <x:a href="/Modules">Modules</x:a>
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandImport</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

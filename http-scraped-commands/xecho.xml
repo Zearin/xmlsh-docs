@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xecho</h1>
+
+   <br/>
+   <h2>Name</h2>
+
+   <strong>xecho</strong> prints XML arguments to output<br/>
+   <br/>
+   
+   <h3>Synopsis</h3>
+
+   <br/>
+xecho [ <a  href="/SerializationOptions">serialization options</a> ] [options] arg ...<br/>
+   <br/>
+Prints its arguments to the standard output seperated by the seqeunce separator ("\n") and terminated by the sequence terminator.<br/>
+   
+   <h3>Options</h3>
+
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-n</td>
+              <td>Omits the sequence terminator after all arguments are serialized</td>
+            </tr>
+         <tr>
+              <td>-p,-port port</td>
+              <td>Outputs to a named port instead of output</td>
+            </tr>
+      </tbody>
+   </table>
+
+
+If no arguments are given then nothing is  output.<br/>
+This command is similar to the <a  href="/CommandEcho">echo</a> command except that it does not<br/>
+serialize arguments as text if the output is an XML output port or stream.<br/>
+If the output is a text output port or stream then a newline is printed at the end of all arguments.<br/>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+
+Example<br/>
+   <br/>
+# Text example<br/>
+   <div class="code">
+      <pre>$ xecho hi there
+hi
+there</pre>
+   </div>
+
+# Example using xecho to construct sequences<br/>
+   <div class="code">
+      <pre>xecho arg1 1 "hi" &lt;[ &lt;foo&gt;bar&lt;/foo&gt;]&gt; arg5 &gt;{var}
+xecho &lt;[ $var[4] ]&gt;</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>&lt;foo&gt;bar&lt;/foo&gt;</pre>
+   </div>
+
+# Appending to a sequence with xecho<br/>
+   <div class="code">
+      <pre>xecho &lt;[ &lt;foo/&gt; ]&gt;  &gt;{var}
+xecho 2 3 4            &gt;&gt;{var}
+xecho &lt;[ &lt;bar/&gt; ]&gt;  &gt;&gt;{var}
+xecho $var</pre>
+   </div>
+
+Result<br/>
+   <div class="code">
+      <pre>&lt;foo/&gt;
+2
+3
+4
+&lt;bar/&gt;</pre>
+   </div>
+
+To concatenate String content and variables, enclose them in double quotes as per<br/>
+
+   <div class="code">
+      <pre>xecho "Processing $inputfile with option $opt on $dirs"</pre>
+   </div>
+
+which will appear as one line<br/>
+
+
+
+   <a  href="/Commands">Commands</a>	
+   <br/>
+   <a  href="/CategoryCommands">CategoryCommands</a>
+   <br/>
+See Also <a  href="/CommandEcho">echo</a>
+
+
+
+</div>

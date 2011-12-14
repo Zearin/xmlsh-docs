@@ -1,0 +1,113 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="echo" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>echo</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>echo</d:refname>
+		    <d:refpurpose>Print arguments as text</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command echo</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:br/>
+         <x:strong>echo</x:strong> Prints its arguments to stdout<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:strong>echo</x:strong> [ <x:a href="/SerializationOptions">serialization options</x:a> ] [options] [args]<x:br/>
+
+         <x:h4>Options</x:h4>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-n</x:td>
+                  <x:td>No newline</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-p,-port port</x:td>
+                  <x:td>Outputs to a named port instead of out</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+Prints its arguments to the standard output seperated by a space.<x:br/>
+If no arguments are given then a single blank line ("\n") is printed.<x:br/>
+If arguments are XML expressions then they are written in normal text serialized format.<x:br/>
+XML Sequences are output seperated by spaces.<x:br/>
+A newline is printed at the end of all arguments.<x:br/>
+If the first argument is "-n" then no newline is printed.<x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>echo hi there</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>hi there</x:pre>
+         </x:div>
+
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>echo arg1 &lt;[1,"hi",&lt;foo>bar&lt;/foo>]&gt; arg3</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>arg1 1 hi &lt;foo>bar&lt;/foo> arg3</x:pre>
+         </x:div>
+
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>echo -n foo ; echo bar</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>foobar</x:pre>
+         </x:div>
+
+Example: write to the error port<x:br/>
+         <x:div class="code">
+            <x:pre>echo -p error A line written to the error port</x:pre>
+         </x:div>
+
+
+
+ 
+See Also <x:a href="/CommandXEcho">xecho</x:a>
+
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandEcho</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

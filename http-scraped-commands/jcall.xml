@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command jcall</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>jcall</strong> calls a java program (any class's static main) <br/>
+   
+   <h3>Synopsis</h3>
+
+jcall [-cp,-classpath classpath ] classname [args]<br/>
+   
+   <h3>Description</h3>
+
+Calls a java program from within the same JVM and thread as the current shell.<br/>
+   <br/>
+"classname" is the full package and class name, e.g. "org.xmlsh.commands.xpwd"<br/>
+Args are optional arguments to be sent to called class.<br/>
+
+   <h4>Options</h4>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-cp,-classpath classpath</td>
+              <td>Uses the specified classpath in the classloader for calling the specified class.  <br/>
+The classpath is expected to be a single string or sequence of strings.</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+This command simulates the equivalent call to "java" command line. <br/>
+The class is attempted to be loaded, and the main function called with the supplied parameters.<br/>
+   <br/>
+Note, stdin and stdout are redirected to the shell's input and output, but stderr is not changed (remains the stderr of the calling environment, due to java limitations).<br/>
+
+   <h4>Options to the Java virtual machine</h4>
+
+   <br/>
+Sometimes when you call up a Java application you need to pass parameters not to the program, but to the Java Virtual machine. The format for this is generally<br/>
+
+   <div class="code">
+      <pre>java  -X... -D... classname, application parameters</pre>
+   </div>
+
+the -X and -D parameters are not available to the jcall command. If that is what you need, use the java command, i.e. call out to the operating system, see <a  href="/BasicUsage">BasicUsage</a>
+   <br/>
+   
+   <h3>Notes on classpath</h3>
+
+If the classpath is more then one string it should be in a sequence variable or expression.<br/>
+To pass this expression as a sequence you need to wrap it with {} to keep it from being expanded into seperate arguments.<br/>
+   <br/>
+   
+   <h3>Examples</h3>
+
+   <br/>
+Example<br/>
+   <div class="code">
+      <pre>cp=(lib/*.jar)
+jcall -cp {$cp} org.test.MyClass arg1 arg2 arg3</pre>
+   </div>
+
+
+   <br/>
+
+
+
+
+
+</div>

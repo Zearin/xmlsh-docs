@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command :</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>:</strong> is the null command.  It can be used in places where a command is required syntatcially but none is needed.<br/>
+   
+   <h3>Synopsis</h3>
+
+   <br/>
+:<br/>
+   
+   <h3>Examples</h3>
+
+
+   <div class="code">
+      <pre>	if true ; then : else echo false ; fi</pre>
+   </div>
+
+
+
+ 
+
+
+</div>

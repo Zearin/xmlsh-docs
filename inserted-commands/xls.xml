@@ -1,0 +1,78 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xls" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xls</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xls</d:refname>
+		    <d:refpurpose>List files in a directory</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command xls</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>xls</x:strong> List files in a directory<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+xls [ <x:a href="/SerializationOptions">serialization options</x:a> ] [options] [directory or file ...]<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-l,-long</x:td>
+                  <x:td>Long listing, include all file property attributes</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-a,-all</x:td>
+                  <x:td>List all files including hidden files (starts with ".")</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-R,-recurse</x:td>
+                  <x:td>	Recursively list all files and directories</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+Supports the standard [ <x:a href="/SerializationOptions">serialization options</x:a> ]<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+Lists the files in the supplied directory or the current directory.<x:br/>
+Outputs the list using the File schema.<x:br/>
+If -l is given then all file attributes are written  ( name,path,writable,readable,type,length) otherwise only name and path.<x:br/>
+         <x:br/>
+Example:<x:br/>
+         <x:div class="code">
+            <x:pre>xls .</x:pre>
+         </x:div>
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXls</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

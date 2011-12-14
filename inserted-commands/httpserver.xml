@@ -1,0 +1,132 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="httpserver" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>httpserver</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>httpserver</d:refname>
+		    <d:refpurpose>HTTP server</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command httpserver</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>httpserver</x:strong> http server<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+httpserver [options]  [start|stop]<x:br/>
+         <x:br/>
+Note: This command is part of the <x:a href="/CommandsExperimental">Experimental Commands</x:a> set and needs to be imported in order to be used. <x:br/>
+         <x:br/>
+This command is still under development and is expected to change substantially.<x:br/>
+         <x:br/>
+Httpserver starts or stops a single thread which runs an HTTP server within the current shell.<x:br/>
+The server is run as a background thread so the command returns immedeately.  <x:br/>
+Processing of requests is entirely scripted.<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-port port</x:td>
+                  <x:td>Listen on the specified port (default 80)</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-context path</x:td>
+                  <x:td>Responds to requests on the given context (default "/")</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-get cmd</x:td>
+                  <x:td>Executes cmd when handling a GET request</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-put cmd</x:td>
+                  <x:td>Executes cmd when handling a PUT request</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-post cmd</x:td>
+                  <x:td> Executes cmd when handling a POST request</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-chunk</x:td>
+                  <x:td>Operates in HTTP Chunked mode (default is off)</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>start</x:td>
+                  <x:td>Starts the HTTP server</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>stop</x:td>
+                  <x:td>Stops the HTTP server</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+   
+         <x:h3>Usage</x:h3>
+
+         <x:br/>
+On invocation of a method,  $1 is set to the file part of the URI, $2 is set to the query portion of the URI.<x:br/>
+The HTTP Request body is made available as stdin to the command, and the output of the command becomes the Response portion.<x:br/>
+         <x:br/>
+Like <x:a href="/EmbeddingServlet">xmlsh servlet</x:a> the global variable HTTP_HEADERS is set as with all HTTP headers.<x:br/>
+         <x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+         <x:br/>
+Start a server that serves the file specified by the URL given.<x:br/>
+         <x:div class="code">
+            <x:pre>import commands posix
+httpserver -port 80 -get 'cat $(xfile . $1)' start</x:pre>
+         </x:div>
+
+
+   
+         <x:h3>Return Value</x:h3>
+
+
+
+
+ 
+         <x:a href="/CommandsExperimental">CommandsExperimental</x:a>
+         <x:br/>
+         <x:a href="/EmbeddingServlet">EmbeddingServlet</x:a>
+         <x:br/>
+
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandHttpserver</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

@@ -1,0 +1,63 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="cd" role="core">
+	
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>cd</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>cd</d:refname>
+		    <d:refpurpose>Change (or print) current directory</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command cd</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>cd</x:strong> Changes the working directory<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:br/>
+The cd command changes the working directory of the current shell.<x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+
+         <x:div class="code">
+            <x:pre>$ cd /tmp</x:pre>
+         </x:div>
+
+With no arguments changes to the users "home" directory.<x:br/>
+The "home" directory is found by first looking for an environment variable "HOME" and if not found then using the java System property "user.home".<x:br/>
+         <x:br/>
+
+
+ 
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandCd</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

@@ -1,0 +1,71 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="exit" role="core">
+      <d:refmeta>
+        <d:refentrytitle>
+            <d:command>exit</d:command>
+        </d:refentrytitle>
+        <d:manvolnum/>
+      </d:refmeta>
+
+      <d:refnamediv>
+        <d:refname>exit</d:refname>
+        <d:refpurpose>Exit the shell, script, or function</d:refpurpose>
+        <d:refclass>
+<!--builtin-->
+
+<!--command-->
+
+<!--function-->
+        </d:refclass>
+      </d:refnamediv>
+
+    
+      <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command exit</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>exit</x:strong> Exits the current shell or script.<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:strong>exit</x:strong> [ret code]<x:br/>
+         <x:br/>
+Exits the current shell.  If ret code is specified it is used as the exit value, otherwise 0. <x:br/>
+If running an xmlsh script then exits the script with the specified exit code.<x:br/>
+If running interactively exits the xmlsh program.<x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+Example: exit with exit value 0<x:br/>
+         <x:div class="code">
+            <x:pre>exit 0</x:pre>
+         </x:div>
+
+Example: exit with the last command's exit value<x:br/>
+         <x:div class="code">
+            <x:pre>exit </x:pre>
+         </x:div>
+
+
+
+
+ 
+         <x:br/>
+
+
+      </x:div>
+        <d:cmdsynopsis>
+            <d:command/>
+            <d:arg/>
+        </d:cmdsynopsis>
+      </d:refsynopsisdiv>
+
+      <d:refsection>
+        <d:title>See Also</d:title>
+        <d:para>
+            <d:uri>http://www.xmlsh.org/CommandExit</d:uri>
+        </d:para>
+      </d:refsection>
+   </d:refentry>

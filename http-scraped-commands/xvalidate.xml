@@ -1,0 +1,83 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xvalidate</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xvalidate</strong> validates an xml document against a schema<br/>
+   
+   <h3>Synopsis</h3>
+
+xvalidate [ <a  href="/SerializationOptions">serialization options</a> ] [options] [file]<br/>
+   
+   <h3>Options</h3>
+
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-xsd	schema.xsd</td>
+              <td>Validates against a single W3C schema files in no namespace</td>
+            </tr>
+         <tr>
+              <td>-xsd  "URI schema.xsd [...]"</td>
+              <td>Validates against one or more W3C schema files in namespaces</td>
+            </tr>
+         <tr>
+              <td>-dtd	schema.dtd</td>
+              <td>Validates against a XML DTD file</td>
+            </tr>
+         <tr>
+              <td>-rng  schema.rng</td>
+              <td>Validates against an RNG schema file</td>
+            </tr>
+         <tr>
+              <td>-schematron schematron.xml</td>
+              <td>	validates against a schematron description</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+
+   <h3>Description</h3>
+
+validates an xml document against a schema.  <br/>
+Forcibly ignores any DTD schema specified in the DOCTYPE instruction.<br/>
+
+   <h4>xsd validation</h4>
+
+Validates an xml document against one or more xsd schemas.<br/>
+If the first form is used then the schema is used as the "no namespace" schema.<br/>
+If the second form is used then one or more URI/schema pairs are used as namespace schemas for validation.<br/>
+XSD validation uses the <a  href="/CommandXsdvalidate">xsdvalidate</a> command.<br/>
+
+   <h4>dtd validation</h4>
+
+Validations against the specified DTD and ignores any DTD in the DOCTYPE processing instruction.<br/>
+
+   <h4>rng validation</h4>
+
+rng validation uses the <a  href="/CommandRngvalidate">rngvalidate</a> command. See that command for details on the options.<br/>
+
+   <h4>schematron validation</h4>
+
+schematron validation uses the <a  href="/CommandSchematron">schematron</a> command<br/>
+
+If no files are specified, then stdin is read.<br/>
+If one file is specified it is used as XML input.<br/>
+   
+   <h3>Return Value</h3>
+
+Returns 0 (true) if validation is successful.<br/>
+Returns 1 (fail) if validation fails and prints any validation errors on stderr<br/>
+   <br/>
+
+
+ 
+
+
+</div>

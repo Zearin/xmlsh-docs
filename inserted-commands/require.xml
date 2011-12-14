@@ -1,0 +1,91 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="require" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>require</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>require</d:refname>
+		    <d:refpurpose>Check the current shell against a specified minimum version</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command require</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>require</x:strong> Checks the current shell for a specified minimum version<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:strong>require</x:strong>
+         <x:br/>
+         <x:strong>require version</x:strong>
+         <x:br/>
+Checks to see if the supplied version is less then or equal the the current version of xmlsh. (see <x:a href="/CommandXversion">xversion</x:a>).<x:br/>
+If the required version is greater then the current version then throws an exception equivalent to the <x:a href="/CommandSet">"throw on error" (-e)</x:a> flag.<x:br/>
+require can be trapped with <x:a href="/ExceptionHandling">try/catch </x:a> or with a conditional same as errors from <x:a href="/CommandSet">"throw on error" (-e)</x:a>.<x:br/>
+         <x:br/>
+If no arguments are given then require simply is an invalid command for versions prior to the implementation or require (1.0.1).<x:br/>
+         <x:br/>
+On failure (if caught or not) prints to standard error  "requires version: &lt;require test>"<x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+         <x:br/>
+Example require version 1.0.2.  If version is less then 1.0.2 then an exception is thrown (which will abort a script).<x:br/>
+         <x:div class="code">
+            <x:pre>require 1.0.1 </x:pre>
+         </x:div>
+
+
+Check for version 1.0.2 and print an error message but keep going<x:br/>
+         <x:div class="code">
+            <x:pre>require 1.0.2 || echo Required verison 1.0.2 ignored</x:pre>
+         </x:div>
+
+Trap a require or a script calling require with try/catch<x:br/>
+
+         <x:div class="code">
+            <x:pre>try {
+   require 99
+} catch e {
+  echo Ignored failure of require 99
+}</x:pre>
+         </x:div>
+
+
+
+
+         <x:a href="/Commands">Commands</x:a>
+         <x:br/>
+         <x:a href="/CommandXVersion">CommandXVersion</x:a>
+         <x:br/>
+         <x:a href="/CategoryCommands">CategoryCommands</x:a>
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandRequire</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

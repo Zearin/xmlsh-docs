@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xmd5sum</h1>
+
+   
+   <h3>xmd5sum</h3>
+
+   <strong>xmd5sum</strong> List files in a directory<br/>
+   
+   <h3>Synopsis</h3>
+
+xmd5sum [ <a  href="/SerializationOptions">serialization options</a> ]  [file ...]<br/>
+   
+   <h3>Options</h3>
+
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   
+   <h3>Description</h3>
+
+   <br/>
+Calculates the md5 checksum of each file and outputs the file and length.<br/>
+If any argument is a directory, then it is recursed and all contents are also summed.<br/>
+   <br/>
+Example:<br/>
+
+   <div class="code">
+      <pre>cd $XMLSH/samples/data
+xmd5sum *.xml</pre>
+   </div>
+
+Results<br/>
+   <div class="code">
+      <pre>&lt;xmd5&gt;
+  &lt;file name="REC-xml-20060816.xml" md5="8fac09521dfbbf3509024a924351f49f" length="199019"/&gt;
+  &lt;file name="books.xml" md5="dbd4c7ab88e5092f7ca83643cef2fd86" length="2841"/&gt;
+  &lt;file name="intl.xml" md5="73696927038bcac47b0c87d3aec16bc2" length="418"/&gt;
+  &lt;file name="othello.xml" md5="7dd2133a6e6104d79e017cd7062aa939" length="248777"/&gt;
+  &lt;file name="xi_doc1.xml" md5="80e03792e5d21285672ad5295f54c989" length="297"/&gt;
+  &lt;file name="xi_sub1.xml" md5="57024d1dc619fc7db898f10083d62a93" length="212"/&gt;
+  &lt;file name="xml-base-chap.xml" md5="3b2cf4f7c2b22090de0def548967b97e" length="101"/&gt;
+  &lt;file name="xml-base-test.xml" md5="09d39f674b7d2ce9c7b967d408d185bf" length="203"/&gt;
+&lt;/xmd5&gt;</pre>
+   </div>
+
+
+   
+   <h3>Return Value</h3>
+
+Returns 0 if the directory exists and is read successfully, otherwise 1.<br/>
+
+
+ 
+
+
+</div>

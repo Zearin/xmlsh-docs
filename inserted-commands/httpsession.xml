@@ -1,0 +1,80 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="httpsession" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>httpsession</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>httpsession</d:refname>
+		    <d:refpurpose>HTTP session control</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command httpsession</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:br/>
+         <x:strong>httpsession</x:strong> Accesses session variables in a servlet.<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:strong>httpsession</x:strong>  [ <x:a href="/SerializationOptions">serialization options</x:a> ] [options]<x:br/>
+
+         <x:h4>Options</x:h4>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-setvar var value</x:td>
+                  <x:td>Sets a session variable</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-getvar var</x:td>
+                  <x:td>Gets a session variable</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-n</x:td>
+                  <x:td>Dont print error if variable does not exist using -getvar</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+   
+         <x:h3>Description</x:h3>
+
+The httpsession command only works within a <x:a href="/EmbeddingServlet">Servlet.</x:a>
+         <x:br/>
+Only one variable may be set or get with each call.<x:br/>
+Setting a session variable sets the underlying servlet session variable which is persisted across calls using whatever session technology is implemented by the J2EE container.  The value of the variable may be any type.<x:br/>
+
+
+
+ 
+         <x:a href="/EmbeddingServlet">EmbeddingServlet</x:a>
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandHttpsession</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

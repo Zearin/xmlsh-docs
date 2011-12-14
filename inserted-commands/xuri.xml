@@ -1,0 +1,125 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xuri" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xuri</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xuri</d:refname>
+		    <d:refpurpose>Create and dissect URIs</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command xuri</x:h1>
+
+         <x:br/>
+         <x:h2>Name</x:h2>
+
+         <x:strong>xuri</x:strong> Constructs and disects URI's<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+xuri [options] uri<x:br/>
+xuri [options] base uri<x:br/>
+xuri [options] scheme ssp fragment<x:br/>
+xuri [options] scheme host path fragment<x:br/>
+xuri [options] scheme authority path query fragment<x:br/>
+xuri [options] scheme user host port path query fragment<x:br/>
+         <x:br/>
+As a special case, in the 1 argument case if the uri has no scheme it is converted into a file URI.<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+         <x:br/>
+Supports the standard [ <x:a href="/SerializationOptions">serialization options</x:a> ]<x:br/>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-a,-authority</x:td>
+                  <x:td>Outputs the authority</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-f,-fragment</x:td>
+                  <x:td>Outputs the fragment</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-h,host</x:td>
+                  <x:td>Outputs the host</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-p,-path</x:td>
+                  <x:td>Outputs the path</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-P,-port</x:td>
+                  <x:td>Outputs the Port</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-Q,-query</x:td>
+                  <x:td>Outputs the query</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-s,-scheme</x:td>
+                  <x:td>Outputs the scheme</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+   
+         <x:h3>Description</x:h3>
+
+         <x:br/>
+Example:<x:br/>
+         <x:div class="code">
+            <x:pre>xuri http test.xmlsh.org /data/books.xml ""</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>http://test.xmlsh.org/data/books.xml</x:pre>
+         </x:div>
+
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>xuri -p http test.xmlsh.org /data/books.xml ""</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>/data/books.xml</x:pre>
+         </x:div>
+
+   
+         <x:h3>Return Value</x:h3>
+
+Returns 0 if the command executed successfully, 1 if there was an error.<x:br/>
+
+
+ 
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXuri</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

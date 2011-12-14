@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command cd</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>cd</strong> Changes the working directory<br/>
+   
+   <h3>Synopsis</h3>
+
+   <br/>
+The cd command changes the working directory of the current shell.<br/>
+   
+   <h3>Examples</h3>
+
+
+   <div class="code">
+      <pre>$ cd /tmp</pre>
+   </div>
+
+With no arguments changes to the users "home" directory.<br/>
+The "home" directory is found by first looking for an environment variable "HOME" and if not found then using the java System property "user.home".<br/>
+   <br/>
+
+
+ 
+   <br/>
+
+
+</div>

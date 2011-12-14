@@ -1,0 +1,83 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xsplit</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xsplit</strong> Splits an xmlfile into multiple files<br/>
+   
+   <h3>Synopsis</h3>
+
+xsplit [ <a  href="/SerializationOptions">serialization options</a> ] [options] [file]<br/>
+   
+   <h3>Description</h3>
+
+Splits a single xml file into multiple xml files.<br/>
+   
+   <h3>Options</h3>
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-w,-wrap string</td>
+              <td>Wraps each xml file with an element named "string"</td>
+            </tr>
+         <tr>
+              <td>-w,-wrap element</td>
+              <td>Wraps each xml file with the specified element</td>
+            </tr>
+         <tr>
+              <td>-c,-children children</td>
+              <td>Number of child elements to put in each file (default=1)</td>
+            </tr>
+         <tr>
+              <td>-n,-nowrap</td>
+              <td>No not wrap a root element around each element</td>
+            </tr>
+         <tr>
+              <td>-p,-prefix prefix</td>
+              <td>	Prefix string to use for creating filename.  (default="x")</td>
+            </tr>
+         <tr>
+              <td>-s,-suffix suffix</td>
+              <td>	Suffix string to use for creating filename.  (default="")</td>
+            </tr>
+         <tr>
+              <td>-e,-ext ext</td>
+              <td>		Extension to use for creating filename.     (default=".xml")</td>
+            </tr>
+         <tr>
+              <td>-o,output dir</td>
+              <td>		Output to direcotry (default=".")</td>
+            </tr>
+         <tr>
+              <td>-nopi</td>
+              <td>Do not output processing instructions in split files</td>
+            </tr>
+         <tr>
+              <td>-nodtd</td>
+              <td>Do not output DTD instructions in split files</td>
+            </tr>
+      </tbody>
+   </table>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   <br/>
+If no files are specified, then stdin is read.<br/>
+If a -w argument is given the output files are wrapped with the supplied container element instead of the root element of the input.<br/>
+   <br/>
+Output files are created by reading up to the root element, and replicating that markup including either the root element,<br/>
+the wrap element or no root element, then for each (n) child element(s) of the root creating a new xml file with the common header<br/>
+elements.   <br/>
+If the -n flag is used (do not wrap children) then "-c 1" is presumed.   Namespace nodes, if any, from the root element will be copied to each child element which will become the document root of each split file.<br/>
+   <br/>
+Implementation Note: xsplit is designed to work with large files.  All processing is done in streaming mode on both input and output.  This means xsplit can split up files with input *and output* exceed available memory.  The side effect is that the options are limited.  Arbitrary xpath expressions cannot be used to determine the split points or output files names.  Consider combining with the <a  href="/CommandXQuery">xquery</a> or <a  href="/CommandXmove">xmove</a> command to further split files or rename once they are manageable size, and with <a  href="/CommandXmove">xmove</a> to rename the files to a more usable name based on information within the resulting file.<br/>
+   <br/>
+
+
+ 
+
+
+</div>

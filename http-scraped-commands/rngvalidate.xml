@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command rngvalidate</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>rngvalidate</strong> validates an xml document using an rng schema<br/>
+   
+   <h3>Synopsis</h3>
+
+rngvalidate [options] schema file  [file ...]<br/>
+   
+   <h3>Description</h3>
+
+Validates an xml document against an rng schema.<br/>
+Uses the <a class="ext" href="http://www.thaiopensource.com/relaxng/jing.html">JINJ</a> rng validator.<br/>
+   <br/>
+The <a  href="/CommandXvalidate">xvalidate</a> -rng option is implemented using the rngvalidate command.<br/>
+   
+   <h3>Options</h3>
+
+
+   <table class="data">
+      <tbody>
+         <tr>
+              <td>-i</td>
+              <td>		Check ID references</td>
+            </tr>
+         <tr>
+              <td>-c</td>
+              <td>          Use compact syntax </td>
+            </tr>
+         <tr>
+              <td>-t</td>
+              <td>		output timing information</td>
+            </tr>
+         <tr>
+              <td>-e encoding</td>
+              <td>	specify encoding</td>
+            </tr>
+         <tr>
+              <td>-f</td>
+              <td>          check feasibly valid  </td>
+            </tr>
+      </tbody>
+   </table>
+
+
+
+
+ 
+   <a  href="/CommandXvalidate">CommandXvalidate</a>
+   <br/>
+
+
+</div>

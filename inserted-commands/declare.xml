@@ -1,0 +1,72 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="declare" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>declare</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>declare</d:refname>
+		    <d:refpurpose>Declare (or list) namespaces</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command declare</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>declare</x:strong> Declares or lists namespaces<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:strong>declare</x:strong> 
+         <x:br/>
+         <x:strong>declare</x:strong> namespace [prefix=[uri]]<x:br/>
+         <x:br/>
+The declare command is used to add global declarations to the shell.  Currently the <x:a href="/Namespaces">declare namespaces</x:a> is the only declaration.<x:br/>
+Future may include serialization<x:br/>
+         <x:br/>
+If uri is omitted then the namespace is undeclared<x:br/>
+         <x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+Example<x:br/>
+         <x:div class="code">
+            <x:pre>declare namespace xmlsh=http://www.xmlsh.org/namespaces/xmlsh
+declare namespace</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>xmlsh=http://www.xmlsh.org/namespaces/xmlsh</x:pre>
+         </x:div>
+
+
+
+ 
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandDeclare</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

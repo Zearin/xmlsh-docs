@@ -1,0 +1,77 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xaddattribute" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>xaddattribute</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>xaddattribute</d:refname>
+		    <d:refpurpose>Add (or replace) an attribute on nodes matching an expression</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h2>Command xaddattribute</x:h2>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>xaddattribute</x:strong> Adds attributes to matching elements<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+         <x:strong>addattribute</x:strong> match-expression attribute-name attribute-value <x:br/>
+   
+         <x:h3>Options</x:h3>
+
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>match-expression</x:td>
+                  <x:td>A XSLT style match expression</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>attribute-name</x:td>
+                  <x:td>Name of attribute to add or replace</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>attribute-value</x:td>
+                  <x:td>Value of attribute</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+   
+         <x:h3>Description</x:h3>
+
+         <x:br/>
+addattribute is a simple front end to the <x:a href="/CommandXed">xed</x:a> command which adds or replaces a single attribute to all matching nodes.<x:br/>
+The match-expression is an XSLT2.0 match expression.   For all element nodes matching that expression, an attribute is added or replaced (if an attribute exists by the same name).<x:br/>
+         <x:br/>
+Example: add a comment attribute to all file elements produced by xls<x:br/>
+         <x:div class="code">
+            <x:pre>xls | xaddattribute file comment "This is a file"</x:pre>
+         </x:div>
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandXaddattribute</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

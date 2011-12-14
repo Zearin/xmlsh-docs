@@ -1,0 +1,89 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="rngvalidate" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>rngvalidate</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>rngvalidate</d:refname>
+		    <d:refpurpose>Validate against an RNG schema</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command rngvalidate</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>rngvalidate</x:strong> validates an xml document using an rng schema<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+rngvalidate [options] schema file  [file ...]<x:br/>
+   
+         <x:h3>Description</x:h3>
+
+Validates an xml document against an rng schema.<x:br/>
+Uses the <x:a class="ext" href="http://www.thaiopensource.com/relaxng/jing.html">JINJ</x:a> rng validator.<x:br/>
+         <x:br/>
+The <x:a href="/CommandXvalidate">xvalidate</x:a> -rng option is implemented using the rngvalidate command.<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-i</x:td>
+                  <x:td>		Check ID references</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-c</x:td>
+                  <x:td>          Use compact syntax </x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-t</x:td>
+                  <x:td>		output timing information</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-e encoding</x:td>
+                  <x:td>	specify encoding</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-f</x:td>
+                  <x:td>          check feasibly valid  </x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+
+
+
+
+ 
+         <x:a href="/CommandXvalidate">CommandXvalidate</x:a>
+         <x:br/>
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandRngvalidate</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

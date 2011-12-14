@@ -1,0 +1,148 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="http" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>http</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>http</d:refname>
+		    <d:refpurpose>HTTP client command</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command http</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>http</x:strong> http client<x:br/>
+         <x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+http [options]<x:br/>
+   
+         <x:h3>Options</x:h3>
+
+
+         <x:h4>Requests</x:h4>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-get	url</x:td>
+                  <x:td>	performs an HTTP GET</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-put  url</x:td>
+                  <x:td>	performs an HTTP PUT</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-post	url</x:td>
+                  <x:td>	performs an HTTP POST</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-delete url</x:td>
+                  <x:td>  performs an HTTP DELETE</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-trace url</x:td>
+                  <x:td> 	performs an HTTP TRACE</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-head url</x:td>
+                  <x:td>	performs an HTTP HEAD</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-options url</x:td>
+                  <x:td> performs an HTTP OPTIONS</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+If no request options are supplied then -get is assumed.<x:br/>
+
+         <x:h4>Connection Options</x:h4>
+
+         <x:table class="data">
+            <x:tbody>
+               <x:tr>
+                  <x:td>-connectTimeout time</x:td>
+                  <x:td>	Sets the connection timeout</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-contentType  content-type</x:td>
+                  <x:td>	Sets the content type in the request property</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-readTimeout	time</x:td>
+                  <x:td>		Sets the read timeout</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-useCaches,+useCaches</x:td>
+                  <x:td>Turns on (off) caching</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-followRedirects,+followRedirects</x:td>
+                  <x:td>Turns on (off) redirection</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-user username</x:td>
+                  <x:td>		Authenticates with username</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-password password</x:td>
+                  <x:td>		Authenticates with password</x:td>
+               </x:tr>
+               <x:tr>
+                  <x:td>-H,-add-header name=value</x:td>
+                  <x:td> Adds a HTTP header</x:td>
+               </x:tr>
+            </x:tbody>
+         </x:table>
+         <x:br/>
+Time is specified in seconds, and can be fractional such as   2.5 <x:br/>
+         <x:br/>
+If username and password are both supplied then Basic Authentication is used.<x:br/>
+         <x:br/>
+For -put and -post the standard input is read and used as the input to the HTTP command.<x:br/>
+For all commands the output of the HTTP command is sent to standard output.<x:br/>
+   
+         <x:h3>Examples</x:h3>
+
+         <x:div class="code">
+            <x:pre>http -get http://www.xmlsh.org</x:pre>
+         </x:div>
+
+   
+         <x:h3>Return Value</x:h3>
+
+Returns 0 if the is return code of the request is 200, otherwise returns the return code<x:br/>
+
+
+ 
+         <x:a href="/CommandsExperimental">CommandsExperimental</x:a>	
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandHttp</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

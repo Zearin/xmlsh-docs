@@ -1,0 +1,70 @@
+<d:refentry xmlns:d="http://docbook.org/ns/docbook" xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="unset" role="core">
+	  <d:refmeta>
+		    <d:refentrytitle>
+			      <d:command>unset</d:command>
+		    </d:refentrytitle>
+		    <d:manvolnum/>
+	  </d:refmeta>
+
+	  <d:refnamediv>
+		    <d:refname>unset</d:refname>
+		    <d:refpurpose>Unset a variable</d:refpurpose>
+		    <d:refclass>
+			<!--builtin-->
+			<!--command-->
+			<!--function-->
+		</d:refclass>
+	  </d:refnamediv>
+
+
+	  <d:refsynopsisdiv>
+      <x:div xmlns="http://www.w3.org/1999/xhtml" xmlns:x="http://www.w3.org/1999/xhtml">
+         <x:h1>Command unset</x:h1>
+
+   
+         <x:h3>Name</x:h3>
+
+         <x:strong>unset</x:strong> unsets environment variables<x:br/>
+   
+         <x:h3>Synopsis</x:h3>
+
+unset [var1 ...]<x:br/>
+
+         <x:h4>Description</x:h4>
+
+Unsets (removes from the environment) each variable passed as an argument by name.  completely removes the variable from the environment for this shell and all future subshells or external processes.<x:br/>
+         <x:br/>
+Example<x:br/>
+
+         <x:div class="code">
+            <x:pre>A="hello"
+echo $A
+unset A
+echo $A</x:pre>
+         </x:div>
+
+Result<x:br/>
+         <x:div class="code">
+            <x:pre>Hello</x:pre>
+         </x:div>
+
+
+
+
+ 
+
+
+      </x:div>
+		    <d:cmdsynopsis>
+			      <d:command/>
+			      <d:arg/>
+		    </d:cmdsynopsis>
+	  </d:refsynopsisdiv>
+
+	  <d:refsection>
+		    <d:title>See Also</d:title>
+		    <d:para>
+			      <d:uri>http://www.xmlsh.org/CommandUnset</d:uri>
+		    </d:para>
+	  </d:refsection>
+</d:refentry>

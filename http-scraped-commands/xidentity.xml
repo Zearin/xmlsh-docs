@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xidentity</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xidentiy</strong> Outputs an identical copy of input XML using default serializatio<br/>
+   
+   <h3>Synopsis</h3>
+
+xidentity [ <a  href="/SerializationOptions">serialization options</a> ] [file]<br/>
+   <br/>
+Supports the standard [ <a  href="/SerializationOptions">serialization options</a> ]<br/>
+   
+   <h3>Description</h3>
+
+Outputs an identical copy of input XML using default serialization.<br/>
+   <br/>
+If no files are specified, then stdin is read.<br/>
+If one file is specified it is used as XML input.<br/>
+   <br/>
+
+
+ 
+
+
+</div>

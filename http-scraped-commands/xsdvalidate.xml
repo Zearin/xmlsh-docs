@@ -1,0 +1,31 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<div xmlns="http://www.w3.org/1999/xhtml">
+   <h1>Command xsdvalidate</h1>
+
+   
+   <h3>Name</h3>
+
+   <strong>xsdvalidate</strong> validates an xml document against one or more xsd schemas<br/>
+   
+   <h3>Synopsis</h3>
+
+xsdvalidate schema_file [file ...]<br/>
+xsdvalidate "URI schema.xsd ..."  [file ...]<br/>
+   
+   <h3>Description</h3>
+
+Validates an xml document against one or more xsd schemas.<br/>
+If the first form is used then the schema is used as the "no namespace" schema.<br/>
+If the second form is used then one or more URI/schema pairs are used as namespace schemas for validation.<br/>
+
+   <br/>
+
+
+   <a  href="/CategoryCommands">CategoryCommands</a>
+   <br/>
+   <a  href="/CommandXvalidate">CommandXvalidate</a>
+   <br/>
+
+
+</div>
