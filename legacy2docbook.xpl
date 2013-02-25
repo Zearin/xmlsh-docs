@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <?xml-stylesheet type="text/css" href="/Users/amrogers/Developer/Applications/oxygen/frameworks/xproc/css/xproc.css"?>
 <p:declare-step
-	name		=	"commands2docbook"
+	name		=	"legacy2docbook"
 	version		=	"1.0"
 	xpath-version=	"2.0"
 	
