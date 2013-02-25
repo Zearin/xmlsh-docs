@@ -28,16 +28,17 @@
 	
 	
 	<p:documentation>
-		<h:p>Convert the custom-XML 'commands.xml' into a series of DocBook files.</h:p>
+		<h:p>Convert the custom-XML 'legacy-commands.xml' into a series of DocBook files.</h:p>
 	</p:documentation>
 	
-	
+	<p:option  name    ="source" 
+	           select  ="legacy-commands.xml" />
 	
 	<!--	
 		I/O
 	======================================================================== -->
 	<p:input	port="source">
-		<p:document href="legacy-commands.xml" />
+		<p:document href="$source" />
 	</p:input>
 	
 	<p:output	port="result" sequence="true">
@@ -67,9 +68,9 @@
 	<!--
 		IMPORTS
 	======================================================================== -->
-	<p:import	href="http://xmlcalabash.com/extension/steps/library-1.0.xpl"	/>
+	<!--<p:import	href="http://xmlcalabash.com/extension/steps/library-1.0.xpl"	/>
 	<p:import	href="http://xmlcalabash.com/extension/steps/fileutils.xpl"		/>
-	<p:import	href="http://xmlcalabash.com/extension/steps/osutils.xpl"		/>
+	<p:import	href="http://xmlcalabash.com/extension/steps/osutils.xpl"		/>-->
 	
 	<!--<p:import	href="src/lib/mylib-xproc/ex-recursive-directory-list.xpl"		/>-->
     
