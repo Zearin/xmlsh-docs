@@ -1,0 +1,3 @@
+[submodule "xmlsh-mirror"]
+	path = xmlsh-mirror
+	url = ssh://amrogers@localhost/Users/amrogers/Developer/Projects/xmlsh-mirror
