@@ -37,7 +37,7 @@
 		I/O
 	======================================================================== -->
 	<p:input	port="source">
-		<p:document href="commands.xml" />
+		<p:document href="legacy-commands.xml" />
 	</p:input>
 	
 	<p:output	port="result" sequence="true">

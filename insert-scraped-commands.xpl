@@ -41,7 +41,7 @@
 		I/O
 	======================================================================== -->
 	<p:input	port="insertion">
-		<p:document href="http-scraped-commands/cd.xml" />
+		<p:document href="build/http-scraped-commands/cd.xml" />
 	</p:input>
 	
 	
