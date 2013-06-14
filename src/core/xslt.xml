@@ -32,7 +32,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xslt</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

@@ -1,19 +1,9 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <!--
 	Skeletal referentry for XMLSH.
 	
 	@see
 		http://www.docbook.org/tdg5/en/html/refentry.html
--->
-<refentry	xmlns	   = "http://docbook.org/ns/docbook" 
-        	xmlns:xi   = "http://www.w3.org/2001/XInclude"
-        	xmlns:xl   = "http://www.w3.org/1999/xlink"  
-        	
-        	version	   ="5.0"
-        	remap      ="command"
-        	role       ="core"
-        	label      ="xmkpipe"
-	>
+--><refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" remap="command" role="core" label="xmkpipe">
     
     
     <!--
@@ -26,7 +16,7 @@
 	-->
 	<refmeta>
 		<refentrytitle>
-			<command remap="command/@name"> </command>
+			<command remap="command/@name">xmkpipe</command>
 		</refentrytitle>
 		
 		<manvolnum>1</manvolnum>
@@ -78,9 +68,9 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name"> </refname>
+		<refname remap="command/@name">xmkpipe</refname>
 		
-		<refpurpose remap="command/synopsis"></refpurpose>
+		<refpurpose remap="command/synopsis"/>
 		
 		<refclass>
 			<!--builtin-->
@@ -102,11 +92,11 @@
 	-->
 	<refsynopsisdiv remap="command/usage">
 		<cmdsynopsis>
-			<command> </command> 
+			<command>xmkpipe</command> 
 			
-			<arg></arg>
-			<arg></arg>
-			<arg></arg>
+			<arg/>
+			<arg/>
+			<arg/>
 		</cmdsynopsis>
 	</refsynopsisdiv>
 	
@@ -122,22 +112,22 @@
 	-->
 	<refsection>
 		<title>Description</title>
-		<para></para>
+		<para/>
 	</refsection>
 	
 	<refsection>
 		<title>Implementation</title>
-		<para></para>
+		<para/>
 	</refsection>
 
 	<refsection>
 		<title>Return Value</title>
-		<para></para>
+		<para/>
 	</refsection>
 		
 	<refsection>
 		<title>See Also</title>
-		<para><uri remap="command/@url"></uri></para>
+		<para><uri remap="command/@url"/></para>
 	</refsection>
 	
 </refentry>
