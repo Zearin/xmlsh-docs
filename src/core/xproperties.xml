@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
-	xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xproperties" role="core">
+<refentry 
+    xmlns="http://docbook.org/ns/docbook" 
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xl="http://www.w3.org/1999/xlink"
+	
+	 
+        	
+        	version	   = "5.0"
+        	remap      ="command"
+        	role       ="core"
+        	label      ="xproperties"
+>
 	<refmeta>
 		<refentrytitle>
 			<command>xproperties</command>
@@ -21,7 +31,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xproperties</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

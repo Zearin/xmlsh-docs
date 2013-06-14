@@ -5,13 +5,15 @@
 	@see
 		http://www.docbook.org/tdg5/en/html/refentry.html
 -->
-<refentry	xmlns	   = "http://docbook.org/ns/docbook" 
+<refentry	xmlns	   = "http://docbook.org/ns/docbook"
+            xmlns:db   = "http://docbook.org/ns/docbook"
         	xmlns:xi   = "http://www.w3.org/2001/XInclude"
-        	xmlns:xl   = "http://www.w3.org/1999/xlink" 
-        	version	   = "5.0"
+        	xmlns:xl   = "http://www.w3.org/1999/xlink"  
         	
+        	version	   ="5.0"
         	remap      ="command"
-        	conformance=""
+        	role       ="core"
+        	label      ="xunquote"
 	>
     
     
@@ -25,7 +27,7 @@
 	-->
 	<refmeta>
 		<refentrytitle>
-			<command remap="command/@name"></command>
+			<command remap="command/@name">xunquote</command>
 		</refentrytitle>
 		
 		<manvolnum>1</manvolnum>
@@ -77,7 +79,7 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name"></refname>
+		<refname remap="command/@name">xunquote</refname>
 		
 		<refpurpose remap="command/synopsis"></refpurpose>
 		
@@ -101,7 +103,7 @@
 	-->
 	<refsynopsisdiv remap="command/usage">
 		<cmdsynopsis>
-			<command></command> 
+			<command>xunquote</command> 
 			
 			<arg></arg>
 			<arg></arg>
