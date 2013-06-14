@@ -21,7 +21,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xwhich</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xcat</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

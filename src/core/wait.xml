@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>wait</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

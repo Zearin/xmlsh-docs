@@ -13,7 +13,7 @@
 		<refentrytitle>
 			<command>break</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
@@ -29,8 +29,7 @@
     
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
-			<arg />
+			<command>break</command>
 		</cmdsynopsis>
 	</refsynopsisdiv>
 

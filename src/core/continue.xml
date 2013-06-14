@@ -28,8 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
-			<arg />
+			<command>continue</command>
 		</cmdsynopsis>
 	</refsynopsisdiv>
 

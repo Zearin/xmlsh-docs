@@ -21,7 +21,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xsql</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

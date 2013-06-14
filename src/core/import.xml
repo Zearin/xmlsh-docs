@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>import</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

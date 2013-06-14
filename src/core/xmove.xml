@@ -21,7 +21,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xmove</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

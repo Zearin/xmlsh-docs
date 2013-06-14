@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xgrep</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

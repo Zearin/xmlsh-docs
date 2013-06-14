@@ -19,8 +19,7 @@
 	<refnamediv>
 		<refname>:</refname>
 		<refpurpose>
-			<command>:</command> is the null command. It can be used in places where a command is
-			required syntatcially but none is needed. 
+			<command>:</command> is the null command. It can be used in places where a command is required syntatcially but none is needed. 
 		</refpurpose>
 		<refclass>
 			<!--builtin-->
@@ -31,7 +30,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>:</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

@@ -21,7 +21,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xsplit</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

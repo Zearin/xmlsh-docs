@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xaddbase</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

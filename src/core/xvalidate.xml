@@ -21,7 +21,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xvalidate</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

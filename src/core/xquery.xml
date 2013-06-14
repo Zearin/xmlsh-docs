@@ -21,7 +21,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xquery</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

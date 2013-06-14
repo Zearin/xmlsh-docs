@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xecho</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

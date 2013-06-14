@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xmd5sum</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

@@ -21,7 +21,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xuri</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xaddattribute</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

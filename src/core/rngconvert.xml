@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>rngconvert</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

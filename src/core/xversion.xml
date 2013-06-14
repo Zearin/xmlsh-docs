@@ -21,7 +21,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xversion</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

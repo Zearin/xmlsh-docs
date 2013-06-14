@@ -21,7 +21,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xunzip</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

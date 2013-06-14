@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xgetopts</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

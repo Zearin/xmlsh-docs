@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xidentity</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

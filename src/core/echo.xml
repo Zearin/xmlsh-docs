@@ -29,7 +29,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>echo</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

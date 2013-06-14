@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xinclude</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xpath</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

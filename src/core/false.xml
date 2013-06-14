@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>false</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>rngvalidate</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

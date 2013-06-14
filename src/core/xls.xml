@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xls</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

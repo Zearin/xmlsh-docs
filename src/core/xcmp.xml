@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>xcmp</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

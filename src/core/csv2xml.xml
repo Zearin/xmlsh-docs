@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>csv2xml</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>

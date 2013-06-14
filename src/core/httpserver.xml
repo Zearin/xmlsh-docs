@@ -28,7 +28,7 @@
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
-			<command />
+			<command>httpserver</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>
