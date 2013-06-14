@@ -1,9 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<?xml-stylesheet type="text/css" href="/Users/amrogers/Developer/Applications/oxygen/frameworks/xproc/css/xproc.css"?>
-<p:pipeline
-	name		=	"untitled"
-	
-	version		=	"1.0"
+<p:library
+    version		=	"1.0"
 	xpath-version=	"2.0"
 	
     xmlns:p		=	"http://www.w3.org/ns/xproc"
@@ -23,7 +20,6 @@
 	
     xmlns:h		=	"http://www.w3.org/1999/xhtml/"
     xmlns:xsl	=	"http://www.w3.org/1999/XSL/Transform"
-    xmlns:db	=	"http://docbook.org/ns/docbook"
 	
 	xmlns:local	=	"#empty">
 	
@@ -34,29 +30,7 @@
 		<h:p>[ DESCRIBE THIS PIPELINE'S PURPOSE ]	</h:p>
 	
 	</p:documentation>
-	
-	
-	
-	<!--
-		I/O
-	======================================================================== -->
-	<p:input	port="insertion">
-		<p:document href="build/http-scraped-commands/cd.xml" />
-	</p:input>
-	
-	
-	
-	<!--	
-		SERIALIZATIONS 
-		May bind to any output (not just "result").
-	======================================================================== -->
-	<p:serialization
-		port				="result" 
-	 	encoding			="UTF-8" 
-	 	omit-xml-declaration="false" 
-	 	version				="1.0"
-	/>
-	
+
 	
 	<!--
 		IMPORTS
@@ -65,17 +39,22 @@
 	<p:import	href="http://xmlcalabash.com/extension/steps/fileutils.xpl"		/>
 	<p:import	href="http://xmlcalabash.com/extension/steps/osutils.xpl"		/>
 	
-	<!--<p:import	href="src/lib/mylib-xproc/ex-recursive-directory-list.xpl"		/>-->
+	<p:import	href="src/lib/mylib-xproc/ex-recursive-directory-list.xpl"		/>
     
+	<!-- 
+	   
+	-->
+	<p:declare-step name="fetch-command-html" type="local:fetch-command-html">
+	    <!-- I/O -->
+	    <p:input   port="source"><p:empty /></p:input>
+	    <p:output  port="result" sequence="false" />
+	    <!-- Options -->
+	    <p:option  name="command-name" required="true" />
+	    
+	    <p:variable name="base-uri" select="'http://www.xmlsh.org/Command'" />
+	    
+	    
+	</p:declare-step>
 	
 	
-	<!--	
-		MAIN PIPELINE CONTENT
-	======================================================================== -->
-	<p:insert match="db:refsection[ last() ]" position="before">
-		<p:input port="insertion" >
-			<p:pipe port="insertion" step="untitled" />
-		</p:input>
-	</p:insert>
-	
-</p:pipeline>
+</p:library>

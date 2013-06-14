@@ -1,26 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model type="application/xml"
-			href="http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" 
-?>
 <!--
 	Skeletal referentry for XMLSH.
 	
 	@see
 		http://www.docbook.org/tdg5/en/html/refentry.html
 -->
-<refentry	xmlns	= "http://docbook.org/ns/docbook" 
-        	xmlns:xi= "http://www.w3.org/2001/XInclude"
-        	xmlns:xl= "http://www.w3.org/1999/xlink" 
-        	version	= "5.0"
+<refentry	xmlns	   = "http://docbook.org/ns/docbook" 
+        	xmlns:xi   = "http://www.w3.org/2001/XInclude"
+        	xmlns:xl   = "http://www.w3.org/1999/xlink" 
+        	version	   = "5.0"
         	
-        	remap="command"
+        	remap      ="command"
         	conformance=""
 	>
-
-
-	<!--    
-		Extended metadata.  
-		(Not required, but useful)
+    
+    
+    <!--
+		Extended metadata.
+		
+		(Not required, but useful.  Must come first in refentry.)
 		
 		@see
 			http://www.docbook.org/tdg5/en/html/refmeta.html
@@ -34,9 +32,6 @@
 
 		<refmiscinfo>
 			<!--
-				@see
-					http://www.docbook.org/tdg5/en/html/refmiscinfo.html
-				
 				Meta-information for a reference entry other than the title and 
 				volume number.
 				
@@ -45,9 +40,15 @@
 				information, release or revision information, descriptive text 
 				for use in a print header or footer, or any other information 
 				not explicitly provided for in refmeta.
+				
+				@see
+					http://www.docbook.org/tdg5/en/html/refmiscinfo.html
 			-->
 		</refmiscinfo>
 	</refmeta>
+
+
+	
 	
 	
 	
@@ -85,14 +86,15 @@
 			<!--command-->
 			<!--function-->
 		</refclass>
-	</refnamediv>
-	
+	</refnamediv>	
 	
 	
 	<!--	
-		Quick-snyopsis info.  Equivalent to `[command] -usage`.
+		Quick-snyopsis info.  
 		
-		(Not required by DocBook.  Should be required for XMLSH.)
+		Equivalent to `[command] -usage`.
+		
+		(Not required by DocBook; SHOULD require for XMLSH.)
 		
 		@see
 			http://www.docbook.org/tdg5/en/html/refsynopsisdiv.html
@@ -109,7 +111,7 @@
 	
 	
 	
-	<!--	
+	<!--
 		Full documentation.
 		
 		Equivalent to a manpage.
@@ -126,7 +128,6 @@
 		<title>Implementation</title>
 		<para></para>
 	</refsection>
-
 
 	<refsection>
 		<title>Return Value</title>
