@@ -1,44 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<refentry
-	xmlns	="http://docbook.org/ns/docbook"
-	xmlns:xi="http://www.w3.org/2001/XInclude"
-	xmlns:xl="http://www.w3.org/1999/xlink"
-	
-	version	="5.0"
-	label	="exit" 
-	role	="core"
+<refentry 
+    xmlns="http://docbook.org/ns/docbook" 
+    xmlns:xi="http://www.w3.org/2001/XInclude" 
+    xmlns:xl="http://www.w3.org/1999/xlink" 
+    
+    version="5.0" 
+    label="exit" 
+    role="core"
 >
-      <refmeta>
+
+    <refmeta>
         <refentrytitle>
             <command>exit</command>
         </refentrytitle>
-        <manvolnum/>
-      </refmeta>
+        <manvolnum>1</manvolnum>
+    </refmeta>
 
-      <refnamediv>
+    <refnamediv>
         <refname>exit</refname>
-        <refpurpose>Exit the shell, script, or function</refpurpose>
-        <refclass>
-<!--builtin-->
+        <refpurpose>Exit the current shell, script, or function</refpurpose>
+    </refnamediv>
 
-<!--command-->
 
-<!--function-->
-        </refclass>
-      </refnamediv>
-
-    
-      <refsynopsisdiv>
+    <refsynopsisdiv>
         <cmdsynopsis>
-            <command/>
-            <arg/>
+            <command>exit</command>
+            <arg choice="opt"><replaceable>EXITCODE</replaceable></arg>
         </cmdsynopsis>
-      </refsynopsisdiv>
 
-      <refsection>
+        <para>Exits the current shell. If <replaceable>EXITCODE</replaceable> is specified, it is used as the exit value; otherwise, the return value is <returnvalue>0</returnvalue>.</para>
+        <para>If running an xmlsh script, exits the script with the specified exit code.</para>
+        <para>If running interactively, exits <application>xmlsh</application>.</para>
+    </refsynopsisdiv>
+    
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>Returns the value specified by <replaceable>EXITCODE</replaceable>, or <returnvalue>0</returnvalue> by default.</para>
+    </refsection>
+    
+
+    <refsection>
         <title>See Also</title>
         <para>
             <uri>http://www.xmlsh.org/CommandExit</uri>
         </para>
-      </refsection>
-   </refentry>
+    </refsection>
+</refentry>

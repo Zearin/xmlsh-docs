@@ -8,31 +8,53 @@
 	label	="fixed2xml" 
 	role	="core streaming"
 >
+    
 	<refmeta>
 		<refentrytitle>
 			<command>fixed2xml</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>fixed2xml</refname>
-		<refpurpose>Convert fixed-field data to XML</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
+		<refpurpose>Converts fixed-width field data to XML</refpurpose>
 	</refnamediv>
 
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>fixed2xml</command>
-			<arg />
+			<group>
+			    <option>-root <replaceable>ROOTNAME</replaceable></option>
+			    <option>-row <replaceable>ROWNAME</replaceable></option>
+			    <option>-col <replaceable>COLNAME</replaceable></option>
+			    <option>-colspecs <replaceable>SPECS</replaceable></option>
+			    <option>-colnames <replaceable>NAMES</replaceable></option>
+			    <option>-encoding <replaceable>ENCODING</replaceable></option>
+			    <option>-header</option>
+			    <option>-attr</option>
+			    <option>-nonorm</option>
+			    <option>-skip <replaceable>LINES</replaceable></option>
+			</group>
+		    
+		    
 		</cmdsynopsis>
+	    
+	    <para>If <option>-colnames</option> is specified, its argument is taken to be either a sequence of strings, or a single string which is comma-seperated, which specifies the column names to be used.</para>
+        <para>If <option>-header</option> is specified, the first row of the fixed file is used as values for column names.</para>
+        <para><option>-colspecs</option> is required. Its argument is a sequence or "," deliminted string of column specs. A column spec is either "start-end" or "start", where start and end are integer column positions starting at one. For example "1-3,5-6,7-9" or &lt;[ "1-3" , "5-6" , "7-9" ]&gt;</para>
+        <para>If  <option>-end</option> is omitted, the remainder of the line is used.</para>
+        <para>Column specs may overlap (e.g "1-10,5-12" )</para>
 	</refsynopsisdiv>
-
+    
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>Returns <returnvalue>0</returnvalue> if the conversion is successful.</para>
+    </refsection>
+    
+    
 	<refsection>
 		<title>See Also</title>
 		<para>

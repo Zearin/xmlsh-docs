@@ -17,12 +17,7 @@
 
 	<refnamediv>
 		<refname>csv2xml</refname>
-		<refpurpose>Convert CSV to XML</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
+		<refpurpose>Convert a CSV file to an XML file</refpurpose>
 	</refnamediv>
 
 
@@ -32,6 +27,11 @@
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>Returns <returnvalue>0</returnvalue> if the conversion was successful.</para>
+    </refsection>
 
 	<refsection>
 		<title>See Also</title>

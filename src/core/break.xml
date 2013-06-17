@@ -17,7 +17,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>break</refname>
+		<refname>
+		    <command>break</command>
+		</refname>
 		<refpurpose>Exits one level of a <command>while</command>, <command>for</command>, or <command>until</command></refpurpose>
 		<refclass>
 			<!--builtin-->
@@ -32,6 +34,11 @@
 			<command>break</command>
 		</cmdsynopsis>
 	</refsynopsisdiv>
+    
+    <refsection>
+		<title>Return Value</title>
+		<para>None</para>
+	</refsection>
 
 	<refsection>
 		<title>See Also</title>

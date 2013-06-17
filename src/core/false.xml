@@ -8,31 +8,32 @@
 	label	="false" 
 	role	="core"
 >
+    
 	<refmeta>
 		<refentrytitle>
 			<command>false</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>false</refname>
 		<refpurpose>Returns false</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>false</command>
-			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>
-
+    
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>Returns <returnvalue>1</returnvalue>, which is considered false.</para>
+    </refsection>
+    
 	<refsection>
 		<title>See Also</title>
 		<para>

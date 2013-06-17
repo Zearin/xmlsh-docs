@@ -12,17 +12,12 @@
 		<refentrytitle>
 			<command>true</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>true</refname>
 		<refpurpose>Return true</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 
@@ -32,6 +27,11 @@
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>Returns <returnvalue>0</returnvalue>, which is considered true.</para>
+    </refsection>
 
 	<refsection>
 		<title>See Also</title>

@@ -18,23 +18,23 @@
 
 	<refnamediv>
 		<refname>:</refname>
+	    <refname>Colon</refname>
 		<refpurpose>
 			<command>:</command> is the null command. It can be used in places where a command is required syntatcially but none is needed. 
 		</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>:</command>
-			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>
-
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>None</para>
+    </refsection>
+    
 	<refsection>
 		<title>See Also</title>
 		<para>

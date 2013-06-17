@@ -12,17 +12,12 @@
 		<refentrytitle>
 			<command>xgetopts</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>xgetopts</refname>
 		<refpurpose>Parse arguments into XML</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 
@@ -32,6 +27,11 @@
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>FIXME</para>
+    </refsection>
 
 	<refsection>
 		<title>See Also</title>

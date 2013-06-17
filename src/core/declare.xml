@@ -12,25 +12,54 @@
 		<refentrytitle>
 			<command>declare</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>declare</refname>
-		<refpurpose>Declare (or list) namespaces</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
+		<refpurpose>List or declare namespaces</refpurpose>
 	</refnamediv>
+
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>declare</command>
-			<arg />
+			<arg choice="opt">
+			    <replaceable>namespace</replaceable>
+			    
+			    <arg choice="opt">prefix
+			        <arg choice="opt">=<replaceable>URI</replaceable></arg>
+			    </arg>
+			</arg>
 		</cmdsynopsis>
+	    
+	    <para>The <command>declare</command> command adds global declarations to the shell.</para>
+	    
+	    <para>
+	        Currently, <command>declare namespace</command> is the only available subcommand.
+	        This may include 'serialization' in the future.
+	    </para>
+        
+        <para>If used with a prefix but not a URI, the namespace is undeclared for the prefix.</para>
+	    
 	</refsynopsisdiv>
+    
+    
+    <refsection>
+        <title>Examples</title>
+        
+        <example>
+            <title>Undeclare a namespace</title>
+            <para><userinput>declare namespace <replaceable>ns</replaceable></userinput></para>
+        </example>
+    </refsection>
+    
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>FIXME</para>
+    </refsection>
+
 
 	<refsection>
 		<title>See Also</title>

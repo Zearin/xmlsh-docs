@@ -1,9 +1,14 @@
-<!--
-	Skeletal referentry for XMLSH.
-	
-	@see
-		http://www.docbook.org/tdg5/en/html/refentry.html
---><refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" remap="command" role="core" label="schematron">
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry 
+    xmlns="http://docbook.org/ns/docbook" 
+    xmlns:xi="http://www.w3.org/2001/XInclude" 
+    xmlns:xl="http://www.w3.org/1999/xlink" 
+    
+    version="5.0" 
+    remap="command" 
+    role="core" 
+    label="schematron"
+>
     
     
     <!--
@@ -71,12 +76,6 @@
 		<refname remap="command/@name">schematron</refname>
 		
 		<refpurpose remap="command/synopsis"/>
-		
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>	
 	
 	
@@ -84,9 +83,7 @@
 		Quick-snyopsis info.  
 		
 		Equivalent to `[command] -usage`.
-		
-		(Not required by DocBook; SHOULD require for XMLSH.)
-		
+				
 		@see
 			http://www.docbook.org/tdg5/en/html/refsynopsisdiv.html
 	-->
@@ -121,9 +118,9 @@
 	</refsection>
 
 	<refsection>
-		<title>Return Value</title>
-		<para/>
-	</refsection>
+        <title>Return Value</title>
+        <para>FIXME</para>
+    </refsection>
 		
 	<refsection>
 		<title>See Also</title>

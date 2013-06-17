@@ -118,7 +118,6 @@
         <p>Rules for the structure of refsection elements.  
            Each rule corresponds to a different section title.</p>
         
-        
         <rule context="db:refsection[ db:title = 'Return Value' ]">
             <assert test="descendant::db:returnvalue or descendant::text() = 'None'">
                 Should have either the text 'None' or a 'returnvalue' element.

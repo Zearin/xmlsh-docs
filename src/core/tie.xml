@@ -8,21 +8,18 @@
 	label	="tie" 
 	role	="core"
 >
+    
 	<refmeta>
 		<refentrytitle>
 			<command>tie</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
+
 
 	<refnamediv>
 		<refname>tie</refname>
 		<refpurpose>Tie an XQuery to a variable for convenience</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 
@@ -32,6 +29,13 @@
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>
+    
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>FIXME</para>
+    </refsection>
+
 
 	<refsection>
 		<title>See Also</title>

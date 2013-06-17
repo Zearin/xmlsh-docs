@@ -6,22 +6,19 @@
 	
 	version	="5.0"
 	label	="eval" 
-	role	="core">
-	<refmeta>
+	role	="core"
+>
+	
+    <refmeta>
 		<refentrytitle>
 			<command>eval</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>eval</refname>
-		<refpurpose>Evaluate a shell command</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
+		<refpurpose>Evaluates arguments as a shell command</refpurpose>
 	</refnamediv>
 
 
@@ -30,8 +27,15 @@
 			<command>eval</command>
 			<arg />
 		</cmdsynopsis>
+	    
+	    <para>The eval command parses its arguments, concatenates them with spaces then passes the resultant string to the current Shell for evaluation and execution. This command can be used to dynamically construct and execute commands.</para>
 	</refsynopsisdiv>
-
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>FIXME</para>
+    </refsection>
+    
 	<refsection>
 		<title>See Also</title>
 		<para>

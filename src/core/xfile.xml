@@ -12,19 +12,13 @@
 		<refentrytitle>
 			<command>xfile</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>xfile</refname>
 		<refpurpose>File name manipulations</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
-
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
@@ -32,6 +26,11 @@
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>FIXME</para>
+    </refsection>
 
 	<refsection>
 		<title>See Also</title>

@@ -12,17 +12,12 @@
 		<refentrytitle>
 			<command>continue</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>continue</refname>
 		<refpurpose>Continue one iteration of a loop</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 
@@ -31,6 +26,11 @@
 			<command>continue</command>
 		</cmdsynopsis>
 	</refsynopsisdiv>
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>None</para>
+    </refsection>
 
 	<refsection>
 		<title>See Also</title>

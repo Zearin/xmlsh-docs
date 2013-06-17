@@ -12,17 +12,12 @@
 		<refentrytitle>
 			<command>jobs</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>jobs</refname>
 		<refpurpose>Print jobs</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 
@@ -32,7 +27,12 @@
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>
-
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>FIXME</para>
+    </refsection>
+    
 	<refsection>
 		<title>See Also</title>
 		<para>

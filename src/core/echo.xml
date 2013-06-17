@@ -18,22 +18,35 @@
 
 	<refnamediv>
 		<refname>echo</refname>
-		<refpurpose>Print arguments as text</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
+		<refpurpose>Prints arguments to STDOUT</refpurpose>
 	</refnamediv>
 
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>echo</command>
-			<arg />
+		    
+		    <group>
+		        <option>-n</option>
+		        <option>-p, -port <replaceable>PORT</replaceable></option>
+		    </group>
+		    
+		    <arg choice="opt" rep="repeat">ARGS</arg>
 		</cmdsynopsis>
+        
+        <para>Prints its arguments to the standard output seperated by a space.</para>
+        <para>If no arguments are given, a single blank line ("\n") is printed.</para>
+        <para>If arguments are XML expressions, they are written in normal text serialized format.</para>
+        <para>XML Sequences are output seperated by spaces.</para>
+        <para>A newline is printed at the end of all arguments.  
+              You can disable this with the <option>-n</option> option.</para>
 	</refsynopsisdiv>
-
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>FIXME</para>
+    </refsection>
+    
 	<refsection>
 		<title>See Also</title>
 		<para>

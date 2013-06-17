@@ -6,8 +6,10 @@
 	
 	version	="5.0"
 	label	="read" 
-	role	="core">
-	<refmeta>
+	role	="core"
+>
+	
+    <refmeta>
 		<refentrytitle>
 			<command>read</command>
 		</refentrytitle>
@@ -24,13 +26,17 @@
 		</refclass>
 	</refnamediv>
 
-
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>read</command>
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>FIXME</para>
+    </refsection>
 
 	<refsection>
 		<title>See Also</title>

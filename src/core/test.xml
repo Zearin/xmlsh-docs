@@ -12,17 +12,12 @@
 		<refentrytitle>
 			<command>test</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>test</refname>
 		<refpurpose>Evaluate expressions</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 
@@ -36,6 +31,11 @@
 			<arg />
 		</cmdsynopsis>
 	</refsynopsisdiv>
+
+    <refsection>
+        <title>Return Value</title>
+        <para>FIXME</para>
+    </refsection>
 
 	<refsection>
 		<title>See Also</title>

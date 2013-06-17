@@ -18,19 +18,25 @@
 	<refnamediv>
 		<refname>help</refname>
 		<refpurpose>Help for xmlsh commands</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>help</command>
-			<arg />
+			<group>
+			    <option>-n,-nobrowse</option>
+			</group>
 		</cmdsynopsis>
+	    
+	    <para>The help command provides online help for xmlsh commands and syntax.</para>
+        <para>A minimum amount of help, typically a synopsis, is availble with the installed xmlsh product and is printed on the output.</para>
+        <para>If a command or topic has more detailed help available online, the URL is printed and optinonaly a broweser</para> 
 	</refsynopsisdiv>
+    
+    <refsection>
+        <title>Return Value</title>
+        <para>FIXME</para>
+    </refsection>
 
 	<refsection>
 		<title>See Also</title>
