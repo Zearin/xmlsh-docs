@@ -128,7 +128,7 @@
 		
 	<refsection>
 		<title>See Also</title>
-		<para><uri remap="command/@url"/></para>
+		<para><uri remap="command/@url">http://www.xmlsh.org/CommandXdelattribute</uri></para>
 	</refsection>
 	
 </refentry>
