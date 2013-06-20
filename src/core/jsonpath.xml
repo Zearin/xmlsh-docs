@@ -1,9 +1,5 @@
-<!--
-	Skeletal referentry for XMLSH.
-	
-	@see
-		http://www.docbook.org/tdg5/en/html/refentry.html
---><refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" remap="command" role="core" label="jsonpath">
+<?xml version="1.0" encoding="UTF-8"?>
+<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" remap="command" role="core" label="jsonpath">
     
     
     <!--
