@@ -11,6 +11,7 @@
         	
         	version	   ="5.0"
         	remap      ="command"
+        	role       ="posix streaming"
         	label      ="tee"
 >
     
