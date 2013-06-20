@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>jcall</refname>
+		<refname>
+		    <command>jcall</command>
+		</refname>
 		<refpurpose>Call Java from within the same JVM</refpurpose>
 	</refnamediv>
 

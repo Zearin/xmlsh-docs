@@ -68,7 +68,9 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name">jsonpath</refname>
+		<refname remap="command/@name">
+		    <command>jsonpath</command>
+		</refname>
 		
 		<refpurpose remap="command/synopsis"/>
 	</refnamediv>	

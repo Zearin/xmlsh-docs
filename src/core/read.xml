@@ -17,7 +17,7 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>read</refname>
+		<refname><command>read</command></refname>
 		<refpurpose>Reads text into a variable</refpurpose>
 	</refnamediv>
 

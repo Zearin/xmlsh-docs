@@ -68,7 +68,9 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name">json2xml</refname>
+		<refname remap="command/@name">
+		    <command>json2xml</command>
+		</refname>
 	    <refpurpose remap="command/synopsis"/>
 	</refnamediv>	
 	

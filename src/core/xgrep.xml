@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xgrep</refname>
+		<refname>
+		    <command>xgrep</command>
+		</refname>
 		<refpurpose>Search for patterns in files</refpurpose>
 	</refnamediv>
 

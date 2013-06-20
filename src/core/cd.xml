@@ -17,7 +17,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>cd</refname>
+        <refname>
+            <command>cd</command>
+        </refname>
 		<refpurpose>Changes the working directory of the current shell.</refpurpose>
 	</refnamediv>
 
@@ -26,6 +28,7 @@
 			<command>cd</command>
 			<arg choice="opt"><replaceable>PATH</replaceable></arg>
 		</cmdsynopsis>
+	    
 	    <para>If unspecified, changes to the user’s home directory.</para>
 	    <para><command>cd</command> resolves the home directory by checking the following in order:
 	        

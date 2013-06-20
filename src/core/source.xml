@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>source</refname>
+		<refname>
+		    <command>source</command>
+		</refname>
 		<refpurpose>Execute a script within the current shell</refpurpose>
 	</refnamediv>
 

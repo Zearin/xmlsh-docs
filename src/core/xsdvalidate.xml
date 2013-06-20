@@ -9,7 +9,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xsdvalidate</refname>
+		<refname>
+		    <command>xsdvalidate</command>
+		</refname>
 		<refpurpose>Validate a document against a W3C XSD schema</refpurpose>
 	</refnamediv>
 

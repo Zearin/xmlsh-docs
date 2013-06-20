@@ -73,7 +73,9 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name">schematron</refname>
+		<refname remap="command/@name">
+		    <command>schematron</command>
+		</refname>
 		
 		<refpurpose remap="command/synopsis"/>
 	</refnamediv>	

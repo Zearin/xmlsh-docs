@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xaddbase</refname>
+		<refname>
+		    <command>xaddbase</command>
+		</refname>
 		<refpurpose>Add xml:base attributes</refpurpose>
 	</refnamediv>
 

@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xpath</refname>
+		<refname>
+		    <command>xpath</command>
+		</refname>
 		<refpurpose>Run XPath (2.0) expressions on XML</refpurpose>
 	</refnamediv>
 

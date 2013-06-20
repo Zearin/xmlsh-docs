@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>http</refname>
+		<refname>
+		    <command>http</command>
+		</refname>
 		<refpurpose>HTTP client command</refpurpose>
 	</refnamediv>
 

@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>jobs</refname>
+		<refname>
+		    <command>jobs</command>
+		</refname>
 		<refpurpose>Print jobs</refpurpose>
 	</refnamediv>
 

@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xls</refname>
+		<refname>
+		    <command>xls</command>
+		</refname>
 		<refpurpose>List files in a directory</refpurpose>
 	</refnamediv>
 

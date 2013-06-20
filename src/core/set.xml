@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>set</refname>
+		<refname>
+		    <command>set</command>
+		</refname>
 		<refpurpose>Set positional parameters and view variables</refpurpose>
 	</refnamediv>
 

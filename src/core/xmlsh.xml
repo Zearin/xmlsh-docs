@@ -9,7 +9,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xmlsh</refname>
+		<refname>
+		    <command>xmlsh</command>
+		</refname>
 		<refpurpose>Run a sub shell</refpurpose>
 	</refnamediv>
 

@@ -15,7 +15,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xzip</refname>
+		<refname>
+		    <command>xzip</command>
+		</refname>
 		<refpurpose>Extract (or list) the contents of a zip file</refpurpose>
 	</refnamediv>
 

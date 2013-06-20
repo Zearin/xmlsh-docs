@@ -70,7 +70,9 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name">xgzip</refname>
+		<refname remap="command/@name">
+		    <command>xgzip</command>
+		</refname>
 		
 		<refpurpose remap="command/synopsis"></refpurpose>
 	</refnamediv>	

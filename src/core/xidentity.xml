@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xidentity</refname>
+		<refname>
+		    <command>xidentity</command>
+		</refname>
 		<refpurpose>Output an identical copy of the input</refpurpose>
 	</refnamediv>
 

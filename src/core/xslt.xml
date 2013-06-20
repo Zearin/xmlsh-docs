@@ -20,7 +20,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xslt</refname>
+		<refname>
+		    <command>xslt</command>
+		</refname>
 		<refpurpose>Run an XSLT 2.0 transformation</refpurpose>
 	</refnamediv>
 

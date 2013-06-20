@@ -17,7 +17,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>import</refname>
+		<refname>
+		    <command>import</command>
+		</refname>
 		<refpurpose>Import modules, packages, and commands</refpurpose>
 	</refnamediv>
 

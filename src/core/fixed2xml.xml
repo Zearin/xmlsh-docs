@@ -17,7 +17,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>fixed2xml</refname>
+		<refname>
+		    <command>fixed2xml</command>
+		</refname>
 		<refpurpose>Converts fixed-width field data to XML</refpurpose>
 	</refnamediv>
 

@@ -73,7 +73,9 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name">xdelattribute</refname>
+		<refname remap="command/@name">
+		    <command>xdelattribute</command>
+		</refname>
 		
 		<refpurpose remap="command/synopsis"/>
 	</refnamediv>	

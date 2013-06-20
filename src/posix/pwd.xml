@@ -26,7 +26,7 @@
 	-->
 	<refmeta>
 		<refentrytitle>
-			<command remap="command/@name"></command>
+			<command remap="command/@name">pwd</command>
 		</refentrytitle>
 		
 		<manvolnum>1</manvolnum>
@@ -78,7 +78,7 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name"></refname>
+		<refname remap="command/@name">pwd</refname>
 		
 		<refpurpose remap="command/synopsis"></refpurpose>
 	</refnamediv>	
@@ -96,7 +96,7 @@
 	-->
 	<refsynopsisdiv remap="command/usage">
 		<cmdsynopsis>
-			<command></command> 
+			<command>pwd</command> 
 			
 			<arg></arg>
 			<arg></arg>

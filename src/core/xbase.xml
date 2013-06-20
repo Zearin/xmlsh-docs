@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xbase</refname>
+		<refname>
+		    <command>xbase</command>
+		</refname>
 		<refpurpose>Extract the base URI from a document or node</refpurpose>
 	</refnamediv>
 

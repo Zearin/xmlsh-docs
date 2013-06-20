@@ -9,7 +9,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xunzip</refname>
+		<refname>
+		    <command>xunzip</command>
+		</refname>
 		<refpurpose>Extract (or list) the contents from a zip file</refpurpose>
 	</refnamediv>
 

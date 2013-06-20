@@ -9,7 +9,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xmove</refname>
+		<refname>
+		    <command>xmove</command>
+		</refname>
 		<refpurpose>Move (and/or rename) XML files, based on an expression in the file</refpurpose>
 	</refnamediv>
 

@@ -18,7 +18,9 @@
 
 
 	<refnamediv>
-		<refname>tie</refname>
+		<refname>
+		    <command>tie</command>
+		</refname>
 		<refpurpose>Tie an XQuery to a variable for convenience</refpurpose>
 	</refnamediv>
 

@@ -9,7 +9,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xsql</refname>
+		<refname>
+		    <command>xsql</command>
+		</refname>
 		<refpurpose>Query a relational database using JDBC</refpurpose>
 	</refnamediv>
 

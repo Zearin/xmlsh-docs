@@ -16,7 +16,7 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>return</refname>
+		<refname><command>return</command></refname>
 		<refpurpose>Return from a function</refpurpose>
 	</refnamediv>
 

@@ -17,7 +17,7 @@
     </refmeta>
 
     <refnamediv>
-        <refname>exit</refname>
+        <refname><command>exit</command></refname>
         <refpurpose>Exit the current shell, script, or function</refpurpose>
     </refnamediv>
 

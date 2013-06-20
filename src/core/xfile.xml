@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xfile</refname>
+		<refname>
+		    <command>xfile</command>
+		</refname>
 		<refpurpose>File name manipulations</refpurpose>
 	</refnamediv>
 

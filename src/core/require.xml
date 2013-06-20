@@ -16,7 +16,7 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>require</refname>
+		<refname><command>require</command></refname>
 		<refpurpose>Check the current shell against a specified minimum version</refpurpose>
 	</refnamediv>
 

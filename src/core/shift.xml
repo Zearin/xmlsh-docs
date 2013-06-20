@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>shift</refname>
+		<refname>
+		    <command>shift</command>
+		</refname>
 		<refpurpose>Shift positional parameters</refpurpose>
 	</refnamediv>
 

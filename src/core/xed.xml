@@ -16,7 +16,7 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xed</refname>
+		<refname><command>xed</command></refname>
 		<refpurpose>XPath-based XML edit</refpurpose>
 	</refnamediv>
 

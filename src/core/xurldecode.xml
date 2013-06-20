@@ -68,7 +68,9 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name">xurldecode</refname>
+		<refname remap="command/@name">
+		    <command>xurldecode</command>
+		</refname>
 		
 		<refpurpose remap="command/synopsis"/>
 	</refnamediv>	

@@ -3,18 +3,20 @@
         <refentrytitle>
             <command>xslt1</command>
         </refentrytitle>
-        <manvolnum/>
+        <manvolnum>1</manvolnum>
       </refmeta>
 
       <refnamediv>
-        <refname>xslt1</refname>
+        <refname>
+            <command>xslt1</command>
+        </refname>
         <refpurpose>Run an XSLT 1.0 transformation</refpurpose>
       </refnamediv>
 
     
       <refsynopsisdiv>
         <cmdsynopsis>
-            <command/>
+            <command>xslt1</command>
             <arg/>
         </cmdsynopsis>
       </refsynopsisdiv>

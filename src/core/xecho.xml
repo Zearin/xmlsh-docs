@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xecho</refname>
+		<refname>
+		    <command>xecho</command>
+		</refname>
 		<refpurpose>Print arguments as XML</refpurpose>
 	</refnamediv>
 

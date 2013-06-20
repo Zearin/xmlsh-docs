@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>rngconvert</refname>
+		<refname>
+		    <command>rngconvert</command>
+		</refname>
 		<refpurpose>Convert RNG schemas to (and from) other schema formats</refpurpose>
 	</refnamediv>
 

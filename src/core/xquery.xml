@@ -9,7 +9,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xquery</refname>
+		<refname>
+		    <command>xquery</command>
+		</refname>
 		<refpurpose>Run XQuery scripts on an XML document</refpurpose>
 	</refnamediv>
 

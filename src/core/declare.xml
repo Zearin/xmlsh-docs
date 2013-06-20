@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>declare</refname>
+		<refname>
+		    <command>declare</command>
+		</refname>
 		<refpurpose>List or declare namespaces</refpurpose>
 	</refnamediv>
 

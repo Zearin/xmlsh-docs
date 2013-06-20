@@ -73,7 +73,9 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name">jset</refname>
+		<refname remap="command/@name">
+		    <command>jset</command>
+		</refname>
 		
 		<refpurpose remap="command/synopsis"/>
 	</refnamediv>	

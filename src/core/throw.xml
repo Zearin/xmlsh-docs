@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>throw</refname>
+		<refname>
+		    <command>throw</command>
+		</refname>
 		<refpurpose>Create and update the timestamp of a file</refpurpose>
 	</refnamediv>
 

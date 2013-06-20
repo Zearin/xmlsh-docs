@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xgetopts</refname>
+		<refname>
+		    <command>xgetopts</command>
+		</refname>
 		<refpurpose>Parse arguments into XML</refpurpose>
 	</refnamediv>
 

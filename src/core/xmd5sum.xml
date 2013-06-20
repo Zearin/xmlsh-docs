@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xmd5sum</refname>
+		<refname>
+		    <command>xmd5sum</command>
+		</refname>
 		<refpurpose>Calculate the md5 sum of files</refpurpose>
 	</refnamediv>
 

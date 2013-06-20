@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xdelete</refname>
+		<refname>
+		    <command>xdelete</command>
+		</refname>
 		<refpurpose>Delete nodes or attributes matching an expression</refpurpose>
 	</refnamediv>
 

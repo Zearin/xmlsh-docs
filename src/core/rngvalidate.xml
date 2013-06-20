@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>rngvalidate</refname>
+		<refname>
+		    <command>rngvalidate</command>
+		</refname>
 		<refpurpose>Validate against an RNG schema</refpurpose>
 	</refnamediv>
 

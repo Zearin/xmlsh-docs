@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xcat</refname>
+		<refname>
+		    <command>xcat</command>
+		</refname>
 		<refpurpose>Concatenate XML documents</refpurpose>
 	</refnamediv>
 

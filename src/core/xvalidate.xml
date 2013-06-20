@@ -9,7 +9,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xvalidate</refname>
+		<refname>
+		    <command>xvalidate</command>
+		</refname>
 		<refpurpose>Validate a document against a schema</refpurpose>
 	</refnamediv>
 

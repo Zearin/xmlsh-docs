@@ -17,7 +17,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>echo</refname>
+		<refname>
+		    <command>echo</command>
+		</refname>
 		<refpurpose>Prints arguments to STDOUT</refpurpose>
 	</refnamediv>
 

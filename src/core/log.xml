@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>log</refname>
+		<refname>
+		    <command>log</command>
+		</refname>
 		<refpurpose>Writes to the log4j log</refpurpose>
 	</refnamediv>
 

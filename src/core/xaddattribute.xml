@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xaddattribute</refname>
+		<refname>
+		    <command>xaddattribute</command>
+		</refname>
 		<refpurpose>Add (or replace) an attribute on nodes matching an expression</refpurpose>
 	</refnamediv>
 

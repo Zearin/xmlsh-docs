@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>continue</refname>
+		<refname>
+		    <command>continue</command>
+		</refname>
 		<refpurpose>Continue one iteration of a loop</refpurpose>
 	</refnamediv>
 

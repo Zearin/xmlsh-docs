@@ -17,7 +17,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xml2csv</refname>
+		<refname>
+		    <command>xml2csv</command>
+		</refname>
 		<refpurpose>Convert XML to CSV</refpurpose>
 	</refnamediv>
 

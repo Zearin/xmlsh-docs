@@ -17,7 +17,7 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>:</refname>
+		<refname><command>:</command></refname>
 	    <refname>Colon</refname>
 		<refpurpose>
 			<command>:</command> is the null command. It can be used in places where a command is required syntatcially but none is needed. 

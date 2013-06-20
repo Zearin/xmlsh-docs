@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xinclude</refname>
+		<refname>
+		    <command>xinclude</command>
+		</refname>
 		<refpurpose>Run XInclude preprocessing on an XML file</refpurpose>
 	</refnamediv>
 

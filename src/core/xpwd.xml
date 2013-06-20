@@ -9,7 +9,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>xpwd</refname>
+		<refname>
+		    <command>xpwd</command>
+		</refname>
 		<refpurpose>Print the current directory</refpurpose>
 	</refnamediv>
 

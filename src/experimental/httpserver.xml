@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>httpserver</refname>
+		<refname>
+		    <command>httpserver</command>
+		</refname>
 		<refpurpose>HTTP server</refpurpose>
 	</refnamediv>
 

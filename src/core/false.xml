@@ -17,7 +17,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>false</refname>
+		<refname>
+		    <command>false</command>
+		</refname>
 		<refpurpose>Returns false</refpurpose>
 	</refnamediv>
 

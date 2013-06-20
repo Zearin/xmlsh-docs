@@ -73,7 +73,9 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name">xgunzip</refname>
+		<refname remap="command/@name">
+		    <command>xgunzip</command>
+		</refname>
 		<refpurpose remap="command/synopsis"/>
 	</refnamediv>	
 	

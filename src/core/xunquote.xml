@@ -79,7 +79,9 @@
 		
 		--></refdescriptor>
 		
-		<refname remap="command/@name">xunquote</refname>
+		<refname remap="command/@name">
+		    <command>xunquote</command>
+		</refname>
 		
 		<refpurpose remap="command/synopsis"></refpurpose>
 	</refnamediv>	

@@ -16,7 +16,9 @@
 	</refmeta>
 
 	<refnamediv>
-		<refname>test</refname>
+		<refname>
+		    <command>test</command>
+		</refname>
 		<refpurpose>Evaluate expressions</refpurpose>
 	</refnamediv>
 
@@ -26,6 +28,7 @@
 			<command>test</command>
 			<arg />
 		</cmdsynopsis>
+	    
 	    <cmdsynopsis>
 			<command>[</command>
 			<arg />
