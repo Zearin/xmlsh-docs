@@ -5,8 +5,8 @@
 	xmlns:xl="http://www.w3.org/1999/xlink"
 	
 	version	="5.0"
-	label	="fixed2xml" 
 	role	="core streaming"
+	label	="fixed2xml" 
 >
     
 	<refmeta>

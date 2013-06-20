@@ -6,7 +6,7 @@
     
     version="5.0" 
     remap="command" 
-    role="core" 
+    role="core streaming" 
     label="xgunzip"
 >
     

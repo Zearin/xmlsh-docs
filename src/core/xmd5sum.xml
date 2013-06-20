@@ -5,8 +5,8 @@
 	xmlns:xl="http://www.w3.org/1999/xlink"
 	
 	version	="5.0"
-	label	="xmd5sum" 
 	role	="core streaming"
+	label	="xmd5sum" 
 >
 	<refmeta>
 		<refentrytitle>

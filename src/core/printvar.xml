@@ -6,8 +6,8 @@
     
     version="5.0" 
     remap="command" 
+    role="core streaming" 
     label="printvar"
-    role="core" 
 >
     
     
