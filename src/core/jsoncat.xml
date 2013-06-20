@@ -114,7 +114,7 @@
 
 	<refsection>
         <title>Return Value</title>
-        <para>FIXME</para>
+        <para>Returns <returnvalue>0</returnvalue> if the command executed successfully, <returnvalue>1</returnvalue> if there was an error.</para>
     </refsection>
 		
 	<refsection>

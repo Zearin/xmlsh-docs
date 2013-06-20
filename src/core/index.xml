@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href=           "http://www.oasis-open.org/docbook/xml/5.0/rng/docbookxi.rng" 
+            schematypens=   "http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href=           "http://www.oasis-open.org/docbook/xml/5.0/rng/docbook.rng" 
+            type=           "application/xml" 
+            schematypens=   "http://purl.oclc.org/dsdl/schematron"?>
+<reference
+    xmlns=      "http://docbook.org/ns/docbook" 
+    xmlns:xi=   "http://www.w3.org/2001/XInclude"
+    xmlns:xl=   "http://www.w3.org/1999/xlink" 
+    
+    version=    "5.0"
+    role=       "module core"
+>
+    
+    <info>
+        <title>XMLSH Reference</title>
+        <subtitle>Core Module</subtitle>
+        <!--
+        <author>
+            <orgname></orgname>
+            <email></email>
+        </author>
+        -->
+    </info>
+    
+    <xi:include href="break.xml" />
+    <xi:include href="cd.xml" />
+    <xi:include href="colon.xml" />
+    <xi:include href="continue.xml" />
+    <xi:include href="csv2xml.xml" />
+    <xi:include href="declare.xml" />
+    <xi:include href="echo.xml" />
+    <xi:include href="eval.xml" />
+    <xi:include href="exit.xml" />
+    <xi:include href="false.xml" />
+    <xi:include href="fixed2xml.xml" />
+    <xi:include href="help.xml" />
+    <xi:include href="http.xml" />
+    <xi:include href="httpsession.xml" />
+    <xi:include href="import.xml" />
+    <xi:include href="jcall.xml" />
+    <xi:include href="jobs.xml" />
+    <xi:include href="log.xml" />
+    <xi:include href="read.xml" />
+    <xi:include href="require.xml" />
+    <xi:include href="return.xml" />
+    <xi:include href="rngconvert.xml" />
+    <xi:include href="rngvalidate.xml" />
+    <xi:include href="set.xml" />
+    <xi:include href="shift.xml" />
+    <xi:include href="source.xml" />
+    <xi:include href="test.xml" />
+    <xi:include href="throw.xml" />
+    <xi:include href="tie.xml" />
+    <xi:include href="true.xml" />
+    <xi:include href="unset.xml" />
+    <xi:include href="wait.xml" />
+    <xi:include href="xaddattribute.xml" />
+    <xi:include href="xaddbase.xml" />
+    <xi:include href="xbase.xml" />
+    <xi:include href="xcat.xml" />
+    <xi:include href="xcmp.xml" />
+    <xi:include href="xdelete.xml" />
+    <xi:include href="xecho.xml" />
+    <xi:include href="xed.xml" />
+    <xi:include href="xfile.xml" />
+    <xi:include href="xgetopts.xml" />
+    <xi:include href="xgrep.xml" />
+    <xi:include href="xidentity.xml" />
+    <xi:include href="xinclude.xml" />
+    <xi:include href="xls.xml" />
+    <xi:include href="xmd5sum.xml" />
+    <xi:include href="xml2csv.xml" />
+    <xi:include href="xmlsh.xml" />
+    <xi:include href="xmove.xml" />
+    <xi:include href="xpath.xml" />
+    <xi:include href="xproperties.xml" />
+    <xi:include href="xpwd.xml" />
+    <xi:include href="xquery.xml" />
+    <xi:include href="xread.xml" />
+    <xi:include href="xsdvalidate.xml" />
+    <xi:include href="xslt.xml" />
+    <xi:include href="xslt1.xml" />
+    <xi:include href="xsplit.xml" />
+    <xi:include href="xsql.xml" />
+    <xi:include href="xtee.xml" />
+    <xi:include href="xtype.xml" />
+    <xi:include href="xunzip.xml" />
+    <xi:include href="xuri.xml" />
+    <xi:include href="xvalidate.xml" />
+    <xi:include href="xversion.xml" />
+    <xi:include href="xwhich.xml" />
+    <xi:include href="xzip.xml" />
+    
+    
+</reference>
