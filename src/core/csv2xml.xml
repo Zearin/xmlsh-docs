@@ -27,7 +27,21 @@
 		<cmdsynopsis>
 			<command>csv2xml</command>
 			<arg />
+            <!--
+                -root	rootname      use "rootname" as the root element name, default "root"
+                -row rowname          use "rowname" as each row's element name, default "row"
+                -col colname	      use "colname" as each column's element name (or for attribute normal format, the attribute prefix)
+                -colspecs specs	      sequence or comma-delimited list of column specs
+                -colnames names	      Use a sequence or "," delimited list of strings to specify the column names
+                -encoding encoding	  read csv file in encoding (default "cp1252")
+                -header	              read 1 row from the csv file and use as column names (element or attribute)
+                -attr	              Output in attribute normal format (each column is an attribute), default row normal format
+                -nonorm	              "No Normalize" ... Do NOT trim leading and trailing blanks from fields (defaults to normalize)
+                -skip lines	          Skip "lines" of lines before reading header or row data
+                fixedfile	          Name of the fixed file to convert, otherwise stdin. Default "-" (stdin)
+            -->
 		</cmdsynopsis>
+	    
 	</refsynopsisdiv>
     
     <refsection>

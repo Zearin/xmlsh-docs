@@ -19,14 +19,14 @@
 		<refname>
 		    <command>help</command>
 		</refname>
-		<refpurpose>Help for xmlsh commands</refpurpose>
+		<refpurpose>Help for <application>xmlsh</application> commands</refpurpose>
 	</refnamediv>
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>help</command>
 			<group>
-			    <option>-n,-nobrowse</option>
+			    <option>-n -nobrowse</option>
 			</group>
 		</cmdsynopsis>
 	    

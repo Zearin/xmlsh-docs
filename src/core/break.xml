@@ -27,6 +27,7 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>break</command>
+		    <arg choice="opt"><replaceable>level</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
