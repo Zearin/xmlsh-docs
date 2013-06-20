@@ -11,11 +11,6 @@
 	<refnamediv>
 		<refname>xunzip</refname>
 		<refpurpose>Extract (or list) the contents from a zip file</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 

@@ -11,11 +11,6 @@
 	<refnamediv>
 		<refname>xread</refname>
 		<refpurpose>Read an XML document into a variable</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 

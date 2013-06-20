@@ -22,11 +22,6 @@
 	<refnamediv>
 		<refname>xslt</refname>
 		<refpurpose>Run an XSLT 2.0 transformation</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 

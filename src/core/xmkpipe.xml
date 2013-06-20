@@ -71,12 +71,6 @@
 		<refname remap="command/@name">xmkpipe</refname>
 		
 		<refpurpose remap="command/synopsis"/>
-		
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>	
 	
 	

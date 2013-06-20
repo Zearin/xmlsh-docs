@@ -81,12 +81,6 @@
 		<refname remap="command/@name">xml2json</refname>
 		
 		<refpurpose remap="command/synopsis"></refpurpose>
-		
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>	
 	
 	

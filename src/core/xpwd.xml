@@ -11,11 +11,6 @@
 	<refnamediv>
 		<refname>xpwd</refname>
 		<refpurpose>Print the current directory</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 

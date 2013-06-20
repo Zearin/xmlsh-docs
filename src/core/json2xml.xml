@@ -69,14 +69,7 @@
 		--></refdescriptor>
 		
 		<refname remap="command/@name">json2xml</refname>
-		
-		<refpurpose remap="command/synopsis"/>
-		
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
+	    <refpurpose remap="command/synopsis"/>
 	</refnamediv>	
 	
 	

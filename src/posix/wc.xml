@@ -80,12 +80,6 @@
 		<refname remap="command/@name"></refname>
 		
 		<refpurpose remap="command/synopsis"></refpurpose>
-		
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>	
 	
 	

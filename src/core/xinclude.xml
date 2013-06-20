@@ -17,12 +17,7 @@
 
 	<refnamediv>
 		<refname>xinclude</refname>
-		<refpurpose>Run XInclude preprocessing on an XMLfile</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
+		<refpurpose>Run XInclude preprocessing on an XML file</refpurpose>
 	</refnamediv>
 
 

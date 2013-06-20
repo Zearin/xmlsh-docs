@@ -11,11 +11,6 @@
 	<refnamediv>
 		<refname>xmove</refname>
 		<refpurpose>Move (and/or rename) XML files, based on an expression in the file</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 

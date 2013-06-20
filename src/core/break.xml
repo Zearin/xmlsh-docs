@@ -21,11 +21,6 @@
 		    <command>break</command>
 		</refname>
 		<refpurpose>Exits one level of a <command>while</command>, <command>for</command>, or <command>until</command></refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
     

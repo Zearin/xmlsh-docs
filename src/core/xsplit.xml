@@ -11,11 +11,6 @@
 	<refnamediv>
 		<refname>xsplit</refname>
 		<refpurpose>Split XML into multiple files</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 

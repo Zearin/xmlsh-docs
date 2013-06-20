@@ -11,11 +11,6 @@
 	<refnamediv>
 		<refname>xmlsh</refname>
 		<refpurpose>Run a sub shell</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 

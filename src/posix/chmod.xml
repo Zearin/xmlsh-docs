@@ -78,14 +78,7 @@
 		--></refdescriptor>
 		
 		<refname remap="command/@name"></refname>
-		
-		<refpurpose remap="command/synopsis"></refpurpose>
-		
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
+	    <refpurpose remap="command/synopsis"></refpurpose>
 	</refnamediv>	
 	
 	

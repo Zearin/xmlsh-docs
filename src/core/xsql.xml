@@ -11,11 +11,6 @@
 	<refnamediv>
 		<refname>xsql</refname>
 		<refpurpose>Query a relational database using JDBC</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 

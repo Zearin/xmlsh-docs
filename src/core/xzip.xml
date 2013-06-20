@@ -17,11 +17,6 @@
 	<refnamediv>
 		<refname>xzip</refname>
 		<refpurpose>Extract (or list) the contents of a zip file</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 

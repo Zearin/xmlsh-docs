@@ -11,11 +11,6 @@
 	<refnamediv>
 		<refname>xvalidate</refname>
 		<refpurpose>Validate a document against a schema</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 

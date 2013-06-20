@@ -18,11 +18,6 @@
 	<refnamediv>
 		<refname>rngvalidate</refname>
 		<refpurpose>Validate against an RNG schema</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 

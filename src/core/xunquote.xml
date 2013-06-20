@@ -82,12 +82,6 @@
 		<refname remap="command/@name">xunquote</refname>
 		
 		<refpurpose remap="command/synopsis"></refpurpose>
-		
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>	
 	
 	

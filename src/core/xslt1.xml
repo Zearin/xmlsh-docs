@@ -9,13 +9,6 @@
       <refnamediv>
         <refname>xslt1</refname>
         <refpurpose>Run an XSLT 1.0 transformation</refpurpose>
-        <refclass>
-<!--builtin-->
-
-<!--command-->
-
-<!--function-->
-        </refclass>
       </refnamediv>
 
     

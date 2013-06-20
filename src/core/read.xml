@@ -19,11 +19,6 @@
 	<refnamediv>
 		<refname>read</refname>
 		<refpurpose>Reads text into a variable</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 	<refsynopsisdiv>

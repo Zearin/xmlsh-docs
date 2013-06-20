@@ -21,11 +21,6 @@
 	<refnamediv>
 		<refname>xproperties</refname>
 		<refpurpose>Parse (or generate) Java Properties files</refpurpose>
-		<refclass>
-			<!--builtin-->
-			<!--command-->
-			<!--function-->
-		</refclass>
 	</refnamediv>
 
 
