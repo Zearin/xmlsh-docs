@@ -42,16 +42,9 @@
 	<refsynopsisdiv remap="command/usage">
 		<cmdsynopsis>
 			<command>base64</command> 
-			<synopfragmentref>
-			    
-			</synopfragmentref>
-		    <arg></arg>
 			<arg></arg>
 			<arg></arg>
-		    
-		    <synopfragment>
-		        <arg></arg>
-		    </synopfragment>
+			<arg></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
 	

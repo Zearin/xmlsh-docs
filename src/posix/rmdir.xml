@@ -10,84 +10,20 @@
 >
     
     
-    <!--
-		Extended metadata.
-		
-		(Not required, but useful.  Must come first in refentry.)
-		
-		@see
-			http://www.docbook.org/tdg5/en/html/refmeta.html
-	-->
-	<refmeta>
+    <refmeta>
 		<refentrytitle>
 			<command remap="command/@name">rmdir</command>
 		</refentrytitle>
-		
-		<manvolnum>1</manvolnum>
-
-		<refmiscinfo>
-			<!--
-				Meta-information for a reference entry other than the title and 
-				volume number.
-				
-				The refmiscinfo element is an escape hatch for additional 
-				meta-information about a reference page. It may hold copyright 
-				information, release or revision information, descriptive text 
-				for use in a print header or footer, or any other information 
-				not explicitly provided for in refmeta.
-				
-				@see
-					http://www.docbook.org/tdg5/en/html/refmiscinfo.html
-			-->
-		</refmiscinfo>
+        <manvolnum>1</manvolnum>
 	</refmeta>
 
-
-	
-	
-	
-	
-	<!--	
-		(Required)  Overall metadata.
-		
-		@see
-			http://www.docbook.org/tdg5/en/html/refnamediv.html
-	-->
+    
 	<refnamediv>
-		<refdescriptor><!--	
-			
-			A description of the topic of a reference page.
-			
-			Reference pages (refentrys) are usually identified by a short, 
-			succinct topic name, such as the name of a function or command. 
-			The refname (or one of the refnames, in the case of a reference 
-			page that has several) is generally used as the topic name. 
-			When none of the refnames is appropriate, refdescriptor is used 
-			to specify the topic name.
-
-			A refdescriptor is unnecessary when an appropriate refname can be 
-			selected automatically. At least one refname is required, so 
-			refdescriptor cannot be used in place of a name, only in addition 
-			to it.
-		
-		--></refdescriptor>
-		
 		<refname remap="command/@name">rmdir</refname>
-		
-		<refpurpose remap="command/synopsis"></refpurpose>
+	    <refpurpose remap="command/synopsis"></refpurpose>
 	</refnamediv>	
 	
 	
-	<!--	
-		Quick-snyopsis info.  
-		
-		Equivalent to `[command] -usage`.
-		
-		(Not required by DocBook; SHOULD require for XMLSH.)
-		
-		@see
-			http://www.docbook.org/tdg5/en/html/refsynopsisdiv.html
-	-->
 	<refsynopsisdiv remap="command/usage">
 		<cmdsynopsis>
 			<command>rmdir</command> 
@@ -97,17 +33,8 @@
 			<arg></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
-	
-	
-	
-	<!--
-		Full documentation.
-		
-		Equivalent to a manpage.
-		
-		@see
-			http://www.docbook.org/tdg5/en/html/refsection.html
-	-->
+    
+    
 	<refsection>
 		<title>Description</title>
 		<para></para>

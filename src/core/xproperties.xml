@@ -15,14 +15,14 @@
 		<refentrytitle>
 			<command>xproperties</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>
 		    <command>xproperties</command>
 		</refname>
-		<refpurpose>Parse (or generate) Java Properties files</refpurpose>
+		<refpurpose>Parse/generate Java Properties files</refpurpose>
 	</refnamediv>
 
 

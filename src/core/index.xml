@@ -24,6 +24,18 @@
         -->
     </info>
     
+    <partintro>
+        <para>The following commands come with xmlsh.</para> 
+        <para>As a naming convention, commands that start with “x” operate intrinsically on XML data (either as input or output—and usually both).</para>
+        <para>Command that don’t start with “x” generally don’t operate on XML data exclusively (either as input or output).</para>
+
+        <para>Commands where Streaming is “Yes” are fully streamable. A fixed amount of memory is used regardless of the input size, and output may appear before the input has been completely read. Note that this is independent from the capability of XDM Streaming.</para>
+
+        <note>
+            <para>If your xmlsh scripts only include commands from this list, they will be portable have no dependency on OS commands whatsoever; therefore, they’ll work anywhere xmlsh works.</para>
+        </note>
+    </partintro>
+    
     <xi:include href="break.xml" />
     <xi:include href="cd.xml" />
     <xi:include href="colon.xml" />

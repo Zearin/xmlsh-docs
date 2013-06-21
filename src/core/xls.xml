@@ -5,14 +5,14 @@
 	xmlns:xl="http://www.w3.org/1999/xlink"
 	
 	version	="5.0"
-	label="xls" 
 	role="core"
+	label="xls" 
 >
 	<refmeta>
 		<refentrytitle>
 			<command>xls</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>

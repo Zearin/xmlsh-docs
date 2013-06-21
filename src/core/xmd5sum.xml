@@ -12,21 +12,21 @@
 		<refentrytitle>
 			<command>xmd5sum</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>
 		    <command>xmd5sum</command>
 		</refname>
-		<refpurpose>Calculate the md5 sum of files</refpurpose>
+		<refpurpose>Calculate the MD5 sum of files</refpurpose>
 	</refnamediv>
 
 
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xmd5sum</command>
-			<arg />
+			<arg choice="req"><replaceable>file</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     

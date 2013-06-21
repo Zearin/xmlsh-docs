@@ -5,14 +5,14 @@
 		<refentrytitle>
 			<command>xunzip</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
 		<refname>
 		    <command>xunzip</command>
 		</refname>
-		<refpurpose>Extract (or list) the contents from a zip file</refpurpose>
+		<refpurpose>Extract/list the contents from a zip file</refpurpose>
 	</refnamediv>
 
 

@@ -14,7 +14,7 @@
 		<refentrytitle>
 			<command>:</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
@@ -23,7 +23,7 @@
 		</refname>
 	    <refname>Colon</refname>
 		<refpurpose>
-			<command>:</command> is the null command. It can be used in places where a command is required syntatcially but none is needed. 
+			The null command. It can be used in places where a command is required syntatcially but none is needed. 
 		</refpurpose>
 	</refnamediv>
 

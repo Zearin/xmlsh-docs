@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
-	xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xpwd" role="core">
+<refentry 
+    xmlns="http://docbook.org/ns/docbook" 
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xl="http://www.w3.org/1999/xlink" 
+	
+	version="5.0" 
+	role="core"
+	label="xpwd" 
+>
 	<refmeta>
 		<refentrytitle>
 			<command>xpwd</command>
 		</refentrytitle>
-		<manvolnum />
+		<manvolnum>1</manvolnum>
 	</refmeta>
 
 	<refnamediv>
@@ -14,7 +21,6 @@
 		</refname>
 		<refpurpose>Print the current directory</refpurpose>
 	</refnamediv>
-
 
 	<refsynopsisdiv>
 		<cmdsynopsis>

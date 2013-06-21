@@ -13,55 +13,81 @@
     
     <info>
         <title>XMLSH Commands</title>
-        <subtitle>Posix Module</subtitle>
+        <subtitle>POSIX Module</subtitle>
         <!--<author>
             <orgname></orgname>
             <email></email>
         </author>-->
     </info>
     
-    <!--<partintro>-->
+    <partintro>
         <!--    
             http://www.xmlsh.org/CommandsPosix
         -->
-        <!--    
-        The following commands are built into xmlsh, but need to be imported. They are not imported by default because they provide a simpler (less feature-full) implementation of common posix commands which are likely to exist in the environment. On Linux, Unix and Mac/OS these will already exist in /bin or /usr/bin. On Windows they will exist if you have cygwin or other unix compatibility software installed.
+            
+       <para>The following commands are built into <application>xmlsh</application>, but need to be imported. They are not imported by default because they provide a simpler (less feature-full) implementation of common POSIX commands which are likely to exist in the environment. On Linux, Unix, and OS X these will already exist in <filename class="directory">/bin</filename> or <filename class="directory">/usr/bin</filename>. On Windows they will exist if you have <application>cygwin</application> or other <application>UNIX</application> compatibility software installed.</para>
         
-        Importing
+        <section>
+            <title>Importing</title>
         
-        To use the Posix commands, you need to import them into either the global namespace or a local namespace.
-        It’s recommended that you use a local namespace so that you still have access to the system commands of the same name.
+            <para>To use the POSIX commands, you need to <command>import</command> them into either the global namespace or a local namespace.</para>
+            <para>It’s recommended that you use a local namespace so that you still have access to the system commands of the same name.</para>
+             
+            <para>
+                To import into the <varname>p</varname> namespace prefix:
+                <userinput>import commands p=posix</userinput>
+            </para>
+            
+            <para>
+                To import into the global namespace:
+                <userinput>import commands posix</userinput>
+            </para>
+        </section>
         
-        To import into the p namespace prefix:
-        import commands p=posix
         
         
-        To import into the global namespace:
-        import commands posix
+        <section>
+            <title>Advantages and Disadvantages</title>
         
+            <para>You may want to use these commands even if they exist in the environment for the following reasons:</para>
         
+            <itemizedlist>
+                <listitem>
+                        <para>
+                            <emphasis role="strong">They are very fast.</emphasis>
+                            These commands are run in the shell's JVM and do not require starting a subprocess.
+                        </para>
+                </listitem>
+                
+                <listitem>
+                        <para>
+                            <emphasis role="strong">No dependancy on environment</emphasis>
+                            You can use these commands to write scripts that do not depend on them existing in the environment. The test cases use these commands so they can run on Windows without presuming you have cygwin installed.
+                        </para>
+                </listitem>
+                
+                <listitem>
+                        <para>
+                            <emphasis role="strong">Consistant with xmlsh internal environment model.</emphasis>
+                            Since these commands are implemented using the internal API they will produce results more consistant with the internal model. For example the cygwin "pwd" command can give different results then the xmlsh posix "pwd" command due to cygwin's differing model of the filesystem.
+                        </para>
+                </listitem>
+            </itemizedlist>
         
-        Advantages / Disadvantages
+            <para>You may want to avoid these commands for the following reasons:</para>
         
-        You may want to use these commands even if they exist in the environment for the following reasons:
-        
-            They are very fast.
-                These commands are run in the shell's JVM and do not require starting a subprocess.
-            No dependancy on environment
-                You can use these commands to write scripts that do not depend on them existing in the environment. The test cases use these commands so they can run on Windows without presuming you have cygwin installed.
-            Consistant with xmlsh internal environment model
-                Since these commands are implemented using the internal API they will produce results more consistant with the internal model. For example the cygwin "pwd" command can give different results then the xmlsh posix "pwd" command due to cygwin's differing model of the filesystem.
-        
-        You may want to avoid these commands for the following reasons:
-        
-            They are less feature-full then the coresponsing OS commands.
-            They are not as mature, these commands are a simple implementation using core Java methods and may not be as roboust as the OS commands.
-            There are some things these commands cannot do which the native OS commands can, due to being based (limited by) Java APIs. For example, the chmod command cannot set group permissions or setuid modes.
-            The options are not as rich as the equivalent OS commands and may not be identical.
-        
-        It’s recommended that you import the POSIX commands using a prefix (rather than into the global namespace); otherwise, you will be unable to access the OS commands of the same name without using their full path.
-    -->
-    <!--</partintro>-->
+            <itemizedlist>
+                <listitem><para>They are less feature-full then the coresponsing OS commands.</para></listitem>
+                <listitem><para>They are not as mature, these commands are a simple implementation using core Java methods and may not be as roboust as the OS commands.</para></listitem>
+                <listitem><para>There are some things these commands cannot do which the native OS commands can, due to being based (limited by) Java APIs. For example, the <command>chmod</command> command cannot set group permissions or <command>setuid</command> modes.</para></listitem>
+                <listitem><para>The options are not as rich as the equivalent OS commands and may not be identical.</para></listitem>
+            </itemizedlist>
+            
+            <para>It’s recommended that you import the POSIX commands using a prefix (rather than into the global namespace); otherwise, you will be unable to access the OS commands of the same name without using their full path.</para>
+            
+        </section>
+    
+    </partintro>
     
         
     <xi:include href="base64.xml"   />
@@ -81,5 +107,5 @@
     <xi:include href="touch.xml"    />
     <xi:include href="wc.xml"       />
     
-    
+   
 </reference>
