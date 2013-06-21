@@ -12,7 +12,8 @@
 >
     
     <info>
-        <title>XMLSH Reference</title>
+        <title>XMLSH Commands</title>
+        <subtitle>Posix Module</subtitle>
         <!--<author>
             <orgname></orgname>
             <email></email>
