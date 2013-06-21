@@ -26,8 +26,10 @@
 		<cmdsynopsis>
 			<command>help</command>
 			<group>
-			    <option>-n -nobrowse</option>
+			    <arg>-n</arg> 
+			    <arg>-nobrowse</arg>
 			</group>
+		    <arg choice="opt"><replaceable>command</replaceable></arg>
 		</cmdsynopsis>
 	    
 	    <para>The help command provides online help for xmlsh commands and syntax.</para>

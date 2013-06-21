@@ -19,7 +19,7 @@
 		<refname>
 		    <command>xaddbase</command>
 		</refname>
-		<refpurpose>Add xml:base attributes</refpurpose>
+		<refpurpose>Add <tag class="attribute">xml:base</tag> attributes</refpurpose>
 	</refnamediv>
 
 

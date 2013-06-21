@@ -27,11 +27,19 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>echo</command>
+		    <arg choice="opt">-n</arg>
 		    
-		    <group>
-		        <option>-n</option>
-		        <option>-p, -port <replaceable>PORT</replaceable></option>
-		    </group>
+		    <sbr/>
+		    
+		    <arg choice="opt">
+		        <group>
+		            <arg>-p</arg>
+		            <arg>-port</arg>
+		        </group>
+		        <arg choice="req"><replaceable>PORT</replaceable></arg>
+		    </arg>
+		    
+		    <sbr/>
 		    
 		    <arg choice="opt" rep="repeat">ARGS</arg>
 		</cmdsynopsis>

@@ -29,7 +29,7 @@
 			<arg choice="opt">
 			    <replaceable>namespace</replaceable>
 			    
-			    <arg choice="opt">prefix
+			    <arg choice="opt"><replaceable>prefix</replaceable>
 			        <arg choice="opt">=<replaceable>URI</replaceable></arg>
 			    </arg>
 			</arg>
