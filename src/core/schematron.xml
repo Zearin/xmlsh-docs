@@ -92,10 +92,8 @@
 	<refsynopsisdiv remap="command/usage">
 		<cmdsynopsis>
 			<command>schematron</command> 
-			
-			<arg/>
-			<arg/>
-			<arg/>
+			<arg choice="req"><replaceable>SCHEMA</replaceable></arg>
+			<arg choice="req"><replaceable>FILE</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
 	
