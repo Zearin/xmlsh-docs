@@ -26,7 +26,28 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>log</command>
-			<arg />
+		    
+			<arg>
+			    <group choice="req">
+			        <arg choice="plain">-c</arg>
+			        <arg choice="plain">-classname</arg>
+			    </group>
+			    <arg choice="req"><replaceable>CLASSNAME</replaceable></arg>
+			</arg>
+		    
+		    <sbr/>
+		    
+		    <arg>
+			    <group choice="req">
+			        <arg choice="plain">-p</arg>
+			        <arg choice="plain">-priority</arg>
+			    </group>
+			    <arg choice="req"><replaceable>PRIORITY</replaceable></arg>
+			</arg>
+		    
+		    <sbr/>
+		    
+		    <arg rep="repeat"><replaceable>ARGS</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
