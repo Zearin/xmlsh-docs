@@ -25,7 +25,20 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xmlsh</command>
-			<arg />
+			
+		    <arg>-x</arg>
+		    <arg>-v</arg>
+		    <arg>-c "<replaceable>COMMAND</replaceable>"</arg>
+		    <arg>-e</arg>
+		    <arg>-rcfile <replaceable>FILE</replaceable></arg>
+		    <arg>-norc</arg>
+		    
+		    <sbr/>
+		    
+		    <arg>
+		        <replaceable>SCRIPT</replaceable> 
+		        <arg rep="repeat"><replaceable>SCRIPT_ARGS</replaceable></arg>
+		    </arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
