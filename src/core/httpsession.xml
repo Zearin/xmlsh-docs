@@ -26,8 +26,24 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>httpsession</command>
-			<arg />
+		    
+			<group>
+			    <arg>-setvar 
+			        <replaceable>VAR</replaceable> 
+			        <arg choice="opt"><replaceable>VALUE</replaceable></arg>
+			    </arg>
+			    
+			    <sbr />
+			    
+			    <arg>-getvar 
+			        <arg choice="opt">-n</arg>
+			        <replaceable>VAR</replaceable>
+			    </arg>
+			</group>
+		    
+		    
 		</cmdsynopsis>
+	    
 	</refsynopsisdiv>
     
     <refsection>
