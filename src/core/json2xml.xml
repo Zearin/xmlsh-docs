@@ -84,10 +84,7 @@
 	<refsynopsisdiv remap="command/usage">
 		<cmdsynopsis>
 			<command>json2xml</command> 
-			
-			<arg/>
-			<arg/>
-			<arg/>
+			<arg choice="req"><replaceable>JSON_FILE</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
 	
