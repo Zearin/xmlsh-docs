@@ -95,9 +95,24 @@
 		<cmdsynopsis>
 			<command>xdelattribute</command> 
 			
-			<arg/>
-			<arg/>
-			<arg/>
+			<arg>
+			    <group>
+			        <arg choice="plain">-a</arg>
+			        <arg choice="plain">-attribute</arg>
+			    </group>
+			    <replaceable>QNAME</replaceable>
+			</arg>
+		    
+			<arg>
+			    <group>
+			        <arg choice="plain">-e</arg>
+			        <arg choice="plain">-element</arg>
+			    </group>
+			    <replaceable>QNAME</replaceable>
+			</arg>
+		    
+			<arg>-v</arg>
+		    
 		</cmdsynopsis>
 	</refsynopsisdiv>
 	
