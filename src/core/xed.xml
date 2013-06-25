@@ -24,7 +24,73 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xed</command>
-			<arg />
+			
+		    <arg>
+			    <group>
+			        <arg choice="plain">-i</arg>
+			        <arg choice="plain">-input</arg>
+			    </group>
+			    <replaceable>INPUT</replaceable>
+			</arg>
+		    
+		    <sbr/>
+		    <arg>-n</arg>
+		    <sbr/>
+		    
+		    <arg>
+		        <group>
+		            <arg choice="plain">-r</arg>
+		            <arg choice="plain">-replace</arg>
+		        </group>
+		        <replaceable>EXPR</replaceable>
+		    </arg>
+		    
+		    
+		    <sbr/>
+		    <arg>-d</arg>
+		    <sbr/>
+		    
+		    <arg>
+		        <group>
+		            <arg choice="plain">-a</arg>
+		            <arg choice="plain">-add</arg>
+		        </group>
+		        <replaceable>EXPR</replaceable>
+		    </arg>
+		    
+		    <sbr/>
+		    
+		    <arg>
+		        <group>
+		            <arg choice="plain">-e</arg>
+		            <arg choice="plain">-xpath</arg>
+		        </group>
+		        <replaceable>XPATH_EXPR</replaceable>
+		    </arg>
+		    
+		    <sbr/>
+		    
+		    <arg>
+		        <group>
+		            <arg choice="plain">-m</arg>
+		            <arg choice="plain">-matches</arg>
+		        </group>
+		        <replaceable>XSLT_MATCH_EXPR</replaceable>
+		    </arg>
+		    
+		    <sbr/>
+		    
+		    <arg>
+		        <group>
+		            <arg choice="plain">-ren</arg>
+		            <arg choice="plain">-rename</arg>
+		        </group>
+		        <replaceable>STRING</replaceable>
+		    </arg>
+		    
+		    <sbr/>
+		    
+		    <arg>-v</arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
