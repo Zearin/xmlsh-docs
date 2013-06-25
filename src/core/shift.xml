@@ -26,8 +26,14 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>shift</command>
-			<arg />
+			<arg choice="opt"><replaceable>N</replaceable></arg>
 		</cmdsynopsis>
+	    
+	    <cmdsynopsis>
+	        <command>shift</command>
+	        <arg choice="plain"><replaceable>VARIABLE</replaceable></arg>
+	        <arg choice="opt"><replaceable>N</replaceable></arg>
+	    </cmdsynopsis>
 	</refsynopsisdiv>
     
     <refsection>
