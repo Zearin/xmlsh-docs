@@ -26,7 +26,18 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xecho</command>
-			<arg />
+			
+		    <arg>-n</arg>
+		    
+		    <arg>
+		        <group>
+		            <arg choice="plain">-p</arg>
+		            <arg choice="plain">-port</arg>
+		        </group>
+		        <replaceable>PORT</replaceable>
+		    </arg>
+		    
+		    <arg choice="req" rep="repeat"><replaceable>ARG</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
