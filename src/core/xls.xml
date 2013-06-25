@@ -26,13 +26,29 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xls</command>
-			<arg />
+			
+		    <group>
+			    <arg choice="plain">-l</arg>
+			    <arg choice="plain">-long</arg>
+			</group>
+		    
+		    <group>
+		        <arg choice="plain">-a</arg>
+		        <arg choice="plain">-all</arg>
+		    </group>
+		    
+		    <group>
+		        <arg choice="plain">-R</arg>
+		        <arg choice="plain">-recurse</arg>
+		    </group>
+		    
+		    <arg choice="opt" rep="repeat"><replaceable>DIRECTORY OR FILE</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
     <refsection>
         <title>Return Value</title>
-        <para>Returns <returnvalue>0</returnvalue> if the command executed successfully, <returnvalue>1</returnvalue> if there was an error.</para>
+        <para>Returns <returnvalue>0</returnvalue> if the directory exists and is read successfully, otherwise <returnvalue>1</returnvalue>.</para>
     </refsection>
 
 	<refsection>
