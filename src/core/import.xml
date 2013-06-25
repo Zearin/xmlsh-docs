@@ -24,17 +24,36 @@
 	</refnamediv>
 
 	<refsynopsisdiv>
-	    <!-- FIXME -->
-	    <!-- 
-            import module [prefix=]module
-            import package [prefix=]package [ [prefix=]package ...]
-            import commands [prefix=]command-subpackage [ [prefix=]command-subpackage ...]
-            import java url [url ...]
-	    -->
-		<cmdsynopsis>
-			<command>import</command>
-			<arg />
-		</cmdsynopsis>
+	    <title>Synopsis</title>
+            
+	    <cmdsynopsis>
+            <command>import module</command>
+            <arg choice="req">
+                <arg choice="opt"><replaceable>PREFIX</replaceable>=</arg>
+                <replaceable>MODULE</replaceable>
+            </arg>
+        </cmdsynopsis>
+	    
+	    <cmdsynopsis>
+            <command>import package</command>
+            <arg choice="req" rep="repeat">
+                <arg choice="opt"><replaceable>PREFIX</replaceable>=</arg>
+                <replaceable>PACKAGE</replaceable>
+            </arg>
+        </cmdsynopsis>
+        
+	    <cmdsynopsis>
+            <command>import commands</command>
+            <arg choice="req" rep="repeat">
+                <arg choice="opt"><replaceable>PREFIX</replaceable>=</arg>
+                <replaceable>COMMAND-SUBPACKAGE</replaceable>
+            </arg>
+        </cmdsynopsis>
+	    
+        <cmdsynopsis>
+            <command>import java</command>
+            <arg choice="req" rep="repeat"><replaceable>URL</replaceable></arg>
+        </cmdsynopsis>
 	</refsynopsisdiv>
     
     <refsection>
