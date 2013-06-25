@@ -26,7 +26,10 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xaddattribute</command>
-			<arg />
+		    
+			<arg choice="req"><replaceable>MATCH_EXPR</replaceable></arg>
+		    <arg choice="req"><replaceable>ATTR_NAME</replaceable></arg>
+		    <arg choice="req"><replaceable>ATTR_VALUE</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
