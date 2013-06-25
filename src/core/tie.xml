@@ -28,7 +28,8 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>tie</command>
-			<arg />
+			<arg choice="plain"><replaceable>VARIABLE</replaceable></arg>
+		    <arg choice="opt"><replaceable>EXPRESSION</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
