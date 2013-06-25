@@ -26,7 +26,26 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xdelete</command>
-			<arg />
+			
+			<sbr/>
+		    
+		    <arg>
+			    <group>
+			        <arg choice="plain">-e</arg>
+			        <arg choice="plain">-xpath</arg>
+			    </group>
+			    <replaceable>XPATH_EXPR</replaceable>
+			</arg>
+		    
+		    <sbr/>
+		    
+		    <arg>
+			    <group>
+			        <arg choice="plain">-m</arg>
+			        <arg choice="plain">-matches</arg>
+			    </group>
+			    <replaceable>XSLT_MATCH_EXPR</replaceable>
+			</arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
