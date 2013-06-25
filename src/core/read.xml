@@ -24,7 +24,9 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>read</command>
-			<arg />
+			<arg choice="req"><replaceable>VAR</replaceable></arg>
+		    <arg choice="opt" rep="repeat"><replaceable>VAR</replaceable></arg>
+		    <!-- STDIN -->
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
