@@ -26,12 +26,11 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>test</command>
-			<arg />
+			<arg choice="req"><replaceable>EXPRESSION</replaceable></arg>
 		</cmdsynopsis>
 	    
 	    <cmdsynopsis>
-			<command>[</command>
-			<arg />
+			<command>[ <replaceable>EXPRESSION</replaceable> ]</command>
 		</cmdsynopsis>
 	</refsynopsisdiv>
 
