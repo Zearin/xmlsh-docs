@@ -26,7 +26,8 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>declare</command>
-			<arg choice="opt">
+			
+		    <arg choice="opt">
 			    <replaceable>namespace</replaceable>
 			    
 			    <arg choice="opt"><replaceable>prefix</replaceable>
