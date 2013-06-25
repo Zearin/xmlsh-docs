@@ -86,9 +86,21 @@
 		<cmdsynopsis>
 			<command>xmkpipe</command> 
 			
-			<arg/>
-			<arg/>
-			<arg/>
+		    <group>
+			    <arg choice="plain">-x</arg>
+		        <arg choice="plain">-xml</arg>
+			</group>
+		    
+		    <group>
+			    <arg choice="plain">-s</arg>
+		        <arg choice="plain">-size</arg>
+		        <replaceable>NUM</replaceable>
+			</group>
+		    
+		    <arg>-close</arg>
+		    
+		    <arg choice="req"><replaceable>NAME</replaceable></arg>
+			
 		</cmdsynopsis>
 	</refsynopsisdiv>
 	
