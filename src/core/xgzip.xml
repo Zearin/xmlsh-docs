@@ -86,22 +86,14 @@
 		<cmdsynopsis>
 			<command>xgzip</command> 
 			
-			<arg></arg>
-			<arg></arg>
-			<arg></arg>
+			<!--
+			    FIXME:
+			    No online synopsis page on wiki 
+			-->
 		</cmdsynopsis>
 	</refsynopsisdiv>
-	
-	
-	
-	<!--
-		Full documentation.
-		
-		Equivalent to a manpage.
-		
-		@see
-			http://www.docbook.org/tdg5/en/html/refsection.html
-	-->
+    
+    
 	<refsection>
 		<title>Description</title>
 		<para></para>
