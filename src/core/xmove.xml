@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<refentry xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude"
-	xmlns:xl="http://www.w3.org/1999/xlink" version="5.0" label="xmove" role="core">
-	<refmeta>
+<refentry 
+    xmlns="http://docbook.org/ns/docbook" 
+    xmlns:xi="http://www.w3.org/2001/XInclude"
+	xmlns:xl="http://www.w3.org/1999/xlink" 
+	
+	version="5.0" 
+	label="xmove" 
+	role="core"
+>
+	
+    <refmeta>
         <refentrytitle>
             <command>xmove</command>
         </refentrytitle>
@@ -19,7 +27,30 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xmove</command>
-			<arg />
+			
+		    <arg>
+			    <group choice="req">
+			        <arg choice="plain">-x</arg>
+			        <arg choice="plain">-xpath</arg>
+			    </group>
+			    <replaceable>XPATH_EXPR</replaceable>
+			</arg>
+		    
+		    <arg>
+		        <group choice="req">
+		            <arg choice="plain">-d</arg>
+		            <arg choice="plain">-dir</arg>
+		        </group>
+		        <replaceable>DIR</replaceable>
+		    </arg>
+		    
+		    <arg>-ns <replaceable>NAMESPACE</replaceable></arg>
+		    
+		    <arg>-f</arg>
+		    
+		    <arg>-mkdir</arg>
+		    
+		    <arg choice="req" rep="repeat"><replaceable>FILES</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
