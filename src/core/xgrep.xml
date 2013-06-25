@@ -26,7 +26,8 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xgrep</command>
-			<arg />
+			<arg choice="req"><replaceable>EXPR</replaceable></arg>
+		    <arg choice="req" rep="repeat"><replaceable>FILE</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
