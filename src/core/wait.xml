@@ -26,7 +26,14 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>wait</command>
-			<arg />
+			<arg>
+			    <group choice="plain">
+			        <arg choice="plain">-m</arg>
+			        <arg choice="plain">-atmost</arg>
+			    </group>
+			    <replaceable>N</replaceable>
+			</arg>
+		    <arg choice="opt" rep="repeat"><replaceable>JOB_ID</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
