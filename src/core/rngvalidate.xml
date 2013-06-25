@@ -26,7 +26,28 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>rngvalidate</command>
-			<arg />
+			
+		    <arg>
+			    <synopfragmentref linkend="OPTIONS">OPTIONS</synopfragmentref>
+			</arg>
+		    
+		    <sbr/>
+		    
+		    <arg choice="req"><replaceable>SCHEMA</replaceable></arg>
+		    <arg choice="req" rep="repeat">FILE</arg>
+		    
+		    <sbr/>
+		    
+		    <synopfragment xml:id="OPTIONS">   
+		        <arg>-i</arg>
+		        <arg>-c</arg>
+		        <arg>-d</arg>
+		        <arg>-t</arg>
+		        <arg>-e <arg choice="req"><replaceable>ENCODING</replaceable></arg></arg>
+		        <arg>-f</arg>
+		        <arg>-s</arg>
+		        <arg>-p</arg>
+		    </synopfragment>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
