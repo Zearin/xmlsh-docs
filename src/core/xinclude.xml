@@ -26,7 +26,7 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xinclude</command>
-			<arg />
+			<arg choice="req"><replaceable>FILE</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
