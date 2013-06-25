@@ -25,7 +25,67 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xfile</command>
-			<arg />
+			
+		    <arg>
+		        <sbr/>
+		        <synopfragmentref linkend="options">OPTIONS</synopfragmentref>
+		        <sbr/>
+		    </arg>
+		    
+		    <arg>
+		        <replaceable>FILENAME</replaceable>
+		        <arg><replaceable>BASE</replaceable></arg>
+		    </arg>
+		    
+		    <synopfragment xml:id="options">
+		        <group>
+		            <arg choice="plain">-b</arg>
+		            <arg choice="plain">-base</arg>
+		        </group>
+		        
+		        <group>
+		            <arg choice="plain">-B</arg>
+		            <arg choice="plain">-basename</arg>
+		        </group>
+		        
+		        <group>
+		            <arg choice="plain">-n</arg>
+		            <arg choice="plain">-name</arg>
+		            <sbr/>
+		        </group>
+		        
+		        <arg>-N</arg>
+		        
+		        <group>
+		            <sbr/>
+		            <arg choice="plain">-d</arg>
+		            <arg choice="plain">-dir</arg>
+		        </group>
+		        
+		        <group>
+		            <arg choice="plain">-a</arg>
+		            <arg choice="plain">-absolute</arg>
+		        </group>
+		        
+		        <group>
+		            <arg choice="plain">-c</arg>
+		            <arg choice="plain">-canonical</arg>
+		        </group>
+		        
+		        <group>
+		            <arg choice="plain">-e</arg>
+		            <arg choice="plain">-extension</arg>
+		        </group>
+		        
+		        <group>
+		            <arg choice="plain">-u</arg>
+		            <arg choice="plain">-uri</arg>
+		            <sbr/>
+		        </group>
+		        
+		        <arg>-s</arg>
+		    </synopfragment>
+		    
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
