@@ -26,23 +26,83 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>csv2xml</command>
-			<arg />
-            <!--
-                -root	rootname      use "rootname" as the root element name, default "root"
-                -row rowname          use "rowname" as each row's element name, default "row"
-                -col colname	      use "colname" as each column's element name (or for attribute normal format, the attribute prefix)
-                -colspecs specs	      sequence or comma-delimited list of column specs
-                -colnames names	      Use a sequence or "," delimited list of strings to specify the column names
-                -encoding encoding	  read csv file in encoding (default "cp1252")
-                -header	              read 1 row from the csv file and use as column names (element or attribute)
-                -attr	              Output in attribute normal format (each column is an attribute), default row normal format
-                -nonorm	              "No Normalize" ... Do NOT trim leading and trailing blanks from fields (defaults to normalize)
-                -skip lines	          Skip "lines" of lines before reading header or row data
-                fixedfile	          Name of the fixed file to convert, otherwise stdin. Default "-" (stdin)
+	        
+		    <arg choice="opt">-root 
+		        <arg choice="opt"><replaceable>ROOTNAME</replaceable></arg>
+		    </arg>
+	        <sbr/>
+	        
+		    <arg choice="opt">-row
+	            <arg choice="opt"><replaceable>ROWNAME</replaceable></arg>
+	        </arg>
+	        <sbr/>
+	        
+		    <arg choice="opt">-col 
+	            <arg choice="req"><replaceable>COLNAME</replaceable></arg>
+	        </arg>
+	        <sbr/>
+		    
+		    <arg>-colnames
+	            <arg choice="req" rep="repeat"><replaceable>COLNAMES</replaceable></arg>
+	        </arg>
+	        <sbr/>
+	        
+		    <group choice="opt">
+		        <arg>-delim 
+	               <arg choice="req"><replaceable>DELIMCHAR</replaceable></arg>
+	            </arg>
+		        <arg>-tab</arg>
+		    </group>
+	        <sbr/>
+		    
+		    <arg choice="opt">-quote 
+		        <arg choice="req"><replaceable>QUOTECHAR</replaceable></arg>
+		    </arg>
+	        
+		    <arg choice="opt">-header</arg>
+	        <arg choice="opt">-attr</arg>
+	        <arg choice="opt">-skip
+	            <arg choice="req"><replaceable>LINES</replaceable></arg>
+	        </arg>
+		    <arg choice="opt">-trim</arg>
+		    <arg choice="opt">-max
+		        <arg choice="req"><replaceable>NUM</replaceable></arg>
+		    </arg>
+		    
+		    <arg>
+		        <replaceable>CSVFILE</replaceable>
+		    </arg>
+            
+		    <!--
+		        
+		    -root	rootname	 Use "rootname" as the root element name, default "root"
+            -row rowname	     Use "rowname" as each row's element name, default "row"
+            -col colname	     Use "colname" as each column's element name (or for attribute normal format, the attribute prefix)
+            -colnames names	     Use a sequence or , separated list of strings to specify the column names
+            -delim delimchar	 Deliminate columns with delimchar, default ","
+            -tab	             Use tab char as delimitor. Synonymous for -delim <[ "&#009;" ]>
+            -quote quotechar	 Quote with quote character, default "
+            -header	             Read 1 row from the csv file and use as column names (element or attribute)
+            -attr	             Output in attribute normal format (each column is an attribute), default row normal format
+            -skip lines	         Skip # lines before reading header or data
+            -trim	             Trim the output by ignoring any data after the last column specified in -colnames or -header
+            -max #	             Combine the data in the last field by ignoring any more delimiters after the # of fields is specifed, or if # is <=0 then use the number of colums
+            csvfile	             Name of the csv file to convert, otherwise stdin. Default "-" (stdin)
+            
             -->
 		</cmdsynopsis>
 	    
 	</refsynopsisdiv>
+    
+    <refsection>
+        <title>Description</title>
+        
+        <para>Supports the standard [serialization options].</para>
+        <para>If <option>-colnames</option> is specified, its argument is taken to be either a sequence of strings, or a single string which is "," seperated which specifieds the column names to be used.</para>
+        <para>if <option>-header</option> is specified then the first row of the CSV file is read and the values used as column names.</para>
+        <para>If both <option>-colnames</option> and <option>-header</option> are specified then <option>-colnames</option> takes precedence, but the header is still read (and ignored).</para>
+        <para>The input CSV file is read using the text encoding serialization options.</para>
+    </refsection>
     
     <refsection>
         <title>Return Value</title>
