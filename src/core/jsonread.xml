@@ -85,11 +85,11 @@
 	<refsynopsisdiv remap="command/usage">
 		<cmdsynopsis>
 			<command>jsonread</command> 
+			<arg choice="req"><replaceable>VARIABLE</replaceable></arg>
 			
-			<arg/>
-			<arg/>
-			<arg/>
 		</cmdsynopsis>
+	    
+	    <para>Reads up to EOF from <filename>stdin</filename>, parses the stream as a JSON document, and assigns it to the specified variable.</para>
 	</refsynopsisdiv>
 	
 	
