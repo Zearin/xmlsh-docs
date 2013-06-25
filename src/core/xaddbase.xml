@@ -26,7 +26,21 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xaddbase</command>
-			<arg />
+			
+		    <arg><synopfragmentref linkend="options">OPTIONS</synopfragmentref></arg>
+		    <arg><replaceable>FILE</replaceable></arg>
+		    
+		    <synopfragment xml:id="options">
+		        <group>
+		            <arg choice="plain">-r</arg>
+		            <arg choice="plain">-relative</arg>
+		        </group>
+		        
+		        <group>
+		            <arg choice="plain">-a</arg>
+		            <arg choice="plain">-all</arg>
+		        </group>
+		    </synopfragment>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
