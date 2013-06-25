@@ -27,23 +27,24 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>fixed2xml</command>			
-		    <arg choice="req">-colspecs <arg choice="req"><replaceable>SPECS</replaceable></arg></arg><sbr />
-		    <arg>-encoding <arg choice="req"><replaceable>ENCODING</replaceable></arg></arg><sbr />
-		    <arg>-root <arg choice="req"><replaceable>ROOTNAME</replaceable></arg></arg><sbr />
-		    <arg>-row <arg choice="req"><replaceable>ROWNAME</replaceable></arg></arg><sbr />
-		    <arg>-col <arg choice="req"><replaceable>COLNAME</replaceable></arg></arg><sbr />
-		    <arg>-colnames <arg choice="req"><replaceable>NAMES</replaceable></arg></arg><sbr />
+		    
+		    <arg choice="req">-colspecs <replaceable>SPECS</replaceable></arg><sbr />
+		    <arg>-encoding <replaceable>ENCODING</replaceable></arg><sbr />
+		    <arg>-root <replaceable>ROOTNAME</replaceable></arg><sbr />
+		    <arg>-row <replaceable>ROWNAME</replaceable></arg><sbr />
+		    <arg>-col <replaceable>COLNAME</replaceable></arg><sbr />
+		    <arg>-colnames <replaceable>NAMES</replaceable></arg><sbr />
 		    <arg>-header</arg><sbr />
 		    <arg>-attr</arg><sbr />
 		    <arg>-nonorm</arg><sbr />
-		    <arg>-skip <arg choice="req"><replaceable>LINES</replaceable></arg></arg>
+		    <arg>-skip <replaceable>LINES</replaceable></arg>
 		</cmdsynopsis>
 	    
 	    <para>If <option>-colnames</option> is specified, its argument is taken to be either a sequence of strings, or a single string which is comma-seperated, which specifies the column names to be used.</para>
         <para>If <option>-header</option> is specified, the first row of the fixed file is used as values for column names.</para>
-        <para><option>-colspecs</option> is required. Its argument is a sequence or a comma-deliminted string of column specs. A column spec is either "<replaceable>start</replaceable>-<replaceable>end</replaceable>" or "<replaceable>start</replaceable>", where start and end are integer column positions starting at one. For example <userinput>"1-3,5-6,7-9"</userinput> or <userinput>&lt;[ "1-3" , "5-6" , "7-9" ]&gt;</userinput></para>
+        <para><option>-colspecs</option> is required. Its argument is a sequence or a comma-deliminted string of column specs. A column spec is either <userinput><replaceable>start</replaceable>-<replaceable>end</replaceable></userinput> or <userinput><replaceable>start</replaceable></userinput>, where start and end are integer column positions starting at one. For example <userinput>"1-3,5-6,7-9"</userinput> or <userinput>&lt;[ "1-3" , "5-6" , "7-9" ]&gt;</userinput></para>
         <para>If  <option>-end</option> is omitted, the remainder of the line is used.</para>
-        <para>Column specs may overlap (e.g <userinput>"1-10,5-12"</userinput> )</para>
+        <para>Column specs may overlap (e.g <userinput>"1-10,5-12"</userinput> ).</para>
 	</refsynopsisdiv>
     
     
