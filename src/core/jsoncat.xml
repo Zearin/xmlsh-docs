@@ -109,7 +109,7 @@
 	
 	<refsection>
 		<title>Implementation</title>
-		<para/>
+		<para>This command is implemented as an <filename class="extension">.xsh</filename> script.</para>
 	</refsection>
 
 	<refsection>

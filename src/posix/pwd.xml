@@ -40,9 +40,9 @@
 	</refsection>
 	
 	<refsection>
-		<title>Implementation</title>
-		<para></para>
-	</refsection>
+        <title>Implementation</title>
+        <para>This command is implemented as an <filename class="extension">.xsh</filename> script.</para>
+    </refsection>
 
 	<refsection>
 		<title>Return Value</title>
