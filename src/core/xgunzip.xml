@@ -94,9 +94,10 @@
 		<cmdsynopsis>
 			<command>xgunzip</command> 
 			
-			<arg/>
-			<arg/>
-			<arg/>
+			<!--
+			    FIXME:
+			    No online synopsis page on wiki 
+			-->
 		</cmdsynopsis>
 	</refsynopsisdiv>
 	
