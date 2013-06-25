@@ -26,7 +26,22 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>jcall</command>
-			<arg />
+			
+		    <arg choice="opt">			    
+                <group>
+                    <arg choice="plain">-cp</arg>
+                    <arg choice="plain">-classpath</arg>
+                </group>
+		        
+			    <arg choice="req"><replaceable>CLASSPATH</replaceable></arg>
+			</arg>
+		    
+		    <sbr/>
+		    
+			<arg choice="req"><replaceable>CLASSNAME</replaceable></arg>
+			<arg choice="opt" rep="repeat">
+			    <replaceable>ARGS</replaceable>
+			</arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
