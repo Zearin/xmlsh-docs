@@ -26,7 +26,72 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xgetopts</command>
-			<arg />
+			
+		    <group>
+			    <arg choice="plain">-a</arg>
+			    <arg choice="plain">-argindex</arg>
+			</group>
+		    
+		    <group>
+			    <arg choice="plain">-o</arg>
+			    <arg choice="plain">-optdef</arg>
+		        <replaceable>OPTSTRING</replaceable>
+			</group>
+		    
+		    <group>
+			    <arg choice="plain">-c</arg>
+			    <arg choice="plain">-command</arg>
+		        <replaceable>COMMAND_NAME</replaceable>
+			</group>
+		    
+		    <group>
+			    <arg choice="plain">-p</arg>
+			    <arg choice="plain">-passthrough</arg>
+		        <replaceable>OPTSTRING</replaceable>
+			</group>
+		    
+		    <group>
+			    <arg choice="plain">-i</arg>
+			    <arg choice="plain">-ignore</arg>
+		        <replaceable>OPTSTRING</replaceable>
+			</group>
+		    
+		    
+		    
+	        <group>
+	            <group>
+                    <arg choice="plain">-s</arg>
+                    <arg choice="plain">-serialize</arg>
+                </group>
+	            
+                <group>
+                    <arg choice="plain">+s</arg>
+                    <arg choice="plain">+serialize</arg>
+                </group>
+	        </group>
+		    
+		    <group>
+	            <group>
+                    <arg choice="plain">-ps</arg>
+                    <arg choice="plain">-pass-serialize</arg>
+                </group>
+	            
+                <group>
+                    <arg choice="plain">+ps</arg>
+                    <arg choice="plain">+pass-serialize</arg>
+                </group>
+	        </group>
+		    
+		    <arg>-noargs</arg>
+		    <arg>-novalues</arg>
+		    
+		    
+		    <sbr/>
+		    
+		    <arg>--</arg>
+		    
+		    <sbr/>
+		    <arg choice="req" rep="repeat"><replaceable>ARG</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
