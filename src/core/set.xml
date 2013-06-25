@@ -26,7 +26,21 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>set</command>
-			<arg />
+			
+		    <arg choice="opt">
+			    <synopfragmentref linkend="options">OPTIONS</synopfragmentref>
+			</arg>
+		    
+		    <arg choice="opt" rep="repeat">
+		        <replaceable>param</replaceable>
+		    </arg>
+		    
+		    <synopfragment xml:id="options">
+		        <arg>-x</arg>
+		        <arg>-v</arg>
+		        <arg>-e</arg>
+		        <arg>-xpipe</arg>
+		    </synopfragment>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
