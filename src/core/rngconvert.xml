@@ -26,7 +26,45 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>rngconvert</command>
-			<arg />
+			
+		    <arg choice="opt">
+			    <synopfragmentref linkend="options">OPTIONS</synopfragmentref>
+			</arg>
+		    
+		    <sbr/>
+		    
+		    <arg choice="req"><replaceable>INPUT_FILE</replaceable></arg>
+		    <arg choice="req"><replaceable>OUTPUT_FILE</replaceable></arg>
+		    
+		    <sbr/>
+		    
+		    <synopfragment xml:id="options" xreflabel="OPTIONS">
+		        
+		        <arg rep="repeat">-i <replaceable>INPUT_OPTION</replaceable></arg>
+		        <arg rep="repeat">-o <replaceable>OUTPUT_OPTION</replaceable></arg>
+		        
+		        <arg><sbr/>
+		            -I 
+		            <group choice="req">
+                        <arg choice="plain">rng</arg>
+                        <arg choice="plain">rnc</arg>
+                        <arg choice="plain">dtd</arg>
+                        <arg choice="plain">xml</arg>
+                    </group>
+		            <sbr/>
+		        </arg>
+		        
+		        <arg>-O <group choice="req">
+		            <arg choice="plain">rng</arg>
+		            <arg choice="plain">rnc</arg>
+		            <arg choice="plain">dtd</arg>
+		            <arg choice="plain">xsd</arg>
+		          </group><sbr/>
+		        </arg>
+		        
+		        <arg>-C <arg choice="plain"><replaceable>CATALOG_URI</replaceable></arg></arg>
+		    </synopfragment>
+		    
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
