@@ -27,7 +27,11 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xml2csv</command>
-			<arg />
+		    
+			<arg>-header</arg>
+		    <arg>-attr</arg>
+		    <arg>-delim <replaceable>DELIM_CHAR</replaceable></arg>
+		    <arg>-quote <replaceable>QUOTE_CHAR</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
