@@ -80,23 +80,16 @@
 	</refnamediv>	
 	
 	
-	<!--	
-		Quick-snyopsis info.  
-		
-		Equivalent to `[command] -usage`.
-		
-		(Not required by DocBook; SHOULD require for XMLSH.)
-		
-		@see
-			http://www.docbook.org/tdg5/en/html/refsynopsisdiv.html
-	-->
 	<refsynopsisdiv remap="command/usage">
 		<cmdsynopsis>
 			<command>xml2json</command> 
 			
-			<arg></arg>
-			<arg></arg>
-			<arg></arg>
+			<group>
+			    <arg choice="plain">-p</arg>
+			    <arg choice="plain">-print</arg>
+			</group>
+		    
+		    <arg choice="req"><replaceable>XML_FILE</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
 	
