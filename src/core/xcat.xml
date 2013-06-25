@@ -26,7 +26,20 @@
 	<refsynopsisdiv>
 		<cmdsynopsis>
 			<command>xcat</command>
-			<arg />
+			
+		    <arg>
+			    -w
+			    <group choice="req">
+			        <arg choice="plain"><replaceable>STRING</replaceable></arg>
+			        <arg choice="plain"><replaceable>ELEMENT</replaceable></arg>
+			    </group>
+			</arg>
+		    
+		    <sbr/>
+		    
+		    <arg>-r</arg>
+		    
+		    <arg rep="repeat"><replaceable>FILE</replaceable></arg>
 		</cmdsynopsis>
 	</refsynopsisdiv>
     
